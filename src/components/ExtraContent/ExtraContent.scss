@@ -1,0 +1,16 @@
+@import "../../helpers/variables";
+
+.extraContent {
+background-color: $mainBeige;
+display:flex;
+justify-content: space-between;
+&__tel {
+    font-weight: 600;
+}
+}
+
+a:hover {
+    font-size: 105%;
+}
+
+
