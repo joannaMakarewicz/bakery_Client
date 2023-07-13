@@ -1,0 +1,23 @@
+.main {
+    background-image: url("../../assets/bcg5.jpg");
+    background-size: cover;
+    &__heading {
+        font-family: 'Parisienne', cursive;
+        font-weight: 600;
+        margin: 16px 6px;
+    }
+    &__extra {
+        display: flex;
+        font-size: 1.2em;
+        justify-content: center;
+    }
+    &__extra::before, &__extra::after {
+        background:red;
+        display: inline-block;
+        margin: 0 1rem 0 0;
+        width: 30px;
+        height: 1px;
+        vertical-align: middle;
+        content: "";
+    }
+}
