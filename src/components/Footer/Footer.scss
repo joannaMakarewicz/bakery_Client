@@ -2,4 +2,17 @@
 
 .footer {
     background-color: $darkBeige;
+    &__contact {
+        text-align: left;
+    }
+    &__list {
+        list-style: none;
+    }
+    &__logo {
+        max-width: 50%;
+    }
+}
+
+.footer a {
+    color:#fff;
 }
