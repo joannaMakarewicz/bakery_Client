@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Poppins:wght@400;600&display=swap');
 @import "./helpers/variables";
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  font-size: 16px;
   min-height: 100vh;
 }
 

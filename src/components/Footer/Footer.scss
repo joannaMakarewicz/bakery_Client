@@ -2,6 +2,13 @@
 
 .footer {
     background-color: $darkBeige;
+    font-size: 0.9rem;
+    padding:6px;
+    text-align: left;
+    &__article {
+        align-items: center;
+        justify-content: center;
+    }
     &__contact {
         text-align: left;
     }
@@ -9,6 +16,7 @@
         list-style: none;
     }
     &__logo {
+        border-radius: 50%;
         max-width: 50%;
     }
 }

@@ -15,24 +15,24 @@ const Footer = () => {
     <MyDataContext.Consumer>
       {(dataBase) => (
         <footer className="footer text-light">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-4 col-sm-6">
+          <section className="container">
+            <article className="row footer__article">
+              <div className="col-md-4 col-sm-6 mt-3 mb-3">
                 <img
                   className="footer__logo"
                   src={logo}
                   alt="chodź na ciacho"
                 />
               </div>
-              <div className="footer__contact col-md-4 col-sm-6">
-                <h5>{dataBase.myData.name.toUpperCase()}</h5>
+              <div className="footer__contact col-md-4 col-sm-6 mb-3">
+                <h5 className="mb-3">{dataBase.myData.name.toUpperCase()}</h5>
                 <ul className="footer__list p-0">
                   <li>
                   <a href="x" target="location">
-                    <FaLocationDot />
+                    <FaLocationDot className="me-1" />
                   </a>
                     ul. {dataBase.myData.address}</li>
-                  <li className="text-nowrap"><a href="/"><MdAlternateEmail/>{dataBase.myData.email}</a></li>
+                  <li className="text-nowrap"><a href="/"><MdAlternateEmail className="me-1"/>{dataBase.myData.email}</a></li>
                   <li>
                     <a
                       href={`tel: ${dataBase.myData.tel}`}
@@ -44,13 +44,13 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="col-md-4 col-sm-6">
-                <h5>NAWIGACJA</h5>
-                <p>Polityka prywatności</p>
+              <div className="col-md-4 col-sm-6 mb-3">
+                <h5 className="mb-3">NAWIGACJA</h5>
+                <p className="m-0">Polityka prywatności</p>
                 <p>Regulamin</p>
               </div>
               <div className="col-md-4 col-sm-6">
-                <h5>OBSERWUJ NAS</h5>
+                <h5 className="mb-3">OBSERWUJ NAS</h5>
                 <div>
                   <a href="x" target="facebook">
                     <BsFacebook className="me-3" />
@@ -60,8 +60,8 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-            </div>
-          </div>
+            </article>
+          </section>
         </footer>
       )}
     </MyDataContext.Consumer>
