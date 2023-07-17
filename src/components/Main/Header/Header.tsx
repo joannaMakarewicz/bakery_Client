@@ -17,7 +17,7 @@ const Header = () => {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
+            <h3>Słodkie stoły</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -29,7 +29,7 @@ const Header = () => {
           />
 
           <Carousel.Caption>
-            <h3>Second slide label</h3>
+            <h3>Wesela</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -46,9 +46,8 @@ const Header = () => {
               alt="Third slide"
             />
           </div>
-
           <Carousel.Caption>
-            <h3>Third slide label</h3>
+            <h3>Torty</h3>
             <p>
               Praesent commodo cursus magna, vel scelerisque nisl consectetur.
             </p>

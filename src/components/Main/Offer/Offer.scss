@@ -1,6 +1,13 @@
 .offer {
- 
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr;
-margin:0 auto;
+  margin: 0 auto;
+  @media screen and (min-width: 425px) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 6px;
+  }
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 6px;
+  }
 }

@@ -3,24 +3,41 @@
 .footer {
     background-color: $darkBeige;
     font-size: 0.9rem;
-    padding:6px;
+    padding:16px 6px;
     text-align: left;
     &__article {
-        align-items: center;
+        display:grid;
         justify-content: center;
+        @media screen and (min-width:768px) {
+            grid-template-columns: 1fr 1fr;
+            
+        }
     }
     &__contact {
         text-align: left;
+        line-height: 1.5rem;
+    }
+    &__container {
+        text-align: center;
+        @media screen and (min-width:768px) {
+            text-align: left;
+            
+        }
     }
     &__list {
         list-style: none;
     }
     &__logo {
         border-radius: 50%;
-        max-width: 50%;
+        max-width: 30%;
+
     }
 }
 
 .footer a {
     color:#fff;
+}
+
+.footer h5 {
+    color:$mainBeige;
 }

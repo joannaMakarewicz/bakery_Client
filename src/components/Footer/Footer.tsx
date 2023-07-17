@@ -16,16 +16,17 @@ const Footer = () => {
       {(dataBase) => (
         <footer className="footer text-light">
           <section className="container">
-            <article className="row footer__article">
-              <div className="col-md-4 col-sm-6 mt-3 mb-3">
+            <article className="footer__article">
+              <div className="footer__container col-md-3 col-sm-6 mt-3 mb-3 w-100">
                 <img
                   className="footer__logo"
                   src={logo}
                   alt="chodź na ciacho"
                 />
               </div>
-              <div className="footer__contact col-md-4 col-sm-6 mb-3">
-                <h5 className="mb-3">{dataBase.myData.name.toUpperCase()}</h5>
+              <div className="footer__contact col-md-3 col-sm-6 mb-3 mt-3 w-100">
+                <h5 className=" footer__heading m-0">{dataBase.myData.name.toUpperCase()}</h5>
+                <p className="mb-3 fs-5">{dataBase.myData.owner}</p>
                 <ul className="footer__list p-0">
                   <li>
                   <a href="x" target="location">
@@ -44,14 +45,14 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-              <div className="col-md-4 col-sm-6 mb-3">
+              <div className="col-md-3 col-sm-6 mb-3 mt-3 w-100">
                 <h5 className="mb-3">NAWIGACJA</h5>
                 <p className="m-0">Polityka prywatności</p>
                 <p>Regulamin</p>
               </div>
-              <div className="col-md-4 col-sm-6">
+              <div className="col-md-3 col-sm-6 mb-3 mt-3 w-100">
                 <h5 className="mb-3">OBSERWUJ NAS</h5>
-                <div>
+                <div className="footer__container fs-2">
                   <a href="x" target="facebook">
                     <BsFacebook className="me-3" />
                   </a>
