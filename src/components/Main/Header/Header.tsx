@@ -10,6 +10,26 @@ const Header = () => {
   return (
     <header className="header">
       <Carousel>
+      <Carousel.Item>
+          <div className="d-flex">
+            <img
+              className="header__img d-block w-100"
+              src={bcg3}
+              alt="Third slide"
+            />
+            <img
+              className="header__img d-block w-100"
+              src={bcg4}
+              alt="Third slide"
+            /> 
+          </div>
+          <Carousel.Caption>
+            <h3>Torty</h3>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
         <Carousel.Item>
           <img
             className="header__img d-block w-100"
@@ -33,26 +53,7 @@ const Header = () => {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
-          <div className="d-flex">
-            <img
-              className="header__img d-block w-50"
-              src={bcg3}
-              alt="Third slide"
-            />
-            <img
-              className="header__img d-block w-50"
-              src={bcg4}
-              alt="Third slide"
-            />
-          </div>
-          <Carousel.Caption>
-            <h3>Torty</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
+
       </Carousel>
     </header>
   );

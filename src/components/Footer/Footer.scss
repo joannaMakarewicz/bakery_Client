@@ -2,26 +2,30 @@
 
 .footer {
     background-color: $darkBeige;
-    font-size: 0.9rem;
-    padding:16px 6px;
+    padding:16px 6px 1px 6px;
     text-align: left;
     &__article {
         display:grid;
         justify-content: center;
+        margin:0 26px;
         @media screen and (min-width:768px) {
             grid-template-columns: 1fr 1fr;
-            
         }
+        @media screen and (min-width:1023px) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+    &__author {
+        border-top:1px solid $mainBeige;
+        text-align: center;
     }
     &__contact {
         text-align: left;
-        line-height: 1.5rem;
     }
     &__container {
         text-align: center;
         @media screen and (min-width:768px) {
             text-align: left;
-            
         }
     }
     &__list {
@@ -30,7 +34,18 @@
     &__logo {
         border-radius: 50%;
         max-width: 30%;
+        @media screen and (min-width:768px) {
+            max-width: 50%;
+        }
+    }
+    &__special {
 
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin:0px;
+        &--margin {
+            margin-top:80px;
+        }
     }
 }
 
@@ -39,5 +54,7 @@
 }
 
 .footer h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
     color:$mainBeige;
 }

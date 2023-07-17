@@ -1,9 +1,13 @@
+@import "../../helpers//variables";
 .main {
     background-image: url("../../assets/bcg5.jpg");
     background-size: contain;
+    &__border {
+        border-top: 2px solid $mainBeige;
+    }
     &__heading {
         font-family: 'Parisienne', cursive;
-        font-size:2.5rem;
+        font-size:3rem;
         letter-spacing: 1.5px;
         margin: 16px 6px;
     }
@@ -16,5 +20,10 @@
         font-size: 1.2em;
         justify-content: center;
     }
+    &__section {
+        width: 80vw;
+        margin: 0 auto;
+    }
+
 
 }

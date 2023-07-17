@@ -3,8 +3,6 @@
 
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
   min-height: 100vh;
 }
 
@@ -22,6 +20,9 @@ html {
 #root {
   color: $fontColor;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
 }
 
 a:link {
