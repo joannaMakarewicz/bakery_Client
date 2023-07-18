@@ -17,6 +17,7 @@
     }
     &__author {
         border-top:1px solid $mainBeige;
+        font-size: 0.8rem;
         text-align: center;
     }
     &__contact {
@@ -29,6 +30,7 @@
         }
     }
     &__list {
+        font-size: 0.9rem;
         list-style: none;
     }
     &__logo {
@@ -44,7 +46,10 @@
         text-transform: uppercase;
         margin:0px;
         &--margin {
-            margin-top:80px;
+            margin-top:40px;
+            @media screen and (min-width:768px) {
+                margin-top:70px;  
+            }
         }
     }
 }

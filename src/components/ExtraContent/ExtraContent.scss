@@ -2,14 +2,13 @@
 
 .extraContent {
 background-color: $mainBeige;
+color: $beigeFontColor;
 display:flex;
 justify-content: space-between;
-&__tel {
-    font-weight: 600;
-}
+
 }
 
-.extraContent:hover {
+.extraContent a:hover {
     font-size: 105%;
 }
 

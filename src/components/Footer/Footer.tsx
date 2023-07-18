@@ -28,7 +28,7 @@ const Footer = () => {
                 <h5 className=" footer__heading m-0">
                   {dataBase.myData.name.toUpperCase()}
                 </h5>
-                <p className="mb-5 fs-5">{dataBase.myData.owner}</p>
+                <p className="mb-4 fs-5">{dataBase.myData.owner}</p>
                 <ul className="footer__list p-0">
                   <li>
                     <a href="x" target="location">

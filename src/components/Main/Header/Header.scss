@@ -1,23 +1,17 @@
 @import "../../../helpers/variables";
 
+
 .carousel {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-inner {
-    background-color: rgba(17, 17, 17, .3);
   background-size: cover;
-  background-position: center center;
-  max-height: 60vh;
-  overflow: hidden;
+  max-height: 50vh;
 }
 
 
 .header h3 {
-  font-size: 2.5rem;
   text-transform: uppercase;
-}
-
-.header h3 {
-  font-size: 90px;
+  font-size: 3rem;
 }

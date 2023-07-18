@@ -1,9 +1,12 @@
 @import "../../helpers//variables";
 .main {
     background-image: url("../../assets/bcg5.jpg");
-    background-size: contain;
+    background-size: cover;
     &__border {
         border-top: 2px solid $mainBeige;
+    }
+    &__description {
+        text-align: justify;
     }
     &__heading {
         font-family: 'Parisienne', cursive;
@@ -11,18 +14,17 @@
         letter-spacing: 1.5px;
         margin: 16px 6px;
     }
-    &__logo {
-        height: 20px;
-        width: 20px;
-    }
     &__extra {
         display: flex;
         font-size: 1.2em;
         justify-content: center;
     }
     &__section {
-        width: 80vw;
         margin: 0 auto;
+        @media  screen and (min-width: 768px) {
+            width: 80vw;
+            
+        }
     }
 
 
