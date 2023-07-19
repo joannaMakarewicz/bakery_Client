@@ -17,6 +17,14 @@
         @media screen and (min-width:768px){
             display:none;
         }
+        &--close {
+         background-color: $darkBeige; 
+         color:#fff;
+         z-index: 22;
+         &:hover {
+          color:#fff;
+         }
+        }
       }
   &__list {
     display: none;
@@ -34,7 +42,7 @@
     } 
     &--open {
       list-style-type: none;
-      background-color: #323031;
+      background-color: $darkBeige;
       align-items: center;
       display: flex;
       flex-direction: column;
@@ -50,7 +58,7 @@
       transition: 1s ease;
       z-index: 10;
       & li :hover {
-          color: #198754;
+          color: #fff;
         }
     }
     }

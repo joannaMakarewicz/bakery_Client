@@ -61,14 +61,14 @@ const Footer = () => {
                 <h5 className="mb-5">OBSERWUJ MNIE</h5>
                 <div className="footer__container fs-2">
                   <a
-                    href="https://m.facebook.com/chodznaciachogdansk/ "
+                    href={dataBase.myData.fb}
                     target="_blank"
                     rel="noreferrer"
                   >
                     <BsFacebook className="me-3" />
                   </a>
                   <a
-                    href="https://www.instagram.com/chodz_na_ciacho/"
+                    href={dataBase.myData.instagram}
                     target="_blank"
                     rel="noreferrer"
                   >

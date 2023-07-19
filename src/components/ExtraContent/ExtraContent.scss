@@ -1,15 +1,21 @@
 @import "../../helpers/variables";
 
 .extraContent {
-background-color: $mainBeige;
-color: $beigeFontColor;
+background-color: #fff;
+border-bottom: 1px solid $beigeColor;
 display:flex;
+font-size: 1rem;
 justify-content: space-between;
 
 }
 
+.extraContent a {
+    color:$mainBeige;
+}
+
 .extraContent a:hover {
     font-size: 105%;
+    color: $beigeColor;
 }
 
 

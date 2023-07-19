@@ -28,7 +28,7 @@ const Navbar = () => {
         <li><a href="/">Oferta</a></li>
         <li><a href="/">Kontakt</a></li>
       </ul>
-      <button className="nav__hamburger" onClick={showMenu}>
+      <button className={active ? " nav__hamburger nav__hamburger--close" : "nav__hamburger"} onClick={showMenu}>
         {active ? (
           <RxCross1 className="w-100 h-100" />
         ) : (

@@ -8,7 +8,7 @@ import "../Offer/Offer.scss";
 const Offer = () => {
 
   return (
-    <article className='offer m-3 mt-5'>
+    <article className='offer m-3 mt-5 mb-5'>
       <Card photo={bcg7} text={'Torty'}/>
       <Card photo={bcg8} text={'Słodkie stoły'}/>
       <Card photo={bcg8} text={'Wesela'}/>
