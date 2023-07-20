@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navlink from "../Navlink/Navlink";
-import { RxHamburgerMenu } from "react-icons/rx";
-import { RxCross1 } from "react-icons/rx";
+import {RxHamburgerMenu} from "react-icons/rx";
+import {RxCross1} from "react-icons/rx"
 import logo from "../../assets/logo.jpg";
 import "../Navbar/Navbar.scss";
 
