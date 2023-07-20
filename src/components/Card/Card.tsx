@@ -15,10 +15,10 @@ const Card = ({ photo, text, name}: CardProps) => {
     <picture className="myCard ">
       <div className="card rounded-0">
         <img className="card-img-top rounded-0" src={photo} alt="Cake" />
-        <button className="myCard__body">
+      </div>
+      <button className="myCard__body">
           {text.toUpperCase()}
         </button>
-      </div>
     </picture>
   );
 };

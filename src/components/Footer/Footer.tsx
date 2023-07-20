@@ -15,8 +15,7 @@ const Footer = () => {
     <MyDataContext.Consumer>
       {(dataBase) => (
         <footer className="footer text-light">
-          <section className="container">
-            <article className="footer__article">
+          <section className="footer__article">
               <div className="footer__container col-md-3 col-sm-6 mt-3 mb-3 w-100 p-3">
                 <img
                   className="footer__logo"
@@ -47,7 +46,7 @@ const Footer = () => {
                       href={`tel: ${dataBase.myData.tel}`}
                     >
                       <BsFillTelephoneFill className="me-1" />
-                      508 046 549
+                      {dataBase.myData.tel}
                     </a>
                   </li>
                 </ul>
@@ -76,7 +75,6 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-            </article>
           </section>
           <div className="footer__author">makaDev</div>
         </footer>

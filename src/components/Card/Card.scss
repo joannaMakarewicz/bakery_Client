@@ -1,7 +1,13 @@
+@import "../../helpers/variables";
+
 .myCard {
     border: 1px solid #d8c097;
     padding:0.5rem;
     &__body {
+        background:transparent;
         border:none;
+        color: $fontColor;
+        padding-top: 8px;
+        
     }
 }

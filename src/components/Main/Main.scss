@@ -2,6 +2,7 @@
 .main {
     background-image: url("../../assets/flowers.png");
     background-size: cover;
+    
     &__border {
         border-top: 2px solid $mainBeige;
     }
@@ -9,10 +10,10 @@
         text-align: justify;
     }
     &__heading {
-        font-family: 'Parisienne', cursive;
-        font-size:3rem;
+        font-size:2.5rem;
         letter-spacing: 1.5px;
         margin: 16px 6px;
+        text-transform: uppercase;
     }
     &__extra {
         display: flex;
