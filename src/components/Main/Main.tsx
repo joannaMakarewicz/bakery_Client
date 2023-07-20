@@ -6,10 +6,10 @@ import "../Main/Main.scss";
 
 const Main = () => {
   return (
-    <main className="main mt-5">
+    <main className="main pt-5 pb-5">
       <section className="main__section">
         <div className="w-25 mx-auto my-3 main__border" />
-        <h1 className="main__heading p-1 pb-4 m-3">
+        <h1 className="main__heading p-1 m-3">
           Tortowe wariacje i cukrowe inspiracje
         </h1>
         <div className="w-25 mx-auto my-3 main__border" />
