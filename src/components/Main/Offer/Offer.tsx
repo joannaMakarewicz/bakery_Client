@@ -8,10 +8,10 @@ import "../Offer/Offer.scss";
 const Offer = () => {
 
   return (
-    <article className='offer m-3 mt-5 mb-5'>
-      <Card photo={bcg7} text={'Torty'}/>
-      <Card photo={bcg8} text={'Słodkie stoły'}/>
-      <Card photo={bcg8} text={'Wesela'}/>
+    <article className='offer m-3 mt-5 mb-5' id="offer">
+      <Card photo={bcg7} text={'Torty'} name={'cakes'}/>
+      <Card photo={bcg8} text={'Słodkie stoły'} name={'sweetTable'}/>
+      <Card photo={bcg8} text={'Wesela'} name={'weddings'}/>
     </article>
   )
 }

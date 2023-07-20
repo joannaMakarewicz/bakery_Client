@@ -24,7 +24,7 @@ const ExtraContent = () => {
               <FaLocationDot />
             </a>
           </div>
-          <a href={"tel:+48508046549"} className="extraContent__tel">
+          <a href={`tel:${contactData.myData.tel}`} className="extraContent__tel">
             <BsFillTelephoneFill className="me-1" />
             {contactData.myData.tel}
           </a>

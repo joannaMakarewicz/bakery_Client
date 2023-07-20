@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Navlink from "../Navlink/Navlink";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross1 } from "react-icons/rx";
 import logo from "../../assets/logo.jpg";
@@ -22,13 +23,16 @@ const Navbar = () => {
             : "nav__list text-center m-0 p-0"
         }
       >
-        <li>
-          <a href="/">O mnie</a>
-          </li>
-        <li><a href="/">Oferta</a></li>
-        <li><a href="/">Kontakt</a></li>
+        <Navlink linkName="O mnie" link="#offer" />
+        <Navlink linkName="Oferta" link="/" />
+        <Navlink linkName="Kontakt" link="/" />
       </ul>
-      <button className={active ? " nav__hamburger nav__hamburger--close" : "nav__hamburger"} onClick={showMenu}>
+      <button
+        className={
+          active ? " nav__hamburger nav__hamburger--close" : "nav__hamburger"
+        }
+        onClick={showMenu}
+      >
         {active ? (
           <RxCross1 className="w-100 h-100" />
         ) : (
