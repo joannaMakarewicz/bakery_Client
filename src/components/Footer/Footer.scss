@@ -2,14 +2,18 @@
 
 .footer {
     background-color: $darkBeige;
+    color:#fff;
     padding:16px 6px 1px 6px;
     text-align: left;
+    
     &__article {
         display:grid;
         justify-content: center;
         margin:0 26px;
         @media screen and (min-width:768px) {
             grid-template-columns: 1fr 1fr;
+            width: 80vw;
+            margin: 0 auto;
         }
         @media screen and (min-width:1023px) {
             grid-template-columns: 1fr 1fr 1fr 1fr;

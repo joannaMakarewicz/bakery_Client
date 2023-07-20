@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Navlink from "../Navlink/Navlink";
+import { Link } from "react-router-dom"
 import {RxHamburgerMenu} from "react-icons/rx";
 import {RxCross1} from "react-icons/rx"
 import logo from "../../assets/logo.jpg";
@@ -14,7 +15,10 @@ const Navbar = () => {
 
   return (
     <nav className="nav">
-      <img className="nav__logo" src={logo} alt="chodz na ciacho" />
+<Link to="/">
+<img className="nav__logo" src={logo} alt="chodz na ciacho" />
+  </Link>
+      
 
       <ul
         className={
@@ -23,8 +27,10 @@ const Navbar = () => {
             : "nav__list text-center m-0 p-0"
         }
       >
-        <Navlink linkName="O mnie" link="#offer" />
-        <Navlink linkName="Oferta" link="/" />
+        <Navlink linkName="O mnie" link="/" />
+        <Navlink linkName="Torty" link="/cakes" />
+        <Navlink linkName="Wesela" link="/wedding" />
+        <Navlink linkName="Słodki stół" link="/sweetTable" />
         <Navlink linkName="Kontakt" link="/" />
       </ul>
       <button
