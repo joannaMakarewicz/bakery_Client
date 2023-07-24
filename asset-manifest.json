@@ -1,27 +1,35 @@
 {
   "files": {
-    "main.css": "/bakery/static/css/main.f2a3d5d0.css",
-    "main.js": "/bakery/static/js/main.8ec0b1c2.js",
+    "main.css": "/bakery/static/css/main.bbd7ea2e.css",
+    "main.js": "/bakery/static/js/main.bc891c01.js",
     "static/js/787.b2a56feb.chunk.js": "/bakery/static/js/787.b2a56feb.chunk.js",
+    "static/media/bcg15.jpeg": "/bakery/static/media/bcg15.930ea588ed0f3a69489b.jpeg",
+    "static/media/bcg9.jpeg": "/bakery/static/media/bcg9.d09d6cc72bb7ccfb3411.jpeg",
     "static/media/bcg17.jpeg": "/bakery/static/media/bcg17.ed6f0371ee1956242716.jpeg",
     "static/media/bcg20.jpeg": "/bakery/static/media/bcg20.df7e651183a1a270d693.jpeg",
     "static/media/bcg21.jpeg": "/bakery/static/media/bcg21.479bef9a0f18a8d27b0e.jpeg",
     "static/media/bcg19.jpeg": "/bakery/static/media/bcg19.a41158769a699e725c06.jpeg",
+    "static/media/bcg3.jpeg": "/bakery/static/media/bcg3.699cfcc0c755b09d55d2.jpeg",
     "static/media/bcg23.jpeg": "/bakery/static/media/bcg23.fc68777b225dfe28c023.jpeg",
+    "static/media/bcg1.jpeg": "/bakery/static/media/bcg1.ffab6d9824e45ea7f058.jpeg",
+    "static/media/bcg25.jpg": "/bakery/static/media/bcg25.ab2f7f61befd5acd1444.jpg",
     "static/media/flowers_big.png": "/bakery/static/media/flowers_big.2cfd99eaf720419732f1.png",
+    "static/media/bcg11.jpeg": "/bakery/static/media/bcg11.2934b00fa56e8864fead.jpeg",
     "static/media/bcg10.jpeg": "/bakery/static/media/bcg10.3a0fc0137fbc628a99b2.jpeg",
+    "static/media/bcg13.jpeg": "/bakery/static/media/bcg13.4e0426eb69efe217c788.jpeg",
     "static/media/bcg24.jpeg": "/bakery/static/media/bcg24.96175ba89efe6bde39c9.jpeg",
     "static/media/bcg7.jpg": "/bakery/static/media/bcg7.4dce4915c46d29cb1eba.jpg",
     "static/media/logo.jpg": "/bakery/static/media/logo.86a1b4bc906265b2ef96.jpg",
     "static/media/bcg8.jpg": "/bakery/static/media/bcg8.92bf01b4983a87854020.jpg",
+    "static/media/bcg12.jpeg": "/bakery/static/media/bcg12.06a0060a89e995942349.jpeg",
     "static/media/flowers.png": "/bakery/static/media/flowers.b4d674e4e1e29b8b4a95.png",
     "index.html": "/bakery/index.html",
-    "main.f2a3d5d0.css.map": "/bakery/static/css/main.f2a3d5d0.css.map",
-    "main.8ec0b1c2.js.map": "/bakery/static/js/main.8ec0b1c2.js.map",
+    "main.bbd7ea2e.css.map": "/bakery/static/css/main.bbd7ea2e.css.map",
+    "main.bc891c01.js.map": "/bakery/static/js/main.bc891c01.js.map",
     "787.b2a56feb.chunk.js.map": "/bakery/static/js/787.b2a56feb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2a3d5d0.css",
-    "static/js/main.8ec0b1c2.js"
+    "static/css/main.bbd7ea2e.css",
+    "static/js/main.bc891c01.js"
   ]
 }
