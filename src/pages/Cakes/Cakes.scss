@@ -40,7 +40,7 @@
         display: flex;
         height: 100%;
         padding: 0.5rem;
-        width: 60%;
+        width: 50%;
       }
     }
   }
@@ -63,21 +63,42 @@
     left: 30%;
     position: static;
     top: 15%;
-    width: 80%;
     @media screen and (min-width: 1024px) {
+      left: 20%;
+      font-size: 0.9rem;
       padding: 2rem;
       position: absolute;
       top: 10%;
     }
     @media screen and (min-width: 1200px) {
-      padding: 2rem;
-      position: absolute;
-      top: 15%;
+      top: 7%;
+    }
+    @media screen and (min-width: 1300px) {
+      font-size: 1rem;
+      top: 10%;
     }
     @media screen and (min-width: 1400px) {
-      padding: 2rem;
-      position: absolute;
-      top: 25%;
+      left: 40%;
+      font-size: 1.5rem;
+      top: 23%;
+      width: 60%;
     }
+  }
+}
+
+.gallery {
+  background-color: #f1f1f1;
+  padding: 40px 10vw;
+  &__box {
+    display: grid;
+    column-gap: 6px;
+    row-gap: 6px;
+    grid-template-columns: 1fr;
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  &__heading {
+    margin-bottom: 40px;
   }
 }

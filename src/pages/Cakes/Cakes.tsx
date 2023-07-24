@@ -7,6 +7,11 @@ import Footer from "../../components/Footer/Footer";
 // import { PiNumberCircleThreeThin } from "react-icons/pi";
 import Button from "react-bootstrap/Button";
 import bcg23 from "../../assets/bcg23.jpeg";
+import bcg19 from "../../assets/bcg19.jpeg";
+import bcg21 from "../../assets/bcg21.jpeg";
+import bcg22 from "../../assets/bcg19.jpeg";
+import bcg20 from "../../assets/bcg20.jpeg";
+import bcg24 from "../../assets/bcg21.jpeg";
 import "../Cakes/Cakes.scss";
 
 const Cakes = () => {
@@ -16,7 +21,7 @@ const Cakes = () => {
       <Navbar />
       <section className="cakes">
         <article className="cakes__bcg">
-          <h1>Torty</h1>
+          <h1 className="text-light">Torty</h1>
         </article>
         <article className="cakes__content">
           <div className="cakes__content--frame">
@@ -24,7 +29,7 @@ const Cakes = () => {
           </div>
 
           <div className="cakes__text">
-          <div className="w-25 mx-auto my-3 cakes__border" />
+            <div className="w-25 mx-auto my-3 cakes__border" />
             <h2 className="cakes__heading">Torty na każdą okazję</h2>
             <div className="w-25 mx-auto my-3 cakes__border" />
             <p className="cakes__description">
@@ -55,10 +60,13 @@ const Cakes = () => {
 
           </aside> */}
         </article>
-        
-        <article className="cakes__gallery">
-        <h3>Galeria</h3>
-
+        <article className="gallery">
+            <h3 className="gallery__heading">Galeria</h3>
+            <div className="gallery__box">
+            <img src={bcg19} alt="cakes" width={"100%"} />
+            <img src={bcg20} alt="cakes" width={"100%"} />
+            <img src={bcg21} alt="cakes" width={"100%"} />
+            </div>
         </article>
       </section>
       <Footer />

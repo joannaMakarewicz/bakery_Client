@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Navlink from "../Navlink/Navlink";
-import { Link } from "react-router-dom"
-import {RxHamburgerMenu} from "react-icons/rx";
-import {RxCross1} from "react-icons/rx"
+import { Link } from "react-router-dom";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { RxCross1 } from "react-icons/rx";
 import logo from "../../assets/logo.jpg";
 import "../Navbar/Navbar.scss";
 
@@ -15,10 +15,9 @@ const Navbar = () => {
 
   return (
     <nav className="nav">
-<Link to="/">
-<img className="nav__logo" src={logo} alt="chodz na ciacho" />
-  </Link>
-      
+      <Link to="/">
+        <img className="nav__logo" src={logo} alt="chodz na ciacho" />
+      </Link>
 
       <ul
         className={
