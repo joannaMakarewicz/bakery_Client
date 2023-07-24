@@ -6,11 +6,11 @@ import Footer from "../../components/Footer/Footer";
 // import { PiNumberCircleTwoThin } from "react-icons/pi";
 // import { PiNumberCircleThreeThin } from "react-icons/pi";
 import Button from "react-bootstrap/Button";
-import bcg23 from "../../assets/bcg23.jpeg";
+import bcg3 from "../../assets/bcg3.jpeg";
 import bcg19 from "../../assets/bcg19.jpeg";
-import bcg21 from "../../assets/bcg21.jpeg";
+import bcg1 from "../../assets/bcg1.jpeg";
 import bcg22 from "../../assets/bcg19.jpeg";
-import bcg20 from "../../assets/bcg20.jpeg";
+import bcg9 from "../../assets/bcg9.jpeg";
 import bcg24 from "../../assets/bcg21.jpeg";
 import "../Cakes/Cakes.scss";
 
@@ -21,16 +21,16 @@ const Cakes = () => {
       <Navbar />
       <section className="cakes">
         <article className="cakes__bcg">
-          <h1 className="text-light">Torty</h1>
+
         </article>
         <article className="cakes__content">
           <div className="cakes__content--frame">
-            <img src={bcg23} alt="cakes" width={"100%"} />
+            <img src={bcg3} alt="cakes" width={"100%"} />
           </div>
 
           <div className="cakes__text">
             <div className="w-25 mx-auto my-3 cakes__border" />
-            <h2 className="cakes__heading">Torty na każdą okazję</h2>
+            <h1 className="cakes__heading">Torty na każdą okazję</h1>
             <div className="w-25 mx-auto my-3 cakes__border" />
             <p className="cakes__description">
               Okrągłe, kwadratowe, piętrowe, bezowe, wymarzone. Twoja wizja,
@@ -61,12 +61,18 @@ const Cakes = () => {
           </aside> */}
         </article>
         <article className="gallery">
-            <h3 className="gallery__heading">Galeria</h3>
-            <div className="gallery__box">
-            <img src={bcg19} alt="cakes" width={"100%"} />
-            <img src={bcg20} alt="cakes" width={"100%"} />
-            <img src={bcg21} alt="cakes" width={"100%"} />
+          <h2 className="gallery__heading">Galeria</h2>
+          <div className="gallery__box">
+            <div className="gallery__frame">
+              <img src={bcg19} alt="cakes" width={"100%"} />
             </div>
+            <div className="gallery__frame">
+              <img src={bcg9} alt="cakes" width={"100%"} />
+            </div>
+            <div className="gallery__frame">
+              <img src={bcg1} alt="cakes" width={"100%"} />
+            </div>
+          </div>
         </article>
       </section>
       <Footer />

@@ -19,6 +19,7 @@
     background-color: $beigeColor;
     border: 0;
     justify-content: end;
+    margin-top:24px;
     &:hover {
       background-color: #d7b881;
     }
@@ -40,13 +41,14 @@
         display: flex;
         height: 100%;
         padding: 0.5rem;
-        width: 50%;
+        width: 60%;
       }
     }
   }
   &__description {
     font-size: 1rem;
     text-align: justify;
+    margin-top:40px;
     @media screen and (min-width: 1024px) {
       font-size: 0.9rem;
     }
@@ -88,7 +90,7 @@
 
 .gallery {
   background-color: #f1f1f1;
-  padding: 40px 10vw;
+  padding: 40px 10vw 60px;
   &__box {
     display: grid;
     column-gap: 6px;
@@ -97,6 +99,15 @@
     @media screen and (min-width: 768px) {
       grid-template-columns: 1fr 1fr 1fr;
     }
+  }
+  &__frame {
+    border: 1px solid #d8c097;
+    display: flex;
+    height: 100%;
+    padding: 0.5rem;
+    & img {
+        object-fit: cover;
+      }
   }
   &__heading {
     margin-bottom: 40px;
