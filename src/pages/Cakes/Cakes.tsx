@@ -2,10 +2,10 @@ import React from "react";
 import ExtraContent from "../../components/ExtraContent/ExtraContent";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
-import { PiNumberCircleOneThin } from "react-icons/pi";
-import { PiNumberCircleTwoThin } from "react-icons/pi";
-import { PiNumberCircleThreeThin } from "react-icons/pi";
-import Button from 'react-bootstrap/Button';
+// import { PiNumberCircleOneThin } from "react-icons/pi";
+// import { PiNumberCircleTwoThin } from "react-icons/pi";
+// import { PiNumberCircleThreeThin } from "react-icons/pi";
+import Button from "react-bootstrap/Button";
 import bcg23 from "../../assets/bcg23.jpeg";
 import "../Cakes/Cakes.scss";
 
@@ -19,12 +19,14 @@ const Cakes = () => {
           <h1>Torty</h1>
         </article>
         <article className="cakes__content">
-            <div className="cakes__content--frame">
+          <div className="cakes__content--frame">
             <img src={bcg23} alt="cakes" width={"100%"} />
-            </div>
-          
-          <div>
-            <h2 className="cakes__heading">twój tytuł</h2>
+          </div>
+
+          <div className="cakes__text">
+          <div className="w-25 mx-auto my-3 cakes__border" />
+            <h2 className="cakes__heading">Torty na każdą okazję</h2>
+            <div className="w-25 mx-auto my-3 cakes__border" />
             <p className="cakes__description">
               Okrągłe, kwadratowe, piętrowe, bezowe, wymarzone. Twoja wizja,
               smaki, styl składają się na unikalność najważniejszego deseru
@@ -34,9 +36,10 @@ const Cakes = () => {
               teksturą i dekorem. Tworzymy niepowtarzalne kombinacje smaków,
               które zmieniają się u nas w zależności od pory roku.
             </p>
+            <Button className="cakes__button">Wycena</Button>
           </div>
 
-          <aside className="cakes__additional">
+          {/* <aside className="cakes__additional">
             <div className="cakes__additional--bcg h-100">
             <h3 className="cakes__additional--heading p-2">Co ma wpływ na cenę tortu:</h3>
             <ul className="p-0 text-start">
@@ -50,7 +53,12 @@ const Cakes = () => {
                 <Button className="cakes__button">Wycena</Button>
             </div>
 
-          </aside>
+          </aside> */}
+        </article>
+        
+        <article className="cakes__gallery">
+        <h3>Galeria</h3>
+
         </article>
       </section>
       <Footer />
