@@ -2,7 +2,6 @@
 .main {
     background-image: url("../../assets/flowers.png");
     background-size: cover;
- 
     @media screen and (min-width:1024px) {
         background-image: url("../../assets/flowers_big.png"); 
     }
@@ -13,7 +12,7 @@
         text-align: justify;
     }
     &__heading {
-        font-size:2.5rem;
+        font-size:2rem;
         letter-spacing: 1.5px;
         margin: 16px 6px;
         text-transform: uppercase;
@@ -27,7 +26,6 @@
         margin: 0 auto;
         @media  screen and (min-width: 768px) {
             width: 80vw;
-            
         }
     }
 

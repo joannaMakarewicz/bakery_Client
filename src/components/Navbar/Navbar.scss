@@ -3,13 +3,13 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 0 16px 0 6px;
+  padding: 6px 16px 6px 6px;
   .nav__hamburger {
     background-color: #fff;
     border: none;
     color: $mainBeige;
     display: block;
-    font-size: 2em;
+    font-size: 1.5em;
     max-height: 1.5em;
     max-width: 1.5em;
     padding: 0;
@@ -76,7 +76,7 @@
   }
 
   &__logo {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
   }
 }
