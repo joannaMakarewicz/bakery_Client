@@ -12,10 +12,13 @@
         text-align: justify;
     }
     &__heading {
-        font-size:2rem;
+        font-size:1.5rem;
         letter-spacing: 1.5px;
         margin: 16px 6px;
         text-transform: uppercase;
+        @media screen and (min-width:425px) {
+            font-size:2rem;  
+        }
     }
     &__extra {
         display: flex;

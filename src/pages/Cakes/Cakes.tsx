@@ -32,7 +32,7 @@ const Cakes = () => {
             <div className="w-25 mx-auto my-3 cakes__border" />
             <h1 className="cakes__heading">Torty na każdą okazję</h1>
             <div className="w-25 mx-auto my-3 cakes__border" />
-            <p className="cakes__description">
+            <p className="cakes__description p-1 m-3">
               Okrągłe, kwadratowe, piętrowe, bezowe, wymarzone. Twoja wizja,
               smaki, styl składają się na unikalność najważniejszego deseru
               uroczystości. Nasze doświadczenie mówi, że nie ma ograniczeń –

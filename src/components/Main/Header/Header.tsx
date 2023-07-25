@@ -11,15 +11,6 @@ const Header = () => {
     <header className="header">
       <Carousel>
         <Carousel.Item>
-          <div className="d-flex">
-            <img
-              className="header__img d-block w-100"
-              src={bcg10}
-              alt="Third slide"
-            />
-          </div>
-        </Carousel.Item>
-        <Carousel.Item>
           <img
             className="header__img d-block w-100"
             src={bcg24}
@@ -27,10 +18,19 @@ const Header = () => {
           />
         </Carousel.Item>
         <Carousel.Item>
+          <div className="d-flex">
+            <img
+              className="header__img d-block w-100"
+              src={bcg10}
+              alt="Second slide"
+            />
+          </div>
+        </Carousel.Item>
+        <Carousel.Item>
           <img
             className="header__img d-block w-100"
             src={bcg17}
-            alt="Second slide"
+            alt="Third slide"
           />
         </Carousel.Item>
       </Carousel>
