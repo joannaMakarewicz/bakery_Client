@@ -33,13 +33,13 @@ const Footer = () => {
                   <span className="footer__list--special">{dataBase.myData.city}</span>
                 </li>
                 <li className="text-nowrap">
-                  <a href={`email: ${dataBase.myData.tel}`} target="_blank" rel="noreferrer">
+                  <a href={`mailto: ${dataBase.myData.tel}`} target="_blank" rel="noreferrer">
                     <MdAlternateEmail className="me-1" />
                     {dataBase.myData.email}
                   </a>
                 </li>
                 <li>
-                  <a href={`tel: ${dataBase.myData.tel}`} target="_blank" rel="noreferrer">
+                  <a href={`tel: ${dataBase.myData.tel}`} target="_blank" rel="noreferrer" >
                     <BsFillTelephoneFill className="me-1" />
                     {dataBase.myData.tel}
                   </a>

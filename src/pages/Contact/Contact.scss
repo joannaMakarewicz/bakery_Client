@@ -1,81 +1,62 @@
 @import "../../helpers/variables";
-
 .contact {
-  &__bcg {
-    align-items: center;
-    background-image: url("../../assets/bcg17.jpeg");
-    background-size: cover;
+  display: flex;
+  justify-content: center;
+  &__article {
     display: flex;
-    font-size: 3rem;
-    height: 10rem;
+    flex-direction: column;
     justify-content: center;
-    object-fit: cover;
-    text-transform: uppercase;
+    padding: 6px 16px 6px 6px;
   }
   &__border {
     border-top: 1px solid $mainBeige;
   }
-  &__content {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin: 40px 0;
-    position: static;
+  &__iframe {
+    margin: 0 auto;
+    width: 90vw;
+    height: 350px;
     @media screen and (min-width: 1024px) {
-   margin:40px 10vw;
-      align-items: start;
-      position: relative;
-    }
-    &--frame {
-      display: none;
-      @media screen and (min-width: 1024px) {
-        border: 1px solid #eff1f3;
-        display: flex;
-        height: 100%;
-        padding: 0.5rem;
-        width: 60%;
-      }
+      margin: auto;
+      width: 35vw;
+      height: 400px;
     }
   }
-  &__description {
-    font-size: 1rem;
-    text-align: justify;
-    margin-top:40px;
+  &__section {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 16px;
+    text-align: left;
+    @media screen and (min-width: 768px) {
+      width: 80%;
+    }
     @media screen and (min-width: 1024px) {
-      font-size: 0.9rem;
+      grid-template-columns: 1fr 1fr;
     }
   }
-  &__gallery {
-    background-color: $lightBeige;
+  & a {
+    color: $fontColor;
+    &:hover {
+      color:$darkBeige;
+    }
   }
   &__heading {
-    text-transform: uppercase;
-    margin: 2rem;
+    margin: 2rem 0;
+    text-align: center;
   }
-  &__text {
-    background: rgba(255, 255, 255, 0.8);
-    left: 30%;
-    position: static;
-    top: 15%;
-    @media screen and (min-width: 1024px) {
-      left: 20%;
-      font-size: 0.9rem;
-      padding: 2rem;
-      position: absolute;
-      top: 10%;
+  &__list {
+    font-size: 1rem;
+    line-height: 2rem;
+    list-style: none;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    &--special {
+      display: block;
     }
-    @media screen and (min-width: 1200px) {
-      top: 7%;
-    }
-    @media screen and (min-width: 1300px) {
-      font-size: 1rem;
-      top: 10%;
-    }
-    @media screen and (min-width: 1400px) {
-      left: 40%;
-      font-size: 1.5rem;
-      top: 23%;
-      width: 60%;
-    }
+  }
+  &__name {
+    margin: 2rem 0;
+  }
+  &__tel {
+    margin-bottom: 2rem;
   }
 }

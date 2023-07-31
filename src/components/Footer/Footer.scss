@@ -33,13 +33,13 @@
   &__container {
     text-align: center;
     @media screen and (min-width: 768px) {
-      align-items: start;
+      align-items: flex-start;
       display: flex;
       flex-direction: column;
-      justify-content: start;
+      justify-content: flex-start;
     }
     @media screen and (min-width: 1024px) {
-      align-items: start;
+      align-items: flex-start;
       display: flex;
       flex-direction: column;
       justify-content: center;
