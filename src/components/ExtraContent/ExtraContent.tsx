@@ -20,7 +20,7 @@ const ExtraContent = () => {
             <a href={contactData.myData.instagram} target="_blank" rel="noreferrer">
               <BsInstagram className="me-3" />
             </a>
-            <a href="x" target="location">
+            <a href={contactData.myData.google} target="_blank" rel="noreferrer">
               <FaLocationDot />
             </a>
           </div>

@@ -9,6 +9,7 @@ type MyDataContextProps = {
   instagram: string;
   address: string;
   city: string;
+  google: string;
 };
 
 const MyDataContext = React.createContext({

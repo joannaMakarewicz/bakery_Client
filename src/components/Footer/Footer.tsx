@@ -26,20 +26,20 @@ const Footer = () => {
               <p className="footer__owner">{dataBase.myData.owner}</p>
               <ul className="footer__list">
                 <li>
-                  <a href="x" target="location">
+                  <a href={dataBase.myData.google} target="_blank" rel="noreferrer">
                     <FaLocationDot className="me-1" />
                   </a>
                   ul. {dataBase.myData.address}
                   <span className="footer__list--special">{dataBase.myData.city}</span>
                 </li>
                 <li className="text-nowrap">
-                  <a href="/">
+                  <a href={`email: ${dataBase.myData.tel}`} target="_blank" rel="noreferrer">
                     <MdAlternateEmail className="me-1" />
                     {dataBase.myData.email}
                   </a>
                 </li>
                 <li>
-                  <a href={`tel: ${dataBase.myData.tel}`}>
+                  <a href={`tel: ${dataBase.myData.tel}`} target="_blank" rel="noreferrer">
                     <BsFillTelephoneFill className="me-1" />
                     {dataBase.myData.tel}
                   </a>
