@@ -30,7 +30,7 @@ const Navbar = () => {
         <Navlink linkName="Torty" link="/cakes" />
         <Navlink linkName="Wesela" link="/wedding" />
         <Navlink linkName="Słodki stół" link="/sweetTable" />
-        <Navlink linkName="Kontakt" link="/" />
+        <Navlink linkName="Kontakt" link="/contact" />
       </ul>
       <button
         className={

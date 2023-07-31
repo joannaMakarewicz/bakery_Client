@@ -11,6 +11,7 @@ import Cakes from "./pages/Cakes/Cakes";
 import Wedding from "./pages/Wedding/Wedding";
 import SweetTable from "./pages/SweetTable/SweetTable";
 import MyDataContext from "./context/MyDataContext";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   const myData = {
@@ -20,7 +21,9 @@ function App() {
     email: "chodznaciachogdansk@gmail.com",
     fb: "https://m.facebook.com/chodznaciachogdansk/",
     instagram: "https://www.instagram.com/chodz_na_ciacho/",
-    address: "Leona Wyczółkowskiego 14A/3, 80-147 Gdańsk",
+    address: "Leona Wyczółkowskiego 14A/3",
+    city: "80-147 Gdańsk"
+   
   };
 
   return (
@@ -31,6 +34,7 @@ function App() {
           <Route path="/cakes" element={<Cakes />} />
           <Route path="/wedding" element={<Wedding />} />
           <Route path="/sweetTable" element={<SweetTable />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/bakery" element={<Navigate to="/" />} />
           {/* <Route end path="/" element={<Home />} /> */}
           {/* <Route path="*" element={<ErrorPage />} /> */}

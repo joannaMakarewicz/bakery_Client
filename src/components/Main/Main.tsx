@@ -13,7 +13,7 @@ const Main = () => {
           Tortowe wariacje i cukrowe inspiracje
         </h1>
         <div className="w-25 mx-auto my-3 main__border" />
-        <p className="main__description p-1 pt-4 pb-4 m-3 mt-0">
+        <p className="main__description p-1 pt-5 pb-5 m-3 mt-0">
           Jesteśmy pracownią artystycznych tortów i słodkości. Tworzymy w
           oparciu o solidny fundament wykształcenia w zakresie technologii
           żywienia i doświadczenie w komponowaniu nowych smaków. To właśnie

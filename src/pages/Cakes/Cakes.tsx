@@ -5,7 +5,7 @@ import Footer from "../../components/Footer/Footer";
 // import { PiNumberCircleOneThin } from "react-icons/pi";
 // import { PiNumberCircleTwoThin } from "react-icons/pi";
 // import { PiNumberCircleThreeThin } from "react-icons/pi";
-import Button from "react-bootstrap/Button";
+import Button from "../../components/Button/Button";
 import bcg3 from "../../assets/bcg3.jpeg";
 import bcg19 from "../../assets/bcg19.jpeg";
 import bcg1 from "../../assets/bcg1.jpeg";
@@ -41,7 +41,7 @@ const Cakes = () => {
               teksturą i dekorem. Tworzymy niepowtarzalne kombinacje smaków,
               które zmieniają się u nas w zależności od pory roku.
             </p>
-            <Button className="cakes__button">Wycena</Button>
+            <Button buttonName={"Wycena"}/>
           </div>
 
           {/* <aside className="cakes__additional">

@@ -5,7 +5,7 @@ import Main from "../../components/Main/Main";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Main/Header/Header";
 import "../Home/Home.scss";
-import MyDataContext from "../../context/MyDataContext";
+
 
 const Home = () => {
   return (

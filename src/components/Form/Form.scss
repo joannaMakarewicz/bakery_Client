@@ -1,0 +1,17 @@
+@import "../../helpers//variables";
+.form {
+    align-items: center;
+    background-color:#e8eddf;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.form-control {
+    background-color: #e8eddf;
+    border:0;
+    border-bottom: 1px solid $mainBeige;
+    border-radius:0;
+    outline-color: #e8eddf;
+
+}
