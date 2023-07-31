@@ -15,33 +15,25 @@
     margin: 0 auto;
     width: 90vw;
     height: 350px;
+    @media screen and (min-width: 768px) {
+      width: 80vw;
+    }
     @media screen and (min-width: 1024px) {
       margin: auto;
       width: 35vw;
       height: 400px;
     }
   }
-  &__section {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 16px;
-    text-align: left;
-    @media screen and (min-width: 768px) {
-      width: 80%;
-    }
-    @media screen and (min-width: 1024px) {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
   & a {
     color: $fontColor;
     &:hover {
-      color:$darkBeige;
+      color: $darkBeige;
     }
   }
   &__heading {
     margin: 2rem 0;
     text-align: center;
+    text-transform: uppercase;
   }
   &__list {
     font-size: 1rem;
@@ -55,6 +47,18 @@
   }
   &__name {
     margin: 2rem 0;
+  }
+  &__section {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 16px;
+    text-align: left;
+    @media screen and (min-width: 768px) {
+      width: 80%;
+    }
+    @media screen and (min-width: 1024px) {
+      grid-template-columns: 1fr 1fr;
+    }
   }
   &__tel {
     margin-bottom: 2rem;

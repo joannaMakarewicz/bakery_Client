@@ -1,17 +1,45 @@
 @import "../../helpers//variables";
 .form {
-    align-items: center;
-    background-color:#e8eddf;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+  &__control {
+    border: 0;
+    border-radius: 0;
+    font-size: 1rem;
+    outline-color: transparent;
+    margin: 6px;
+    padding: 6px;
+    width: 80%;
+    &--message {
+      height: 8rem;
+    }
+  }
+  &__heading {
+    margin: 2rem 0;
+  }
 }
 
-.form-control {
+.formArea {
     background-color: #e8eddf;
-    border:0;
-    border-bottom: 1px solid $mainBeige;
-    border-radius:0;
-    outline-color: #e8eddf;
-
+    display: grid;
+    padding:48px 0;
+    @media screen and (min-width:768px){
+        padding:48px 10vw;
+    }
+    @media screen and (min-width:1024px){
+        grid-template-columns: 1fr 1fr;
+    }
+  &__img {
+    width: 90vw;
+    @media screen and (min-width: 768px) {
+        width: 80vw;
+      }
+      @media screen and (min-width: 1024px) {
+        margin: auto;
+        width: 25vw;
+      }
+  }
 }
+
