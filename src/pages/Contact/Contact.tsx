@@ -10,8 +10,10 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdAlternateEmail } from "react-icons/md";
 import "../Contact/Contact.scss";
 import MyDataContext from "../../context/MyDataContext";
+import useWebsiteTitle from "../../hooks/useWebsiteTitle";
 
 const Contact = () => {
+  useWebsiteTitle('Kontakt');
   const contactData = useContext(MyDataContext);
 
   return (

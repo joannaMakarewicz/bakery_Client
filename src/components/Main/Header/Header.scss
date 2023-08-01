@@ -11,7 +11,7 @@
 .carousel-inner {
   background-size: cover;
   max-height: 50vh;
-  @media screen and (min-width:868px) {
+  @media screen and (min-width:768px) {
     max-height: 60vh;
   }
 }

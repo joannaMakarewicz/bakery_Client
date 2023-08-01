@@ -13,9 +13,11 @@ import bcg1 from "../../assets/bcg1.jpeg";
 import bcg22 from "../../assets/bcg19.jpeg";
 import bcg9 from "../../assets/bcg9.jpeg";
 import bcg24 from "../../assets/bcg21.jpeg";
+import useWebsiteTitle from "../../hooks/useWebsiteTitle";
 import "../Cakes/Cakes.scss";
 
 const Cakes = () => {
+  useWebsiteTitle("Torty");
   return (
     <>
       <ExtraContent />

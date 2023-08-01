@@ -16,7 +16,7 @@
     transition: 1s ease;
     z-index: 3;
     &:hover {
-      color: $darkBeige;
+      color: $greenDark;
     }
     @media screen and (min-width: 768px) {
       display: none;
@@ -75,7 +75,7 @@
     }
     &:hover {
       @media screen and (min-width:768px) {
-        color:$darkBeige;
+        color:$greenDark;
       }
     }
   }

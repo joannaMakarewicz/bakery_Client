@@ -2,6 +2,7 @@ import React from "react";
 import ExtraContent from "../../components/ExtraContent/ExtraContent";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
+import useWebsiteTitle from "../../hooks/useWebsiteTitle";
 // import { PiNumberCircleOneThin } from "react-icons/pi";
 // import { PiNumberCircleTwoThin } from "react-icons/pi";
 // import { PiNumberCircleThreeThin } from "react-icons/pi";
@@ -14,7 +15,9 @@ import bcg13 from "../../assets/bcg13.jpeg";
 
 import "../SweetTable/SweetTable.scss";
 
-const sweetTable = () => {
+const SweetTable = () => {
+  useWebsiteTitle("Słodki stół");
+
   return (
     <>
       <ExtraContent />
@@ -63,4 +66,4 @@ const sweetTable = () => {
   );
 };
 
-export default sweetTable;
+export default SweetTable;
