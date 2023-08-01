@@ -3,7 +3,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 0 16px;
+  padding: 3rem 16px;
   &__control {
     border: 0;
     border-radius: 0;
@@ -22,24 +22,27 @@
 }
 
 .formArea {
-    background-color: #e8eddf;
-    display: grid;
-    padding:48px 0;
-    @media screen and (min-width:768px){
-        padding:48px 10vw;
+  background-color: #e8eddf;
+  display: grid;
+  padding:0 0 2rem 0;
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+    padding:2rem 10vw;
+  }
+  &__frame {
+    height: 20rem;
+    @media screen and (min-width: 1024px) {
+      border: 1px solid $beigeColor;
+      height: 80%;
+      margin: auto;
+      padding:0.5rem;
+      width: 25vw;
     }
-    @media screen and (min-width:1024px){
-        grid-template-columns: 1fr 1fr;
-    }
+  }
   &__img {
-    width: 90vw;
-    @media screen and (min-width: 768px) {
-        width: 80vw;
-      }
-      @media screen and (min-width: 1024px) {
-        margin: auto;
-        width: 25vw;
-      }
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+
   }
 }
-

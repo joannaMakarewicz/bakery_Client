@@ -2,6 +2,7 @@ import React from 'react';
 import ExtraContent from '../../components/ExtraContent/ExtraContent';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
+import Header from '../../components/Main/Header/Header';
 import bcg23 from "../../assets/bcg23.jpeg";
 import Button from "react-bootstrap/Button";
 import bcg19 from "../../assets/bcg19.jpeg";
@@ -17,8 +18,7 @@ const Wedding = () => {
         <ExtraContent />
         <Navbar />
         <section className="wedding">
-        <article className="wedding__bcg">
-        </article>
+<Header/>
         <article className="wedding__content">
           <div className="wedding__content--frame">
             <img src={bcg23} alt="wedding" width={"100%"} />

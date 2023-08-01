@@ -6,6 +6,7 @@ import Footer from "../../components/Footer/Footer";
 // import { PiNumberCircleTwoThin } from "react-icons/pi";
 // import { PiNumberCircleThreeThin } from "react-icons/pi";
 import Button from "../../components/Button/Button";
+import Header from "../../components/Main/Header/Header";
 import bcg3 from "../../assets/bcg3.jpeg";
 import bcg19 from "../../assets/bcg19.jpeg";
 import bcg1 from "../../assets/bcg1.jpeg";
@@ -20,9 +21,7 @@ const Cakes = () => {
       <ExtraContent />
       <Navbar />
       <section className="cakes">
-        <article className="cakes__bcg">
-
-        </article>
+<Header/>
         <article className="cakes__content">
           <div className="cakes__content--frame">
             <img src={bcg3} alt="cakes" width={"100%"} />

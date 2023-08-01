@@ -6,6 +6,7 @@ import Footer from "../../components/Footer/Footer";
 // import { PiNumberCircleTwoThin } from "react-icons/pi";
 // import { PiNumberCircleThreeThin } from "react-icons/pi";
 import Button from "react-bootstrap/Button";
+import Header from "../../components/Main/Header/Header";
 import bcg11 from "../../assets/bcg11.jpeg";
 import bcg15 from "../../assets/bcg15.jpeg";
 import bcg12 from "../../assets/bcg12.jpeg";
@@ -19,8 +20,7 @@ const sweetTable = () => {
       <ExtraContent />
       <Navbar />
       <section className="sweetTable">
-        <article className="sweetTable__bcg">
-        </article>
+<Header/>
         <article className="sweetTable__content">
           <div className="sweetTable__content--frame">
             <img src={bcg11} alt="sweetTable" width={"100%"} />

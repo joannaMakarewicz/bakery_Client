@@ -29,7 +29,7 @@
     &--frame {
       display: none;
       @media screen and (min-width: 1024px) {
-        border: 1px solid #eff1f3;
+        border: 1px solid $beigeColor;
         display: flex;
         height: 100%;
         padding: 0.5rem;

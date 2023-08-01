@@ -6,7 +6,9 @@ import "../Form/Form.scss";
 const Form = () => {
   return (
     <div className="formArea">
-    <img className="formArea__img" src={bcg11} alt="przykład ciast" />
+        <div className="formArea__frame">
+        <img className="formArea__img" src={bcg11} alt="przykład ciast" />
+        </div>
     <form className="form">
       <h3 className="form__heading">Formularz kontaktowy</h3>
 
