@@ -42,7 +42,7 @@ const SweetTable = () => {
               teksturą i dekorem. Tworzymy niepowtarzalne kombinacje smaków,
               które zmieniają się u nas w zależności od pory roku.
             </p>
-            <Button className="sweetTable__button">Zapytaj o ofertę</Button>
+            <Button className="sweetTable__button" value={"Zapytaj o ofertę"}></Button>
           </div>
         </article>
         <article className="gallery">

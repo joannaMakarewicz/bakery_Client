@@ -15,9 +15,17 @@
     &--message {
       height: 8rem;
     }
+    &--file {
+font-size: 0.9rem;
+    }
   }
   &__heading {
     margin: 2rem 0;
+  }
+  &__info {
+    font-size: 0.8rem;
+    text-align: left;
+    width:80%;
   }
 }
 

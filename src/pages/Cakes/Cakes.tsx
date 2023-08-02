@@ -42,7 +42,7 @@ const Cakes = () => {
               teksturą i dekorem. Tworzymy niepowtarzalne kombinacje smaków,
               które zmieniają się u nas w zależności od pory roku.
             </p>
-            <Button buttonName={"Wycena"}/>
+            <Button value={"Wycena"}/>
           </div>
 
           {/* <aside className="cakes__additional">
