@@ -1,9 +1,14 @@
 @import "../../helpers//variables";
 .nav {
   align-items: center;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   padding: 6px 16px 6px 6px;
+  position:fixed;
+  top:35px;
+  width: 100%;
+  z-index: 5;
   &__hamburger {
     background-color: transparent;
     border: none;
