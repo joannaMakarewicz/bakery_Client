@@ -1,12 +1,13 @@
 import Header from "./Header/Header";
 import Offer from "./Offer/Offer";
-import ContactDetails from "./ContactDetails/ContactDetails";
-import logo from "../../assets/logo.jpg";
+import Arrow from "../Arrow/Arrow";
 import "../Main/Main.scss";
 
 const Main = () => {
   return (
-    <main className="main pt-5 pb-5">
+    <main className="main pb-5">
+      <Arrow/>
+      <Header/>
       <section className="main__section">
         <div className="w-25 mx-auto my-3 main__border" />
         <h1 className="main__heading">

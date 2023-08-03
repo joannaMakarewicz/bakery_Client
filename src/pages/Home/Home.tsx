@@ -3,7 +3,6 @@ import ExtraContent from "../../components/ExtraContent/ExtraContent";
 import Navbar from "../../components/Navbar/Navbar";
 import Main from "../../components/Main/Main";
 import Footer from "../../components/Footer/Footer";
-import Header from "../../components/Main/Header/Header";
 import useWebsiteTitle from "../../hooks/useWebsiteTitle";
 import "../Home/Home.scss";
 
@@ -14,7 +13,6 @@ const Home = () => {
     <>
       <ExtraContent />
       <Navbar />
-      <Header />
       <Main />
       <Footer />
     </>

@@ -8,7 +8,7 @@ import "../Header/Header.scss";
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className="header" id="top">
       <Carousel>
         <Carousel.Item>
           <img
