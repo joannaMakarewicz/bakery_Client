@@ -21,8 +21,11 @@
 .header {
   background-image: url("../../../assets/bcg16_blur.png");
   background-size: cover;
-  height: 70vh;
+  height: 60vh;
   width: 100vw;
+  @media screen and (min-width:376px) {
+    height: 70vh;
+  }
   @media screen and (min-width:769px) {
     height: 500px;
   }
@@ -31,7 +34,6 @@
   }
 
   &__images {
-    display: flex;
     height: 100%;
     margin: auto;
     overflow: visible;
@@ -56,7 +58,7 @@
     border: 12px solid rgba(255, 255, 255, 1);
     position: absolute;
     &--1 {
-      top: 0;
+      top: -16px;
       left: -36px;
       transform: scale(1, 1) translate(0px, 0px);
       width: 40vw;
@@ -79,14 +81,15 @@
     &--2 {
       border: 12px solid rgba(255, 255, 255, 1);
       left:3vw;
-      top: 16vh;
+      top: 15vh;
       transform: scale(1, 1) translate(0px, 0px);
       width: 70vw;
       z-index: 3;
-      min-width: 350px;
+      min-width: 300px;
       @media screen and (min-width:376px) {
         top:16vh;
-        left:7vw;
+        left:4vw;
+        min-width: 350px;
         width: 70vw;
       }
       @media screen and (min-width:426px) {
@@ -111,7 +114,7 @@
       }
     }
     &--3 {
-      right: -6px;
+      right: -12px;
       bottom:-12px;
       transform: scale(1, 1) translate(0px, 0px);
       width: 40vw;
