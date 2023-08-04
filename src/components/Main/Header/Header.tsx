@@ -14,39 +14,36 @@ const Header = () => {
   return (
     <header className="header" id="top">
       <div className="header__images">
-      <img className="header__photo header__photo--1" src={bcg28} alt="slide first"/>
-      <Carousel className="header__photo header__photo--2">
-        <Carousel.Item>
-          <img
-            className="header__img w-100"
-            src={bcg24}
-            alt="First slide"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <div className="d-flex">
-            <img
-              className="header__img w-100"
-              src={bcg10}
-              alt="Second slide"
-            />
-          </div>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="header__img w-100"
-            src={bcg17}
-            alt="Third slide"
-          />
-        </Carousel.Item>
-      </Carousel>
-      <img className="header__photo header__photo--3" src={bcg30} alt="slide third"/>
+        <img
+          className="header__photo header__photo--1"
+          src={bcg28}
+          alt="slide first"
+        />
+        <Carousel className="header__photo header__photo--2">
+          <Carousel.Item>
+            <img className="header__img w-100" src={bcg24} alt="First slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <div className="d-flex">
+              <img
+                className="header__img w-100"
+                src={bcg10}
+                alt="Second slide"
+              />
+            </div>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="header__img w-100" src={bcg17} alt="Third slide" />
+          </Carousel.Item>
+        </Carousel>
+        <img
+          className="header__photo header__photo--3"
+          src={bcg30}
+          alt="slide third"
+        />
       </div>
-
     </header>
   );
 };
-
-
 
 export default Header;
