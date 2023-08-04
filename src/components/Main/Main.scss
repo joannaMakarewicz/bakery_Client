@@ -1,11 +1,6 @@
 @import "../../helpers//variables";
 .main {
-  background-image: url("../../assets/flowers.png");
-  background-size: cover;
   margin-top:130px;
-  @media screen and (min-width: 1024px) {
-    background-image: url("../../assets/flowers_big.png");
-  }
   &__border {
     border-top: 2px solid $mainBeige;
   }

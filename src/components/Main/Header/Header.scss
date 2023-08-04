@@ -1,38 +1,60 @@
 @import "../../../helpers/variables";
 
-.carousel-indicators  [data-bs-target] {
- background-color:$beigeColor;
+.carousel-indicators [data-bs-target] {
+  background-color: $beigeColor;
 }
 
-.carousel {
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-}
 
-.carousel-inner {
-  background-size: cover;
-  max-height: 50vh;
-  @media screen and (min-width:768px) {
-    max-height: 60vh;
-  }
-}
+// .carousel-item {
+//   transform: translateY(0px);
+//   @media screen and (min-width: 425px) {
+//     transform: translateY(-30px);
+//   }
+//   @media screen and (min-width: 768px) {
+//     transform: translateY(-170px);
+//   }
+// }
 
-.carousel-item {
-  transform: translateY(0px);
-  @media screen and (min-width:425px) {
-    transform: translateY(-30px);
-  }
-  @media screen and (min-width:768px) {
-    transform: translateY(-170px);
-  }
+.carousel-indicators {
+  display: none;
 }
-
 
 .header {
-& h3 {
-  text-transform: uppercase;
-  font-size: 3rem;
-  &__img {
-    object-fit: cover;
+  background-image: url("../../../assets/bcg16_blur.png");
+
+  background-size: cover;
+  height: 677px;
+  padding: 0 10vw;
+  position: relative;
+  &__images {
+    display: flex;
+    height: 100%;
   }
-}
+  & h3 {
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+  &__photo{
+    background-size: cover;
+    border: 12px solid rgba(255, 255, 255, 1);
+    position: absolute;
+    &--1 {
+      top: 15%;
+      left: 16vw;
+      width: 394px;
+    }
+    &--2 {
+      border: 12px solid rgba(255, 255, 255, 1);
+      left: 32%;
+      top: 10%;
+      width: 36%;
+      z-index: 3;
+    }
+    &--3 {
+      right: 16vw;
+      top: 35%;
+      width: 394px;
+
+    }
+  }
 }
