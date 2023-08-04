@@ -20,7 +20,6 @@ const Contact = () => {
     <>
       <ExtraContent />
       <Navbar />
-      <Header />
       <main className="contact pt-5 pb-5">
         <section className="contact__section">
           <article className="contact__article">

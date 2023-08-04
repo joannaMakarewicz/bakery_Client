@@ -20,7 +20,6 @@ const Wedding = () => {
         <ExtraContent />
         <Navbar />
         <section className="wedding">
-<Header/>
         <article className="wedding__content">
           <div className="wedding__content--frame">
             <img src={bcg23} alt="wedding" width={"100%"} />

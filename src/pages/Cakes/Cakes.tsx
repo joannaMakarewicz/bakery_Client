@@ -23,7 +23,6 @@ const Cakes = () => {
       <ExtraContent />
       <Navbar />
       <section className="cakes">
-<Header/>
         <article className="cakes__content">
           <div className="cakes__content--frame">
             <img src={bcg3} alt="cakes" width={"100%"} />

@@ -23,7 +23,6 @@ const SweetTable = () => {
       <ExtraContent />
       <Navbar />
       <section className="sweetTable">
-<Header/>
         <article className="sweetTable__content">
           <div className="sweetTable__content--frame">
             <img src={bcg11} alt="sweetTable" width={"100%"} />
