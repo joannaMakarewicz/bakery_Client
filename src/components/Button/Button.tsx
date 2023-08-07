@@ -9,7 +9,7 @@ type?: 'button' | 'submit' | 'reset';
 }
 
 const Button = ({value, type }:ButtonProps) => {
-  return <LoadingButton className="button" type={type} >{value}</LoadingButton>;
+  return <LoadingButton className="button w-25" type={type} >{value}</LoadingButton>;
 };
 
 export default Button;

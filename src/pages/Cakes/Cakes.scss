@@ -1,7 +1,7 @@
 @import "../../helpers/variables";
 
 .cakes {
-  margin-top:140px;
+  position: relative;
   &__bcg {
     align-items: center;
     background-image: url("../../assets/bcg17.jpeg");
@@ -20,11 +20,16 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: 40px 0;
-    position: static;
+    justify-content: center;
+    margin: 10px 0 40px;
+    padding: 80px 0;
+    @media screen and (min-width: 768px) {
+      padding: 50px 0;
+    }
     @media screen and (min-width: 1024px) {
-   margin:40px 10vw;
+      margin: 110px 10vw;
       align-items: start;
+      padding: 0;
       position: relative;
     }
     &--frame {
@@ -34,17 +39,59 @@
         display: flex;
         height: 100%;
         padding: 0.5rem;
-        width: 60%;
+        width: 50%;
+      }
+      @media screen and (min-width: 1250px) {
+        width: 40%;
       }
     }
   }
   &__description {
     font-size: 1rem;
     text-align: justify;
-    margin-top:40px;
+    margin-top: 40px;
+    padding-left: 12px;
+    width: 100%;
     @media screen and (min-width: 1024px) {
       font-size: 0.9rem;
+      padding-left: 0;
     }
+    @media screen and (min-width: 1400px) {
+      margin-right: 0;
+    }
+  }
+  &__extra {
+    margin: 0 auto 2rem;
+    color: #d8c097;
+    font-size: 1em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    @media screen and (min-width:425px ) {
+      font-size: 1.2em;
+    }
+    &::before {
+      margin: 0 1rem 0 0;
+    }
+    &::after {
+      margin: 0 0 0 1rem;
+    }
+    &::before {
+      display: inline-block;
+      width: 30px;
+      height: 1px;
+      vertical-align: middle;
+      background: #d8c097;
+      content: "";
+    }
+    &::after {
+      display: inline-block;
+      width: 30px;
+      height: 1px;
+      vertical-align: middle;
+      background: #d8c097;
+      content: "";
+    }
+
   }
   &__gallery {
     background-color: $lightBeige;
@@ -56,26 +103,43 @@
   &__text {
     background: rgba(255, 255, 255, 0.8);
     left: 30%;
+    margin: 0 auto;
     position: static;
     top: 15%;
+    width: 80vw;
     @media screen and (min-width: 1024px) {
-      left: 20%;
-      font-size: 0.9rem;
+      left: 30%;
+      font-size: 1.3rem;
+      height: 86%;
       padding: 2rem;
+      padding-right: 0;
       position: absolute;
-      top: 10%;
+      top: 8%;
+      width: 70%;
     }
     @media screen and (min-width: 1200px) {
-      top: 7%;
+      font-size: 1.3rem;
+      
+      left: 30%;
+      top: 10%;
+      width: 70%;
     }
     @media screen and (min-width: 1300px) {
-      font-size: 1rem;
+      left: 30%;
+      font-size: 1.5rem;
+       
+      padding-right: 0;
       top: 10%;
+      width: 70%;
     }
     @media screen and (min-width: 1400px) {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
       left: 40%;
-      font-size: 1.5rem;
-      top: 23%;
+      top: 0;
       width: 60%;
     }
   }
@@ -99,10 +163,52 @@
     height: 100%;
     padding: 0.5rem;
     & img {
-        object-fit: cover;
-      }
+      object-fit: cover;
+    }
   }
   &__heading {
     margin-bottom: 40px;
+  }
+}
+
+.special {
+  height: 200px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 10vw;
+  padding: 30px 2px 0;
+  position: absolute;
+  top: -15vh;
+  width: 80vw;
+  @media screen and (min-width:425px) {
+    height: 250px;
+    top: -20vh;
+  }
+  @media screen and (min-width:768px) {
+    height: 250px;
+    top: -20vh;
+  }
+  @media screen and (min-width:1024px) {
+    height: 250px;
+    top: -30vh;
+  }
+  & h1,
+  p {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+  &__content {
+    letter-spacing: 2px;
+    opacity: 0.5;
+  }
+  &__heading {
+    font-size: 40px;
+    letter-spacing: 1px;
+    @media screen and (min-width:425px){
+      font-size: 46px;
+    }
   }
 }

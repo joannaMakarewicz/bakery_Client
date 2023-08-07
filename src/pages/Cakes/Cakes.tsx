@@ -6,6 +6,7 @@ import Footer from "../../components/Footer/Footer";
 // import { PiNumberCircleTwoThin } from "react-icons/pi";
 // import { PiNumberCircleThreeThin } from "react-icons/pi";
 import Button from "../../components/Button/Button";
+import HeaderSmall from "../../components/HeaderSmall/HeaderSmall";
 import Header from "../../components/Main/Header/Header";
 import bcg3 from "../../assets/bcg3.jpeg";
 import bcg19 from "../../assets/bcg19.jpeg";
@@ -22,17 +23,22 @@ const Cakes = () => {
     <>
       <ExtraContent />
       <Navbar />
+      <HeaderSmall />
       <section className="cakes">
+        <article className="special">
+          <p className="special__content">Niepowtarzalne, wyjątkowe,</p>
+          <h1 className="special__heading">Torty na każdą okazję</h1>
+        </article>
         <article className="cakes__content">
           <div className="cakes__content--frame">
             <img src={bcg3} alt="cakes" width={"100%"} />
           </div>
 
           <div className="cakes__text">
-            <div className="w-25 mx-auto my-3 cakes__border" />
-            <h1 className="cakes__heading">Torty na każdą okazję</h1>
-            <div className="w-25 mx-auto my-3 cakes__border" />
-            <p className="cakes__description p-1 m-3">
+            <div className="cakes__extra">
+              <span>Spełniamy marzenia</span>
+            </div>
+            <p className="cakes__description">
               Okrągłe, kwadratowe, piętrowe, bezowe, wymarzone. Twoja wizja,
               smaki, styl składają się na unikalność najważniejszego deseru
               uroczystości. Nasze doświadczenie mówi, że nie ma ograniczeń –
@@ -41,24 +47,8 @@ const Cakes = () => {
               teksturą i dekorem. Tworzymy niepowtarzalne kombinacje smaków,
               które zmieniają się u nas w zależności od pory roku.
             </p>
-            <Button value={"Wycena"}/>
+            <Button value={"Wycena"} />
           </div>
-
-          {/* <aside className="cakes__additional">
-            <div className="cakes__additional--bcg h-100">
-            <h3 className="cakes__additional--heading p-2">Co ma wpływ na cenę tortu:</h3>
-            <ul className="p-0 text-start">
-                <li><PiNumberCircleOneThin className="cakes__special"/>Wielkość
-                <p>Wybierz rozmiar tortu sugerując się liczbą zaproszonych gości</p></li>
-                <li><PiNumberCircleTwoThin className="cakes__special"/>Smak
-                <p>Wybierz rozmiar tortu sugerując się liczbą zaproszonych gości</p></li>
-                <li><PiNumberCircleThreeThin className="cakes__special"/>Ozdoby
-                <p>Wybierz rozmiar tortu sugerując się liczbą zaproszonych gości</p></li>
-                </ul>
-                <Button className="cakes__button">Wycena</Button>
-            </div>
-
-          </aside> */}
         </article>
         <article className="gallery">
           <h2 className="gallery__heading">Galeria</h2>
