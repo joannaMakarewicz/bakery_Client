@@ -1,5 +1,8 @@
 @import "../../helpers/variables";
 
+.button {
+  display: absolute;
+}
 .cakes {
   position: relative;
   &__bcg {
@@ -21,10 +24,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 10px 0 40px;
-    padding: 80px 0;
+    margin: 10px 0 30px;
+    padding: 110px 0 30px;
     @media screen and (min-width: 768px) {
-      padding: 50px 0;
+      padding: 60px 0;
     }
     @media screen and (min-width: 1024px) {
       margin: 110px 10vw;
@@ -61,37 +64,51 @@
     }
   }
   &__extra {
-    margin: 0 auto 2rem;
+    margin: 30px auto;
     color: #d8c097;
     font-size: 1em;
     text-transform: uppercase;
     white-space: nowrap;
-    @media screen and (min-width:425px ) {
+    @media screen and (min-width: 425px) {
       font-size: 1.2em;
     }
     &::before {
-      margin: 0 1rem 0 0;
+      display: none;
+
+      @media screen and (min-width: 375px) {
+        display: inline-block;
+        margin: 0 1rem 0 0;
+      }
     }
     &::after {
-      margin: 0 0 0 1rem;
+      display: none;
+      @media screen and (min-width: 375px) {
+        display: inline-block;
+        margin: 0 0 0 1rem;
+      }
     }
     &::before {
-      display: inline-block;
-      width: 30px;
-      height: 1px;
-      vertical-align: middle;
-      background: #d8c097;
-      content: "";
+      display: none;
+      @media screen and (min-width: 375px) {
+        display: inline-block;
+        width: 30px;
+        height: 1px;
+        vertical-align: middle;
+        background: #d8c097;
+        content: "";
+      }
     }
     &::after {
-      display: inline-block;
-      width: 30px;
-      height: 1px;
-      vertical-align: middle;
-      background: #d8c097;
-      content: "";
+      display: none;
+      @media screen and (min-width: 375px) {
+        display: inline-block;
+        width: 30px;
+        height: 1px;
+        vertical-align: middle;
+        background: #d8c097;
+        content: "";
+      }
     }
-
   }
   &__gallery {
     background-color: $lightBeige;
@@ -107,6 +124,7 @@
     position: static;
     top: 15%;
     width: 80vw;
+    z-index: 4;
     @media screen and (min-width: 1024px) {
       left: 30%;
       font-size: 1.3rem;
@@ -119,7 +137,7 @@
     }
     @media screen and (min-width: 1200px) {
       font-size: 1.3rem;
-      
+
       left: 30%;
       top: 10%;
       width: 70%;
@@ -127,7 +145,7 @@
     @media screen and (min-width: 1300px) {
       left: 30%;
       font-size: 1.5rem;
-       
+
       padding-right: 0;
       top: 10%;
       width: 70%;
@@ -172,42 +190,47 @@
 }
 
 .special {
-  height: 200px;
+  height: 230px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   left: 10vw;
-  padding: 30px 2px 0;
+  padding: 15px 2px 0;
   position: absolute;
   top: -15vh;
   width: 80vw;
-  @media screen and (min-width:425px) {
+  @media screen and (min-width: 425px) {
     height: 250px;
     top: -20vh;
   }
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     height: 250px;
     top: -20vh;
   }
-  @media screen and (min-width:1024px) {
+  @media screen and (min-width: 1024px) {
     height: 250px;
     top: -30vh;
   }
   & h1,
   p {
-    margin: 0;
-    padding: 0;
+    padding: 0 2px;
     text-transform: uppercase;
   }
   &__content {
+    font-size: 18px;
     letter-spacing: 2px;
+    margin: 30px 0px;
     opacity: 0.5;
+    @media screen and (min-width: 425px) {
+      font-size: 20px;
+    }
   }
   &__heading {
-    font-size: 40px;
+    font-size: 30px;
     letter-spacing: 1px;
-    @media screen and (min-width:425px){
+    margin: 0;
+    @media screen and (min-width: 425px) {
       font-size: 46px;
     }
   }

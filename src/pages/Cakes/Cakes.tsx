@@ -26,7 +26,7 @@ const Cakes = () => {
       <HeaderSmall />
       <section className="cakes">
         <article className="special">
-          <p className="special__content">Niepowtarzalne, wyjątkowe,</p>
+          <p className="special__content">Niepowtarzalne, wyjątkowe</p>
           <h1 className="special__heading">Torty na każdą okazję</h1>
         </article>
         <article className="cakes__content">
