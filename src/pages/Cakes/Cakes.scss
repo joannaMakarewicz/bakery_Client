@@ -163,7 +163,7 @@
   }
 }
 
-.gallery {
+.cakesGallery {
   background-color: #f1f1f1;
   padding: 40px 10vw 60px;
   &__box {
@@ -171,8 +171,11 @@
     column-gap: 6px;
     row-gap: 6px;
     grid-template-columns: 1fr;
+    @media screen and (min-width: 425px) {
+      grid-template-columns: 1fr 1fr;
+    }
     @media screen and (min-width: 768px) {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   }
   &__frame {
