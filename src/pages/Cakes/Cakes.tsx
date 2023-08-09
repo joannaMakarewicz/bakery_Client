@@ -7,6 +7,7 @@ import Footer from "../../components/Footer/Footer";
 // import { PiNumberCircleThreeThin } from "react-icons/pi";
 import Button from "../../components/Button/Button";
 import HeaderSmall from "../../components/HeaderSmall/HeaderSmall";
+import Arrow from "../../components/Arrow/Arrow";
 import bcg3 from "../../assets/bcg3.jpeg";
 import bcg19 from "../../assets/bcg19.jpeg";
 import bcg1 from "../../assets/bcg1.jpeg";
@@ -21,10 +22,12 @@ import "../Cakes/Cakes.scss";
 
 const Cakes = () => {
   useWebsiteTitle("Torty");
+
   return (
     <>
       <ExtraContent />
       <Navbar />
+      <Arrow/>
       <HeaderSmall />
       <section className="cakes">
         <article className="special">

@@ -11,6 +11,7 @@ import { MdAlternateEmail } from "react-icons/md";
 import "../Contact/Contact.scss";
 import MyDataContext from "../../context/MyDataContext";
 import useWebsiteTitle from "../../hooks/useWebsiteTitle";
+import Arrow from "../../components/Arrow/Arrow";
 
 const Contact = () => {
   useWebsiteTitle('Kontakt');
@@ -20,6 +21,7 @@ const Contact = () => {
     <>
       <ExtraContent />
       <Navbar />
+      <Arrow/>
       <main className="contact pt-5 pb-5">
         <section className="contact__section">
           <article className="contact__article">

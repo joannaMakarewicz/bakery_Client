@@ -2,16 +2,16 @@ import React from 'react';
 import ExtraContent from '../../components/ExtraContent/ExtraContent';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
-import Header from '../../components/Main/Header/Header';
 import useWebsiteTitle from '../../hooks/useWebsiteTitle';
+import Arrow from '../../components/Arrow/Arrow';
 import bcg23 from "../../assets/bcg23.jpeg";
 import Button from "react-bootstrap/Button";
-import bcg19 from "../../assets/bcg19.jpeg";
 import bcg21 from "../../assets/bcg21.jpeg";
 import bcg22 from "../../assets/bcg19.jpeg";
 import bcg20 from "../../assets/bcg20.jpeg";
-
+import HeaderSmall from '../../components/HeaderSmall/HeaderSmall';
 import "../Wedding/Wedding.scss";
+
 
 const Wedding = () => {
   useWebsiteTitle('Wesela');
@@ -19,6 +19,8 @@ const Wedding = () => {
     <>
         <ExtraContent />
         <Navbar />
+        <Arrow/>
+        <HeaderSmall/>
         <section className="wedding">
         <article className="wedding__content">
           <div className="wedding__content--frame">

@@ -3,17 +3,14 @@ import ExtraContent from "../../components/ExtraContent/ExtraContent";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import useWebsiteTitle from "../../hooks/useWebsiteTitle";
-// import { PiNumberCircleOneThin } from "react-icons/pi";
-// import { PiNumberCircleTwoThin } from "react-icons/pi";
-// import { PiNumberCircleThreeThin } from "react-icons/pi";
+import Arrow from "../../components/Arrow/Arrow";
 import Button from "react-bootstrap/Button";
-import Header from "../../components/Main/Header/Header";
 import bcg11 from "../../assets/bcg11.jpeg";
 import bcg15 from "../../assets/bcg15.jpeg";
 import bcg12 from "../../assets/bcg12.jpeg";
 import bcg13 from "../../assets/bcg13.jpeg";
-
 import "../SweetTable/SweetTable.scss";
+import HeaderSmall from "../../components/HeaderSmall/HeaderSmall";
 
 const SweetTable = () => {
   useWebsiteTitle("Słodki stół");
@@ -22,6 +19,8 @@ const SweetTable = () => {
     <>
       <ExtraContent />
       <Navbar />
+      <Arrow/>
+      <HeaderSmall/>
       <section className="sweetTable">
         <article className="sweetTable__content">
           <div className="sweetTable__content--frame">

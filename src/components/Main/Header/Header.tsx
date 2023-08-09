@@ -12,7 +12,7 @@ import "../Header/Header.scss";
 
 const Header = () => {
   return (
-    <header className="header" id="top">
+    <header className="header">
       <div className="header__images">
         <img
           className="header__photo header__photo--1"
