@@ -41,7 +41,7 @@ const Wedding = () => {
               teksturą i dekorem. Tworzymy niepowtarzalne kombinacje smaków,
               które zmieniają się u nas w zależności od pory roku.
             </p>
-            <Button value="Zapytaj o ofertę" href="/cakes"/>
+            <Button value="Zapytaj o ofertę" href="/contact"/>
           </div>
 
         </article>

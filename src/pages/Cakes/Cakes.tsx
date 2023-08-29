@@ -58,30 +58,30 @@ const Cakes = () => {
         <article className="cakesGallery">
           <h2 className="cakesGallery__heading">Galeria</h2>
           <div className="cakesGallery__box">
-            <div className="cakesGallery__frame">
+            <a  href={bcg19} className="cakesGallery__frame">
               <img src={bcg19} alt="cakes" width={"100%"} />
-            </div>
-            <div className="cakesGallery__frame">
+            </a>
+            <a href={bcg31} className="cakesGallery__frame">
               <img src={bcg31} alt="cakes" width={"100%"} />
-            </div>
-            <div className="cakesGallery__frame">
+            </a>
+            <a href={bcg1} className="cakesGallery__frame">
               <img src={bcg1} alt="cakes" width={"100%"} />
-            </div>
-            <div className="cakesGallery__frame">
+              </a>
+            <a href={bcg2} className="cakesGallery__frame">
               <img src={bcg2} alt="cakes" width={"100%"} />
-            </div>
-            <div className="cakesGallery__frame">
+              </a>
+            <a href={bcg24} className="cakesGallery__frame">
               <img src={bcg24} alt="cakes" width={"100%"} />
-            </div>
-            <div className="cakesGallery__frame">
+              </a>
+            <a href={bcg9} className="cakesGallery__frame">
               <img src={bcg9} alt="cakes" width={"100%"} />
-            </div>
-            <div className="cakesGallery__frame">
+              </a>
+            <a href={bcg26} className="cakesGallery__frame">
               <img src={bcg26} alt="cakes" width={"100%"} />
-            </div>
-            <div className="cakesGallery__frame">
+              </a>
+            <a href={bcg28} className="cakesGallery__frame">
               <img src={bcg28} alt="cakes" width={"100%"} />
-            </div>
+              </a>
           </div>
         </article>
       </section>
