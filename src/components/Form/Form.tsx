@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import bcg11 from "../../assets/bcg11.jpeg";
-import Button from "../Button/Button";
 import "../Form/Form.scss";
+import LoadingButton from "../../helpers/LoadingButton/LoadingButton";
 
 const Form = () => {
   const sendEmail = (e: any) => {
@@ -73,7 +73,7 @@ const Form = () => {
           required
         />
         <p className="form__info">* pole wymagane</p>
-        <Button value={"Wyślij"} type={"submit"} />
+        <LoadingButton value={"Wyślij"} type={"submit"} />
       </form>
     </div>
   );

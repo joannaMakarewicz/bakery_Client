@@ -4,7 +4,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import useWebsiteTitle from "../../hooks/useWebsiteTitle";
 import Arrow from "../../components/Arrow/Arrow";
-import Button from "react-bootstrap/Button";
+import Button from "../../components/Button/Button";
 import bcg11 from "../../assets/bcg11.jpeg";
 import bcg15 from "../../assets/bcg15.jpeg";
 import bcg12 from "../../assets/bcg12.jpeg";
@@ -40,19 +40,19 @@ const SweetTable = () => {
               teksturą i dekorem. Tworzymy niepowtarzalne kombinacje smaków,
               które zmieniają się u nas w zależności od pory roku.
             </p>
-            <Button className="sweetTable__button" value={"Zapytaj o ofertę"}></Button>
+            <Button value="Zapytaj o ofertę" href="/contact" />
           </div>
         </article>
-        <article className="gallery">
-          <h2 className="gallery__heading">Galeria</h2>
-          <div className="gallery__box">
-            <div className="gallery__frame">
+        <article className="sweetTableGallery">
+          <h2 className="sweetTableGallery__heading">Galeria</h2>
+          <div className="sweetTableGallery__box">
+            <div className="sweetTableGallery__frame">
               <img src={bcg15} alt="cakes" width={"100%"} />
             </div>
-            <div className="gallery__frame">
+            <div className="sweetTableGallerygallery__frame">
               <img src={bcg12} alt="cakes" width={"100%"} />
             </div>
-            <div className="gallery__frame">
+            <div className="sweetTableGallery__frame">
               <img src={bcg13} alt="cakes" width={"100%"} />
             </div>
    

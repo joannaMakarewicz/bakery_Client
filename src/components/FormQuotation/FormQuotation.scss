@@ -1,0 +1,57 @@
+@import "../../helpers/variables";
+.formQuotation {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 16px;
+    &__control {
+      border: 0;
+      border-radius: 0;
+      font-size: 1rem;
+      outline-color: transparent;
+      margin: 6px;
+      padding: 6px;
+      width: 80%;
+      &--message {
+        height: 8rem;
+      }
+      &--file {
+  font-size: 0.9rem;
+      }
+    }
+    &__heading {
+      margin: 2rem 0;
+    }
+    &__info {
+      font-size: 0.8rem;
+      text-align: left;
+      width:80%;
+    }
+  }
+
+.formQuotationArea {
+    background-color: #f1f1f1;
+    display: grid;
+    padding:0 0 2rem 0;
+    @media screen and (min-width: 1024px) {
+      grid-template-columns: 1fr 1fr;
+      padding:2rem 10vw;
+    }
+    &__frame {
+      height: 20rem;
+      @media screen and (min-width: 1024px) {
+        border: 1px solid $beigeColor;
+        height: 80%;
+        margin: auto;
+        padding:0.5rem;
+        width: 25vw;
+      }
+    }
+    &__img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+  
+    }
+  }
+  

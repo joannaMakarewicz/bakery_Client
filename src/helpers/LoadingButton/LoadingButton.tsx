@@ -1,14 +1,14 @@
 import React from "react";
+import "../LoadingButton/LoadingButton.scss";
 
-const LoadingButton = (props:any) => {
-    const className = props.className || "btn-primary";
+const LoadingButton = (props: any) => {
+  const className = props.className || "button__icon";
 
-    const buttonProps = { ...props };
-    delete buttonProps.loading;
-  return (
-    props.loading ?
-      (
-      <button className="btn btn-primary position-absolute end-0" type="button" disabled>
+  const buttonProps = { ...props };
+  delete buttonProps.loading;
+  return props.loading ? (
+    <div className="loadingButton">
+      <button className="btn" type="button" disabled>
         <span
           className="spinner-border spinner-border-sm me-2"
           role="status"
@@ -16,12 +16,14 @@ const LoadingButton = (props:any) => {
         ></span>
         Loading...
       </button>
-      )
-    : (
-        <button {...buttonProps} className={`btn ${className}`}>
-          {props.children}
-        </button>
-      )
+    </div>
+  ) : (
+    <div className="loadingButton">
+    <button {...buttonProps} className={`btn ${className}`}>
+      {props.children}
+    </button>
+    </div>
+
   );
 };
 
