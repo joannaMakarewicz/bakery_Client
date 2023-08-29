@@ -5,6 +5,7 @@ import Footer from '../../components/Footer/Footer';
 import useWebsiteTitle from '../../hooks/useWebsiteTitle';
 import Arrow from '../../components/Arrow/Arrow';
 import bcg23 from "../../assets/bcg23.jpeg";
+import Gallery from '../../components/Gallery/Gallery';
 import bcg21 from "../../assets/bcg21.jpeg";
 import bcg22 from "../../assets/bcg19.jpeg";
 import bcg20 from "../../assets/bcg20.jpeg";
@@ -15,6 +16,13 @@ import "../Wedding/Wedding.scss";
 
 const Wedding = () => {
   useWebsiteTitle('Wesela');
+
+  const listOfImages:string[] = [
+    bcg21,
+    bcg22,
+    bcg20,
+    bcg23,
+  ];
 
   return (
     <>
@@ -45,20 +53,7 @@ const Wedding = () => {
           </div>
 
         </article>
-        <article className="weddingGallery">
-            <h2 className="weddingGallery__heading">Galeria</h2>
-            <div className="weddingGallery__box">
-            <div className="weddingGallery__frame">
-              <img src={bcg20} alt="cakes" width={"100%"} />
-            </div>
-            <div className="weddingGallery__frame">
-              <img src={bcg21} alt="cakes" width={"100%"} />
-            </div>
-            <div className="weddingGallery__frame">
-              <img src={bcg22} alt="cakes" width={"100%"} />
-            </div>
-            </div>
-        </article>
+        <Gallery listOfImages={listOfImages}/>
       </section>
         <Footer />
     </>

@@ -5,26 +5,43 @@ import Footer from "../../components/Footer/Footer";
 import useWebsiteTitle from "../../hooks/useWebsiteTitle";
 import Arrow from "../../components/Arrow/Arrow";
 import Button from "../../components/Button/Button";
-import bcg11 from "../../assets/bcg11.jpeg";
-import bcg15 from "../../assets/bcg15.jpeg";
-import bcg12 from "../../assets/bcg12.jpeg";
-import bcg13 from "../../assets/bcg13.jpeg";
+import Gallery from "../../components/Gallery/Gallery";
+import bcg47 from "../../assets/bcg47.jpg";
+import bcg44 from "../../assets/bcg44.jpg";
+import bcg39 from "../../assets/bcg39.jpg";
+import bcg40 from "../../assets/bcg40.jpg";
+import bcg17 from "../../assets/bcg17.jpeg";
+import bcg30 from "../../assets/bcg30.jpg";
+import bcg32 from "../../assets/bcg32.jpg";
+import bcg38 from "../../assets/bcg38.jpg";
+import bcg34 from "../../assets/bcg34.jpg";
 import "../SweetTable/SweetTable.scss";
 import HeaderSmall from "../../components/HeaderSmall/HeaderSmall";
 
 const SweetTable = () => {
   useWebsiteTitle("Słodki stół");
 
+  const listOfImages:string[] = [
+    bcg34,
+    bcg47,
+    bcg39,
+    bcg44,
+    bcg30,
+    bcg38,
+    bcg17,
+    bcg32,
+  ];
+
   return (
     <>
       <ExtraContent />
       <Navbar />
-      <Arrow/>
-      <HeaderSmall/>
+      <Arrow />
+      <HeaderSmall />
       <section className="sweetTable">
         <article className="sweetTable__content">
           <div className="sweetTable__content--frame">
-            <img src={bcg11} alt="sweetTable" width={"100%"} />
+            {/* <img src={bcg40} alt="sweetTable"/> */}
           </div>
 
           <div className="sweetTable__text">
@@ -43,21 +60,7 @@ const SweetTable = () => {
             <Button value="Zapytaj o ofertę" href="/contact" />
           </div>
         </article>
-        <article className="sweetTableGallery">
-          <h2 className="sweetTableGallery__heading">Galeria</h2>
-          <div className="sweetTableGallery__box">
-            <div className="sweetTableGallery__frame">
-              <img src={bcg15} alt="cakes" width={"100%"} />
-            </div>
-            <div className="sweetTableGallerygallery__frame">
-              <img src={bcg12} alt="cakes" width={"100%"} />
-            </div>
-            <div className="sweetTableGallery__frame">
-              <img src={bcg13} alt="cakes" width={"100%"} />
-            </div>
-   
-          </div>
-        </article>
+        <Gallery listOfImages={listOfImages} />
       </section>
       <Footer />
     </>
