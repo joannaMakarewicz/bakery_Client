@@ -11,17 +11,25 @@ import Footer from "../../components/Footer/Footer";
 import HeaderSmall from "../../components/HeaderSmall/HeaderSmall";
 import Arrow from "../../components/Arrow/Arrow";
 import useWebsiteTitle from "../../hooks/useWebsiteTitle";
+import bcg29 from "../../assets/bcg29.jpg";
+import bcg27 from "../../assets/bcg27.jpg";
 import FormQuotation from '../../components/FormQuotation/FormQuotation';
 
 const Quotation = () => {
   useWebsiteTitle("Torty");
+
+  
+  const backgroundImages = [
+    bcg29,
+    bcg27
+  ]
 
   return (
     <>
       <ExtraContent />
       <Navbar />
       <Arrow/>
-      <HeaderSmall />
+      <HeaderSmall backgroundImages={backgroundImages} />
       <section className="quotation">
         <article className="quotationSpecial">
           <p className="quotationSpecial__content">Niepowtarzalne, wyjątkowe</p>

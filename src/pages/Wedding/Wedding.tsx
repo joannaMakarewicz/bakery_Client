@@ -9,6 +9,8 @@ import Gallery from '../../components/Gallery/Gallery';
 import bcg21 from "../../assets/bcg21.jpeg";
 import bcg22 from "../../assets/bcg19.jpeg";
 import bcg20 from "../../assets/bcg20.jpeg";
+import bcg53 from "../../assets/bcg53.jpg";
+import bcg54 from "../../assets/bcg54.jpg";
 import HeaderSmall from '../../components/HeaderSmall/HeaderSmall';
 import Button from '../../components/Button/Button';
 import "../Wedding/Wedding.scss";
@@ -24,12 +26,17 @@ const Wedding = () => {
     bcg23,
   ];
 
+  const backgroundImages = [
+    bcg53,
+    bcg54
+  ]
+
   return (
     <>
         <ExtraContent />
         <Navbar />
         <Arrow/>
-        <HeaderSmall/>
+        <HeaderSmall backgroundImages={backgroundImages}/>
         <section className="wedding">
         <article className="wedding__content">
           <div className="wedding__content--frame">

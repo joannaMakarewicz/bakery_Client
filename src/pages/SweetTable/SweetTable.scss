@@ -2,17 +2,6 @@
 
 .sweetTable {
   margin-top:140px;
-  &__bcg {
-    align-items: center;
-    background-image: url("../../assets/bcg17.jpeg");
-    background-size: cover;
-    display: flex;
-    font-size: 3rem;
-    height: 10rem;
-    justify-content: center;
-    object-fit: cover;
-    text-transform: uppercase;
-  }
   &__border {
     border-top: 1px solid $mainBeige;
   }
@@ -36,7 +25,7 @@
       position: relative;
     }
     &--frame {
-      background-image: url('../../assets/bcg40.jpg');
+      background-image: url('../../assets/bcg17.jpeg');
       background-size:cover;
       background-position: center;
       display: none;

@@ -10,16 +10,25 @@ import "../Contact/Contact.scss";
 import MyDataContext from "../../context/MyDataContext";
 import useWebsiteTitle from "../../hooks/useWebsiteTitle";
 import Arrow from "../../components/Arrow/Arrow";
+import bcg52 from "../../assets/bcg52.jpg";
+import bcg45 from "../../assets/bcg45.jpg";
+import HeaderSmall from "../../components/HeaderSmall/HeaderSmall";
 
 const Contact = () => {
   useWebsiteTitle('Kontakt');
   const contactData = useContext(MyDataContext);
+
+  const backgroundImages = [
+    bcg52,
+    bcg45
+  ]
 
   return (
     <>
       <ExtraContent />
       <Navbar />
       <Arrow/>
+      <HeaderSmall backgroundImages={backgroundImages}/>
       <main className="contact pt-5 pb-5">
         <section className="contact__section">
           <article className="contact__article">

@@ -15,6 +15,8 @@ import bcg30 from "../../assets/bcg30.jpg";
 import bcg32 from "../../assets/bcg32.jpg";
 import bcg38 from "../../assets/bcg38.jpg";
 import bcg34 from "../../assets/bcg34.jpg";
+import bcg46 from "../../assets/bcg46.jpg";
+import bcg51 from "../../assets/bcg51.jpg";
 import "../SweetTable/SweetTable.scss";
 import HeaderSmall from "../../components/HeaderSmall/HeaderSmall";
 
@@ -32,16 +34,20 @@ const SweetTable = () => {
     bcg32,
   ];
 
+  const backgroundImages = [
+    bcg46,
+    bcg51
+  ]
+
   return (
     <>
       <ExtraContent />
       <Navbar />
       <Arrow />
-      <HeaderSmall />
+      <HeaderSmall backgroundImages={backgroundImages} />
       <section className="sweetTable">
         <article className="sweetTable__content">
           <div className="sweetTable__content--frame">
-            {/* <img src={bcg40} alt="sweetTable"/> */}
           </div>
 
           <div className="sweetTable__text">

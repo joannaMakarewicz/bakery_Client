@@ -1,13 +1,18 @@
 import React from "react";
-import bcg29 from "../../assets/bcg29.jpg";
-import bcg27 from "../../assets/bcg27.jpg";
 import "../HeaderSmall/HeaderSmall.scss";
 
-const HeaderSmall = () => {
+type HeaderSmallProps = {
+  backgroundImages: string[];
+};
+
+const HeaderSmall = ({ backgroundImages }: HeaderSmallProps) => {
   return (
     <div className="headerSmall">
-      <img className="headerSmall__photo" src={bcg29} alt="random cake" />
-      <img className="headerSmall__photo" src={bcg27} alt="random cake" />
+      {backgroundImages.map((el) => {
+        return (
+          <img className="headerSmall__photo" src={el} alt="random cake" key={el}/>
+        );
+      })}
     </div>
   );
 };

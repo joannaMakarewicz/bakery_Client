@@ -19,6 +19,8 @@ import bcg35 from "../../assets/bcg35.jpg";
 import bcg24 from "../../assets/bcg21.jpeg";
 import bcg31 from "../../assets/bcg31.jpg";
 import bcg26 from "../../assets/bcg26.jpg";
+import bcg29 from "../../assets/bcg29.jpg";
+import bcg27 from "../../assets/bcg27.jpg";
 import "../Cakes/Cakes.scss";
 
 const Cakes = () => {
@@ -35,12 +37,17 @@ const Cakes = () => {
     bcg28,
   ];
 
+  const backgroundImages = [
+    bcg29,
+    bcg27
+  ]
+
   return (
     <>
       <ExtraContent />
       <Navbar />
       <Arrow/>
-      <HeaderSmall />
+      <HeaderSmall backgroundImages={backgroundImages}/>
       <section className="cakes">
         <article className="special">
           <p className="special__content">Niepowtarzalne, wyjątkowe</p>
