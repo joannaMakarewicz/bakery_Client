@@ -8,15 +8,8 @@ import Footer from "../../components/Footer/Footer";
 import Button from "../../components/Button/Button";
 import HeaderSmall from "../../components/HeaderSmall/HeaderSmall";
 import Arrow from "../../components/Arrow/Arrow";
+import Gallery from "../../components/Gallery/Gallery";
 import bcg3 from "../../assets/bcg3.jpeg";
-import bcg19 from "../../assets/bcg19.jpeg";
-import bcg1 from "../../assets/bcg1.jpeg";
-import bcg2 from "../../assets/bcg2.jpeg";
-import bcg28 from "../../assets/bcg28.jpg";
-import bcg9 from "../../assets/bcg9.jpeg";
-import bcg24 from "../../assets/bcg21.jpeg";
-import bcg31 from "../../assets/bcg31.jpg";
-import bcg26 from "../../assets/bcg26.jpg";
 import useWebsiteTitle from "../../hooks/useWebsiteTitle";
 import "../Cakes/Cakes.scss";
 
@@ -55,35 +48,7 @@ const Cakes = () => {
             <Button value="Wycena" href="/quotation" />
           </div>
         </article>
-        <article className="cakesGallery">
-          <h2 className="cakesGallery__heading">Galeria</h2>
-          <div className="cakesGallery__box">
-            <a  href={bcg19} className="cakesGallery__frame">
-              <img src={bcg19} alt="cakes" width={"100%"} />
-            </a>
-            <a href={bcg31} className="cakesGallery__frame">
-              <img src={bcg31} alt="cakes" width={"100%"} />
-            </a>
-            <a href={bcg1} className="cakesGallery__frame">
-              <img src={bcg1} alt="cakes" width={"100%"} />
-              </a>
-            <a href={bcg2} className="cakesGallery__frame">
-              <img src={bcg2} alt="cakes" width={"100%"} />
-              </a>
-            <a href={bcg24} className="cakesGallery__frame">
-              <img src={bcg24} alt="cakes" width={"100%"} />
-              </a>
-            <a href={bcg9} className="cakesGallery__frame">
-              <img src={bcg9} alt="cakes" width={"100%"} />
-              </a>
-            <a href={bcg26} className="cakesGallery__frame">
-              <img src={bcg26} alt="cakes" width={"100%"} />
-              </a>
-            <a href={bcg28} className="cakesGallery__frame">
-              <img src={bcg28} alt="cakes" width={"100%"} />
-              </a>
-          </div>
-        </article>
+        <Gallery/>
       </section>
       <Footer />
     </>

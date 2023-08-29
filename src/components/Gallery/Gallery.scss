@@ -1,0 +1,30 @@
+@import "../../helpers/variables";
+
+.gallery {
+    background-color: $lightGrey;
+    padding: 40px 10vw 60px;
+    &__box {
+      display: grid;
+      column-gap: 6px;
+      row-gap: 6px;
+      grid-template-columns: 1fr;
+      @media screen and (min-width: 425px) {
+        grid-template-columns: 1fr 1fr;
+      }
+      @media screen and (min-width: 768px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+    }
+    &__frame {
+      border: 1px solid #d8c097;
+      display: flex;
+      height: 100%;
+      padding: 0.5rem;
+      & img {
+        object-fit: cover;
+      }
+    }
+    &__heading {
+      margin-bottom: 40px;
+    }
+  }
