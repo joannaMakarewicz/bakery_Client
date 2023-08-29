@@ -13,6 +13,7 @@ import Arrow from "../../components/Arrow/Arrow";
 import useWebsiteTitle from "../../hooks/useWebsiteTitle";
 import bcg29 from "../../assets/bcg29.jpg";
 import bcg27 from "../../assets/bcg27.jpg";
+import bcg3 from "../../assets/bcg3.jpeg";
 import FormQuotation from '../../components/FormQuotation/FormQuotation';
 
 const Quotation = () => {

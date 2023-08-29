@@ -11,9 +11,11 @@ import bcg22 from "../../assets/bcg19.jpeg";
 import bcg20 from "../../assets/bcg20.jpeg";
 import bcg53 from "../../assets/bcg53.jpg";
 import bcg54 from "../../assets/bcg54.jpg";
+import bcg3 from "../../assets/bcg3.jpeg";
 import HeaderSmall from '../../components/HeaderSmall/HeaderSmall';
 import Button from '../../components/Button/Button';
 import "../Wedding/Wedding.scss";
+import MainContent from '../../components/MainContent/MainContent';
 
 
 const Wedding = () => {
@@ -31,37 +33,25 @@ const Wedding = () => {
     bcg54
   ]
 
+  const information = {
+    topHeading: "magiczne, wyjątkowe",
+    header: "Osłodzimy Twoje wesele",
+    bcg: bcg3,
+    title:"spełniamy marzenia",
+    text:"Okrągłe, kwadratowe, piętrowe, bezowe, wymarzone. Twoja wizja, smaki, styl składają się na unikalność najważniejszego deseru uroczystości. Nasze doświadczenie mówi, że nie ma ograniczeń – stworzymy dla Ciebie tort, którego nigdy nie zapomnisz. Wyzwania i nietuzinkowe rozwiązania to nasz żywioł. Bawimy się formą, teksturą i dekorem. Tworzymy niepowtarzalne kombinacje smaków, które zmieniają się u nas w zależności od pory roku.",
+    buttonName:"Zapytaj o ofertę",
+    buttonLink:"/contact"
+  };
+
   return (
     <>
         <ExtraContent />
         <Navbar />
         <Arrow/>
         <HeaderSmall backgroundImages={backgroundImages}/>
-        <section className="wedding">
-        <article className="wedding__content">
-          <div className="wedding__content--frame">
-            <img src={bcg23} alt="wedding" width={"100%"} />
-          </div>
-
-          <div className="wedding__text">
-            <div className="w-25 mx-auto my-3 wedding__border" />
-            <h1 className="wedding__heading">Osłodzimy Twoje wesele</h1>
-            <div className="w-25 mx-auto my-3 wedding__border" />
-            <p className="wedding__description">
-              Okrągłe, kwadratowe, piętrowe, bezowe, wymarzone. Twoja wizja,
-              smaki, styl składają się na unikalność najważniejszego deseru
-              uroczystości. Nasze doświadczenie mówi, że nie ma ograniczeń –
-              stworzymy dla Ciebie tort, którego nigdy nie zapomnisz. Wyzwania i
-              nietuzinkowe rozwiązania to nasz żywioł. Bawimy się formą,
-              teksturą i dekorem. Tworzymy niepowtarzalne kombinacje smaków,
-              które zmieniają się u nas w zależności od pory roku.
-            </p>
-            <Button value="Zapytaj o ofertę" href="/contact"/>
-          </div>
-
-        </article>
+        <MainContent information={information} />
         <Gallery listOfImages={listOfImages}/>
-      </section>
+
         <Footer />
     </>
   )
