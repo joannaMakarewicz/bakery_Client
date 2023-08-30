@@ -12,7 +12,7 @@ const ExtraContent = () => {
   return (
     <MyDataContext.Consumer>
       {(contactData) => (
-        <div className="extraContent ps-3 pe-3 pt-1 pb-1">
+        <div className="extraContent">
           <div>
             <a href={contactData.myData.fb} target="_blank" rel="noreferrer">
               <BsFacebook className="me-3" />

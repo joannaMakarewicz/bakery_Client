@@ -25,7 +25,7 @@
     flex-direction: column;
     justify-content: center;
     margin: 10px 0 30px;
-    padding: 110px 0 30px;
+    padding: 60px 0 30px;
     @media screen and (min-width: 768px) {
       padding: 60px 0;
     }
@@ -171,7 +171,7 @@
     flex-direction: column;
     justify-content: center;
     left: 10vw;
-    padding: 15px 2px 0;
+    padding: 0 6px;
     position: absolute;
     top: -15vh;
     width: 80vw;
@@ -189,13 +189,12 @@
     }
     & h1,
     p {
-      padding: 0 2px;
       text-transform: uppercase;
     }
     &__content {
       font-size: 18px;
       letter-spacing: 2px;
-      margin: 30px 0px;
+      margin: 40px 0px 30px;
       opacity: 0.5;
       @media screen and (min-width: 425px) {
         font-size: 20px;
