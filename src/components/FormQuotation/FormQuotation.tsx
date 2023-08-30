@@ -1,38 +1,35 @@
-import React from 'react';
-import LoadingButton from '../../helpers/LoadingButton/LoadingButton';
+import React from "react";
+import LoadingButton from "../../helpers/LoadingButton/LoadingButton";
 import emailjs from "@emailjs/browser";
 import bcg2 from "../../assets/bcg2.jpeg";
 import "../FormQuotation/FormQuotation.scss";
 
 const FormQuotation = () => {
-
-    const makeQuotation = (e: any) => {
-        e.preventDefault();
-        emailjs
-          .sendForm(
-            "service_8sjpl4f",
-            "template_96glbjq",
-            e.target,
-            "gxhVuR-MaQt-BRs6F"
-          )
-          .then(
-            (result) => {
-              console.log(result.text);
-            },
-            (error) => {
-              console.log(error.text);
-            }
-          );
-        e.target.reset();
-      };
+  const makeQuotation = (e: any) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_8sjpl4f",
+        "template_96glbjq",
+        e.target,
+        "gxhVuR-MaQt-BRs6F"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
   return (
     <div className="formQuotationArea">
-              <div className="formArea__frame">
-        <img className="formArea__img" src={bcg2} alt="przykład ciast" />
-      </div>
       <form className="formQuotation" onSubmit={makeQuotation}>
-        <h3 className="formQuotation__heading">Wyceń swój wymarzony tort</h3>
-
+        <div className="w-25 mx-auto contact__border" />
+        <h3 className="contact__heading">Wyceń swój wymarzony tort</h3>
+        <div className="w-25 mx-auto contact__border mb-5" />
         <label htmlFor="name"></label>
         <input
           type="text"
@@ -63,7 +60,7 @@ const FormQuotation = () => {
           placeholder="Telefon *"
           required
         />
-                <label htmlFor="guests"></label>
+        <label htmlFor="guests"></label>
         <input
           type="number"
           min="0"
@@ -74,7 +71,7 @@ const FormQuotation = () => {
           required
         />
 
-<label htmlFor="reason"></label>
+        <label htmlFor="reason"></label>
         <input
           type="text"
           className="formQuotation__control"
@@ -95,8 +92,11 @@ const FormQuotation = () => {
         <p className="formQuotation__info">* pole wymagane</p>
         <LoadingButton value={"Wyślij"} type={"submit"} />
       </form>
+      <div className="formQuotationArea__frame">
+        <img className="formQuotationArea__img" src={bcg2} alt="przykład ciast" />
+      </div>
     </div>
   );
-}
+};
 
 export default FormQuotation;

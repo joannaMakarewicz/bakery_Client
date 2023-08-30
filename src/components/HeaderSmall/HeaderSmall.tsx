@@ -10,7 +10,12 @@ const HeaderSmall = ({ backgroundImages }: HeaderSmallProps) => {
     <div className="headerSmall">
       {backgroundImages.map((el) => {
         return (
-          <img className="headerSmall__photo" src={el} alt="random cake" key={el}/>
+          <img
+            className="headerSmall__photo"
+            src={el}
+            alt="random cake"
+            key={el}
+          />
         );
       })}
     </div>

@@ -14,6 +14,7 @@ import bcg52 from "../../assets/bcg52.jpg";
 import bcg45 from "../../assets/bcg45.jpg";
 import bcg3 from "../../assets/bcg3.jpeg";
 import HeaderSmall from "../../components/HeaderSmall/HeaderSmall";
+import MainContent from "../../components/MainContent/MainContent";
 
 const Contact = () => {
   useWebsiteTitle('Kontakt');
@@ -23,6 +24,7 @@ const Contact = () => {
     bcg52,
     bcg45
   ]
+
 
   return (
     <>

@@ -6,9 +6,9 @@ type MainContentProps = {
 information:{
     topHeading:string,
     header:string,
-    bcg:string,
-    title:string,
-    text:string,
+    bcg?:string,
+    title?:string,
+    text?:string,
     buttonName:string,
     buttonLink:string
 }

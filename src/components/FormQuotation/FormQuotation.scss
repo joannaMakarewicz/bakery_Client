@@ -3,7 +3,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 3rem 16px;
+    padding: 0 16px;
     &__control {
       border: 0;
       border-radius: 0;
@@ -32,25 +32,34 @@
 .formQuotationArea {
     background-color: #f1f1f1;
     display: grid;
-    padding:0 0 2rem 0;
+    padding:70px 0 2rem 0;
+    position: relative;
+    top:-150px;
     @media screen and (min-width: 1024px) {
       grid-template-columns: 1fr 1fr;
-      padding:2rem 10vw;
+      padding:100px 10vw;
     }
     &__frame {
-      height: 20rem;
+      display: none;
       @media screen and (min-width: 1024px) {
         border: 1px solid $beigeColor;
+        display: block;
         height: 80%;
-        margin: auto;
+        margin: 0 auto;
         padding:0.5rem;
-        width: 25vw;
+        width: 30vw;
       }
     }
     &__img {
-      height: 100%;
-      object-fit: cover;
-      width: 100%;
+      display: none;
+      @media screen and (min-width: 1024px) {
+        display: block;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+      }
+
   
     }
   }

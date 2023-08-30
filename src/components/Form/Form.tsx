@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import bcg11 from "../../assets/bcg11.jpeg";
+import bcg54 from "../../assets/bcg54.jpg";
 import "../Form/Form.scss";
 import LoadingButton from "../../helpers/LoadingButton/LoadingButton";
 
@@ -28,7 +28,7 @@ const Form = () => {
   return (
     <div className="formArea">
       <div className="formArea__frame">
-        <img className="formArea__img" src={bcg11} alt="przykład ciast" />
+        <img className="formArea__img" src={bcg54} alt="przykład ciast" />
       </div>
       <form className="form" onSubmit={sendEmail}>
         <h3 className="form__heading">Formularz kontaktowy</h3>

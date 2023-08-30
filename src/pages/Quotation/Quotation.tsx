@@ -1,6 +1,5 @@
-import React from 'react';
+import React from "react";
 import "../Quotation/Quotation.scss";
-
 
 import ExtraContent from "../../components/ExtraContent/ExtraContent";
 import Navbar from "../../components/Navbar/Navbar";
@@ -14,34 +13,24 @@ import useWebsiteTitle from "../../hooks/useWebsiteTitle";
 import bcg29 from "../../assets/bcg29.jpg";
 import bcg27 from "../../assets/bcg27.jpg";
 import bcg3 from "../../assets/bcg3.jpeg";
-import FormQuotation from '../../components/FormQuotation/FormQuotation';
+import FormQuotation from "../../components/FormQuotation/FormQuotation";
+import MainContent from "../../components/MainContent/MainContent";
 
 const Quotation = () => {
   useWebsiteTitle("Torty");
 
-  
-  const backgroundImages = [
-    bcg29,
-    bcg27
-  ]
+  const backgroundImages = [bcg29, bcg27];
 
   return (
     <>
       <ExtraContent />
       <Navbar />
-      <Arrow/>
+      <Arrow />
       <HeaderSmall backgroundImages={backgroundImages} />
-      <section className="quotation">
-        <article className="quotationSpecial">
-          <p className="quotationSpecial__content">Niepowtarzalne, wyjątkowe</p>
-          <h1 className="quotationSpecial__heading">Torty na każdą okazję</h1>
-        </article>
-        <FormQuotation/>
-      </section>
+      <FormQuotation />
       <Footer />
     </>
   );
 };
-
 
 export default Quotation;
