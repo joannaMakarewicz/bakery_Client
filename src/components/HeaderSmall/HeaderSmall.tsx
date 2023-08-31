@@ -7,7 +7,6 @@ type HeaderSmallProps = {
 
 const HeaderSmall = ({ backgroundImages }: HeaderSmallProps) => {
   return (
-    <div className="headerSmallArea">
       <div className="headerSmall">
         {backgroundImages.map((el) => {
           return (
@@ -20,7 +19,6 @@ const HeaderSmall = ({ backgroundImages }: HeaderSmallProps) => {
           );
         })}
       </div>
-    </div>
   );
 };
 

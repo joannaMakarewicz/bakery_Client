@@ -12,7 +12,7 @@ const Card = ({ photo, text, name }: CardProps) => {
   return (
     <>
       <figure className="myCard">
-        <div className="card rounded-0">
+        <div className="myCard__img card rounded-0">
           <img className="card-img-top rounded-0" src={photo} alt={name} />
         </div>
         <figcaption className="myCard__body">

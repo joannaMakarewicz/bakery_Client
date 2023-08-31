@@ -50,6 +50,7 @@ font-size: 0.9rem;
     padding:2rem 10vw;
   }
   &__frame {
+    box-shadow: 0 0 10px 0 rgba(41,51,65,.15);
     height: 20rem;
     @media screen and (min-width: 1024px) {
       border: 1px solid $beigeColor;
@@ -63,6 +64,7 @@ font-size: 0.9rem;
     height: 100%;
     object-fit:cover;
     object-position: center;
+    opacity: 0.6;
     width: 100%;
 
   }

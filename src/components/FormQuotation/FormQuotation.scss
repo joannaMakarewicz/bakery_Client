@@ -47,6 +47,7 @@
     display: grid;
     padding:70px 0 2rem 0;
     position: relative;
+    top:-70px;
     @media screen and (min-width:1024px) {
       grid-template-columns: 1fr 1fr;
       padding:70px 10vw;

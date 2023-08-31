@@ -24,6 +24,9 @@
     -webkit-transition: all 0.35s ease;
     transition: all 0.35s ease;
   }
+  &__img {
+    box-shadow: 0 0 10px 0 rgba(41,51,65,.15);
+  }
   & img {
     max-width: 100%;
     vertical-align: top;

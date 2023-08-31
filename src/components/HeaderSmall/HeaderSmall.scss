@@ -2,23 +2,23 @@
 .headerSmall {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 40vh;
+  height: 28vh;
   margin-top: 140px;
   position: relative;
   overflow: hidden;
   width: 100vw;
   @media screen and (min-width:425px){
-    height: 50vh;
+    height: 35vh;
   }
   @media screen and (min-width:600px) {
-    height:50vh;
+    height:40vh;
   }
   @media screen and (min-width:768px) {
-    height: calc(50vh + 70px);
+    height: 55vh;
     top:-70px;
   }
   @media screen and (min-width:1024px) {
-    height: calc(60vh + 80px);
+    height: calc(65vh + 80px);
     top:-80px;
   }
   @media screen and (min-width:1440px) {
@@ -27,11 +27,9 @@
   }
   &__photo {
     object-fit: cover;
+    height: 100%;
     overflow:hidden;
     width: 100%;
   }
 }
 
-.headerSmallArea {
-  overflow: hidden;
-}
