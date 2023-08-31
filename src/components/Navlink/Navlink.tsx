@@ -4,10 +4,13 @@ import "../Navlink/Navlink.scss";
 
 type NavlinkProps = {
     link: string,
-    linkName: string
+    linkName: string,
 }
 
+
+
 const Navlink = ({link, linkName}:NavlinkProps) => {
+
   return (
     <li className="mainNavbar__link">
       <NavLink

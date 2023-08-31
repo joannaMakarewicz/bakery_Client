@@ -72,16 +72,11 @@
     }
   }
   & li a {
-    color: $beigeColor;
     margin-left: 16px;
     text-transform: uppercase;
-    text-decoration: none;
-    @media screen and (min-width:768px) {
-      color:$beigeColor;
-    }
     &:hover {
       @media screen and (min-width:768px) {
-        color:$greenDark;
+        color:$mainBeige;
       }
     }
   }

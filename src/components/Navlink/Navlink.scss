@@ -1,11 +1,17 @@
+@import "../../helpers//variables";
 
-
-#active {
-    color: red;
-    text-decoration: underline;
+.active {
+    color: $mainBeige;
+    text-decoration:underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness:0.1rem ;
+    text-underline-offset: 0.4rem;
+    &:hover {
+      color: $mainBeige;
+    }
   }
   
   .inactive {
-    color: #fff;
+    color: $beigeColor;
     text-decoration: none;
   }
