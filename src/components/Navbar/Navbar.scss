@@ -22,7 +22,7 @@
     transition: 1s ease;
     z-index: 3;
     &:hover {
-      color: $greenDark;
+      color: $beigeColor;
     }
     @media screen and (min-width: 768px) {
       display: none;

@@ -46,7 +46,7 @@ const Cakes = () => {
     header: "Torty na każdą okazję",
     bcg: bcg3,
     title:"spełniamy marzenia",
-    text:"Okrągłe, kwadratowe, piętrowe, bezowe, wymarzone. Twoja wizja, smaki, styl składają się na unikalność najważniejszego deseru uroczystości. Nasze doświadczenie mówi, że nie ma ograniczeń – stworzymy dla Ciebie tort, którego nigdy nie zapomnisz. Wyzwania i nietuzinkowe rozwiązania to nasz żywioł. Bawimy się formą, teksturą i dekorem. Tworzymy niepowtarzalne kombinacje smaków, które zmieniają się u nas w zależności od pory roku.",
+    text:"Wyjątkowe i wymarzone, przygotowywane na indywidualne zamówienie. Stworzymy dla Ciebie niezapomniany tort na wesele, urodziny, komunię, chrzciny, wieczory panieńskie/kawalerskie, baby shawer i na każdą inną okazję.",
     buttonName:"Wycena",
     buttonLink:"/quotation"
   };

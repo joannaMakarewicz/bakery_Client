@@ -11,6 +11,9 @@ position:fixed;
 top:0;
 width: 100%;
 z-index: 5;
+&__tel {
+text-decoration: none;
+}
 }
 
 .extraContent a {
@@ -20,7 +23,7 @@ z-index: 5;
 
 .extraContent a:hover {
     font-size: 103%;
-    color: $greenDark;
+    color: $mainBeige;
 }
 
 
