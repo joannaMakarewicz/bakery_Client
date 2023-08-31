@@ -2,19 +2,19 @@ import React from "react";
 import "../LoadingButton/LoadingButton.scss";
 
 const LoadingButton = (props: any) => {
-  const className = props.className || "button__icon";
+  const className = props.className || "loadingButton__icon";
 
   const buttonProps = { ...props };
   delete buttonProps.loading;
   return props.loading ? (
     <div className="loadingButton">
-      <button className="btn" type="button" disabled>
+      <button className={`btn ${className}`} type="button" disabled>
         <span
           className="spinner-border spinner-border-sm me-2"
           role="status"
           aria-hidden="true"
         ></span>
-        Loading...
+        <span className="sr-only">Loading...</span>
       </button>
     </div>
   ) : (

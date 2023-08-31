@@ -1,16 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import LoadingButton from "../../helpers/LoadingButton/LoadingButton";
 import emailjs from "@emailjs/browser";
 import bcg2 from "../../assets/bcg2.jpeg";
 import "../FormQuotation/FormQuotation.scss";
 
+
+
 const FormQuotation = () => {
+  const [loading, setLoading] = useState<boolean>(false);
+  const [status, setStatus] = useState<boolean>(false);
+  console.log(loading, status)
   const makeQuotation = (e: any) => {
     e.preventDefault();
+    setLoading(true);
     emailjs
       .sendForm(
         "service_8sjpl4f",
-        "template_96glbjq",
+        "template_ihzlhtl",
         e.target,
         "gxhVuR-MaQt-BRs6F"
       )
@@ -22,7 +28,12 @@ const FormQuotation = () => {
           console.log(error.text);
         }
       );
-    e.target.reset();
+
+    setTimeout(() => {
+      setStatus(true);
+      e.target.reset();
+      setLoading(false);
+    }, 200);
   };
   return (
     <div className="formQuotationArea">
@@ -30,6 +41,15 @@ const FormQuotation = () => {
         <div className="w-25 mx-auto contact__border" />
         <h3 className="contact__heading">Wyceń swój wymarzony tort</h3>
         <div className="w-25 mx-auto contact__border mb-5" />
+
+        {status ?
+        (
+          <p className="alert mb-5">Twoja wiadomość została wysłana</p>
+        )
+        :
+        null
+      }
+
         <label htmlFor="name"></label>
         <input
           type="text"
@@ -71,12 +91,12 @@ const FormQuotation = () => {
           required
         />
 
-        <label htmlFor="reason"></label>
+        <label htmlFor="type"></label>
         <input
           type="text"
           className="formQuotation__control"
-          id="reason"
-          name="reason"
+          id="type"
+          name="type"
           placeholder="Rodzaj przyjęcia*"
           required
         />
@@ -90,10 +110,16 @@ const FormQuotation = () => {
           required
         />
         <p className="formQuotation__info">* pole wymagane</p>
-        <LoadingButton value={"Wyślij"} type={"submit"} />
+        <LoadingButton loading={loading}>
+          Wyślij
+        </LoadingButton>
       </form>
       <div className="formQuotationArea__frame">
-        <img className="formQuotationArea__img" src={bcg2} alt="przykład ciast" />
+        <img
+          className="formQuotationArea__img"
+          src={bcg2}
+          alt="przykład ciast"
+        />
       </div>
     </div>
   );

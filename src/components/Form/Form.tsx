@@ -1,12 +1,18 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import bcg54 from "../../assets/bcg54.jpg";
 import "../Form/Form.scss";
 import LoadingButton from "../../helpers/LoadingButton/LoadingButton";
 
 const Form = () => {
-  const sendEmail = (e: any) => {
+  const [loading, setLoading] = useState<boolean>(false);
+  const [status, setStatus] = useState<boolean>(false);
+  console.log(loading, status);
+
+  const sendEmail = async (e: any) => {
     e.preventDefault();
+    setLoading(true);
+
     emailjs
       .sendForm(
         "service_8sjpl4f",
@@ -22,7 +28,14 @@ const Form = () => {
           console.log(error.text);
         }
       );
-    e.target.reset();
+   
+
+
+    setTimeout(() => {
+      setStatus(true);
+      e.target.reset();
+      setLoading(false);
+    }, 200);
   };
 
   return (
@@ -32,6 +45,10 @@ const Form = () => {
       </div>
       <form className="form" onSubmit={sendEmail}>
         <h3 className="form__heading">Formularz kontaktowy</h3>
+
+        {status ? (
+          <p className="alert">Twoja wiadomość została wysłana</p>
+        ) : null}
 
         <label htmlFor="name"></label>
         <input
@@ -73,7 +90,7 @@ const Form = () => {
           required
         />
         <p className="form__info">* pole wymagane</p>
-        <LoadingButton value={"Wyślij"} type={"submit"} />
+        <LoadingButton loading={loading}>Wyślij</LoadingButton>
       </form>
     </div>
   );

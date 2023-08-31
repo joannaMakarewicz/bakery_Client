@@ -1,17 +1,29 @@
 @import "../../helpers//variables";
+.alert {
+  background-color: transparent;
+  border:1px solid $beigeColor;
+  color:$mainBeige;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+  width: 100%;
+}
 .form {
   align-items: center;
   display: flex;
   flex-direction: column;
   padding: 3rem 16px;
+  width: 80%;
+  margin:0 auto;
   &__control {
     border: 0;
     border-radius: 0;
+    color:$fontColor;
     font-size: 1rem;
     outline-color: transparent;
     margin: 6px;
     padding: 6px;
-    width: 80%;
+    width: 100%;
     &--message {
       height: 8rem;
     }
@@ -25,7 +37,7 @@ font-size: 0.9rem;
   &__info {
     font-size: 0.8rem;
     text-align: left;
-    width:80%;
+    width:100%;
   }
 }
 

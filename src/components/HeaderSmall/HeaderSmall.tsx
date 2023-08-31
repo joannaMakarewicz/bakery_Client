@@ -7,17 +7,19 @@ type HeaderSmallProps = {
 
 const HeaderSmall = ({ backgroundImages }: HeaderSmallProps) => {
   return (
-    <div className="headerSmall">
-      {backgroundImages.map((el) => {
-        return (
-          <img
-            className="headerSmall__photo"
-            src={el}
-            alt="random cake"
-            key={el}
-          />
-        );
-      })}
+    <div className="headerSmallArea">
+      <div className="headerSmall">
+        {backgroundImages.map((el) => {
+          return (
+            <img
+              className="headerSmall__photo"
+              src={el}
+              alt="random cake"
+              key={el}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };

@@ -1,6 +1,5 @@
 
 .headerSmall {
-  background-color: #f1f1f1;
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 40vh;
@@ -31,4 +30,9 @@
     overflow:hidden;
     width: 100%;
   }
+}
+
+.headerSmallArea {
+  background-color: #f1f1f1;
+  overflow: hidden;
 }
