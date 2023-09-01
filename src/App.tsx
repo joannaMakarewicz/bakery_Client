@@ -34,12 +34,13 @@ function App() {
         <Routes>
           
           <Route path="/" element={<Home />} />
+          <Route path="/bakery" element={<Home />} />
           <Route path="/cakes" element={<Cakes />} />
           <Route path="/wedding" element={<Wedding />} />
           <Route path="/sweetTable" element={<SweetTable />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/quotation" element={<Quotation />} />
-          <Route path="/bakery" element={<Navigate to="/" />} />
+          {/* <Route path="/bakery" element={<Navigate to="/" />} /> */}
           {/* <Route end path="/" element={<Home />} /> */}
           {/* <Route path="*" element={<ErrorPage />} /> */}
         </Routes>
