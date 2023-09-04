@@ -18,7 +18,7 @@ information:{
 
 const MainContent = ({information}:MainContentProps) => {
 
-
+console.log(information.buttonLink)
   return (
 <section className="mainContent">
         <article className="special">
