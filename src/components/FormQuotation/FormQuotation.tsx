@@ -4,12 +4,10 @@ import emailjs from "@emailjs/browser";
 import bcg2 from "../../assets/bcg2.jpeg";
 import "../FormQuotation/FormQuotation.scss";
 
-
-
 const FormQuotation = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const [status, setStatus] = useState<boolean>(false);
-  console.log(loading, status)
+
   const makeQuotation = (e: any) => {
     e.preventDefault();
     setLoading(true);
@@ -39,16 +37,12 @@ const FormQuotation = () => {
     <div className="formQuotationArea">
       <form className="formQuotation" onSubmit={makeQuotation}>
         <div className="w-25 mx-auto contact__border" />
-        <h3 className="contact__heading">Wyceń swój wymarzony tort</h3>
+        <h3 className="formQuotation__heading">Wyceń swój wymarzony tort</h3>
         <div className="w-25 mx-auto contact__border mb-5" />
 
-        {status ?
-        (
+        {status ? (
           <p className="alert mb-5">Twoja wiadomość została wysłana</p>
-        )
-        :
-        null
-      }
+        ) : null}
 
         <label htmlFor="name"></label>
         <input
@@ -110,9 +104,7 @@ const FormQuotation = () => {
           required
         />
         <p className="formQuotation__info">* pole wymagane</p>
-        <LoadingButton loading={loading}>
-          Wyślij
-        </LoadingButton>
+        <LoadingButton loading={loading}>Wyślij</LoadingButton>
       </form>
       <div className="formQuotationArea__frame">
         <img

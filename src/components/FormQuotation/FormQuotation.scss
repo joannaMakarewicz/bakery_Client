@@ -1,8 +1,8 @@
 @import "../../helpers/variables";
 .alert {
   background-color: transparent;
-  border:1px solid $beigeColor;
-  color:$mainBeige;
+  border: 1px solid $beigeColor;
+  color: $mainBeige;
   font-size: 1rem;
   margin-bottom: 2rem;
   opacity: 0.8;
@@ -10,71 +10,69 @@
 }
 
 .formQuotation {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin:0 auto;
-    padding: 0 16px;
-    width: 80%;
-    &__control {
-      border: 0;
-      border-radius: 0;
-      color:$fontColor;
-      font-size: 1rem;
-      outline-color: transparent;
-      margin: 6px;
-      padding: 6px;
-      width:100%;
-      &--message {
-        height: 8rem;
-      }
-      &--file {
-  font-size: 0.9rem;
-      }
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 80%;
+  &__control {
+    border: 0;
+    border-radius: 0;
+    color: $fontColor;
+    font-size: 1rem;
+    outline-color: transparent;
+    margin: 6px;
+    padding: 6px;
+    width: 100%;
+    &--message {
+      height: 8rem;
     }
-    &__heading {
-      margin: 2rem 0;
-    }
-    &__info {
-      font-size: 0.8rem;
-      text-align: left;
-      width:100%;
+    &--file {
+      font-size: 0.9rem;
     }
   }
+  &__heading {
+    border-radius: 6px;
+    margin: 2rem 0;
+    padding: 6px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__info {
+    font-size: 0.8rem;
+    text-align: left;
+    width: 100%;
+  }
+}
 
 .formQuotationArea {
-    background-color: #f1f1f1;
-    display: grid;
-    padding:70px 0 2rem 0;
-    position: relative;
-    top:-70px;
-    @media screen and (min-width:1024px) {
-      grid-template-columns: 1fr 1fr;
-      padding:70px 10vw;
-    }
-
-    &__frame {
-      display: none;
-      @media screen and (min-width: 1024px) {
-        border: 1px solid $beigeColor;
-        display: block;
-        height: 80%;
-        margin: 0 auto;
-        padding:0.5rem;
-        width: 30vw;
-      }
-    }
-    &__img {
-      display: none;
-      @media screen and (min-width: 1024px) {
-        display: block;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-        width: 100%;
-      }
-
-  
+  background-color: #f1f1f1;
+  display: grid;
+  padding: 70px 0;
+  position: relative;
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+    padding: 70px 10vw;
+  }
+  &__frame {
+    display: none;
+    @media screen and (min-width: 1024px) {
+      border: 1px solid $beigeColor;
+      display: block;
+      margin: 0 auto;
+      padding: 0.5rem;
+      width: 30vw;
     }
   }
-  
+  &__img {
+    display: none;
+    @media screen and (min-width: 1024px) {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+    }
+  }
+}

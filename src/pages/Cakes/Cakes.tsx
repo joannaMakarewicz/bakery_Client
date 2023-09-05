@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ExtraContent from "../../components/ExtraContent/ExtraContent";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
@@ -22,11 +22,15 @@ import bcg26 from "../../assets/bcg26.jpg";
 import bcg29 from "../../assets/bcg29.jpg";
 import bcg27 from "../../assets/bcg27.jpg";
 import bcg3 from "../../assets/bcg3.jpeg";
+import bcg46 from "../../assets/bcg46.jpg";
 import MainContent from "../../components/MainContent/MainContent";
+import Button from "../../components/Button/Button";
 import "../Cakes/Cakes.scss";
+import FormQuotation from "../../components/FormQuotation/FormQuotation";
 
 const Cakes = () => {
   useWebsiteTitle("Torty");
+  const [info, setInfo] = useState<boolean>(false);
 
   const listOfImages: string[] = [
     bcg19,
@@ -45,10 +49,14 @@ const Cakes = () => {
     topHeading: "urodziny, chrzest, komunia",
     header: "Torty na każdą okazję",
     bcg: bcg3,
-    title:"spełniamy marzenia",
-    text:"Wyjątkowe i wymarzone, przygotowywane na indywidualne zamówienie. Stworzymy dla Ciebie niezapomniany tort na wesele, urodziny, komunię, chrzciny, wieczory panieńskie/kawalerskie, baby shawer i na każdą inną okazję.",
-    buttonName:"Wycena",
-    buttonLink:"/quotation"
+    title: "spełniamy marzenia",
+    text: "Wyjątkowe i wymarzone, przygotowywane na indywidualne zamówienie. Stworzymy dla Ciebie niezapomniany tort na wesele, urodziny, komunię, chrzciny, wieczory panieńskie/kawalerskie, baby shawer i na każdą inną okazję.",
+    buttonName: "Wycena",
+    buttonLink: "/quotation",
+  };
+
+  const showInfo = () => {
+    setInfo(true);
   };
 
   return (
@@ -58,7 +66,45 @@ const Cakes = () => {
       <Arrow />
       <HeaderSmall backgroundImages={backgroundImages} />
 
-      <MainContent information={information} />
+      <section className="mainContent">
+        <article className="special">
+          <p className="special__content">{information.topHeading}</p>
+          <h1 className="special__heading">{information.header}</h1>
+        </article>
+        <article className="mainContent__content">
+          <div className="mainContent__content--frame">
+            <img src={information.bcg} alt="cakes" width={"100%"} />
+          </div>
+
+          <div className="mainContent__text">
+            <div className="mainContent__extra">
+              <span>{information.title}</span>
+            </div>
+            <p className="mainContent__description">{information.text}</p>
+            <div className="button" id="quotation">
+              <a
+                href="#quotation"
+                className="btn"
+                id="button__icon"
+                onClick={showInfo}
+              >
+                {information.buttonName}
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section className="cakesQuotation">
+        {info ? (
+          <>
+            <FormQuotation />
+            <div className="mainContent__frame">
+              <img className="mainContent__img" src={bcg46} alt="przykład ciast" />
+            </div>
+          </>
+        ) : null}
+      </section>
+
       <Gallery listOfImages={listOfImages} />
 
       <Footer />
