@@ -7,6 +7,15 @@
   &__description {
     text-align: justify;
   }
+  &__feedback {
+    background-color: red;
+    column-gap: 6px;
+    display:grid;
+    grid-template-columns: 1fr;
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
   &__heading {
     font-size: 1.5rem;
     letter-spacing: 1.5px;
@@ -29,4 +38,9 @@
       width: 80vw;
     }
   }
+}
+
+.test {
+  display: grid;
+ grid-template-columns: 1fr 1fr;
 }
