@@ -14,7 +14,7 @@ const Navlink = ({link, linkName}:NavlinkProps) => {
   return (
     <li className="mainNavbar__link">
       <NavLink
-        className={({ isActive }) => (isActive ? "active" : "inactive")}
+        className={({ isActive }) => (isActive ? "activeStatus" : "inactiveStatus")}
         to={link}
       >
         {linkName}

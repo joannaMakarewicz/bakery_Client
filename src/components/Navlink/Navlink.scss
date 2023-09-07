@@ -1,6 +1,6 @@
 @import "../../helpers//variables";
 
-.active {
+.activeStatus {
     color: $mainBeige;
     text-decoration:underline;
     text-decoration-style: dotted;
@@ -11,7 +11,7 @@
     }
   }
   
-  .inactive {
+  .inactiveStatus {
     color: $beigeColor;
     text-decoration: none;
   }
