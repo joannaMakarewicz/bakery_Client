@@ -30,15 +30,22 @@
     font-size: 1.2em;
     justify-content: center;
   }
+  &__opinion {
+    background-image: url("../../assets/bcg16__blurxxl.png");
+    background-size: cover;
+    padding: 3rem 6px;
+  }
   &__section {
     margin: 0 auto;
     padding-top: 3rem;
     @media screen and (min-width: 768px) {
-      margin: 4rem auto;
+      margin: 0 auto;
       width: 80vw;
     }
+
   }
 }
+
 
 .test {
   display: grid;

@@ -15,16 +15,16 @@ const Main = () => {
       text: "Przepiękny wizualnie tort, udekorowany prawdziwymi ciętymi, kwiatami, ale przede wszystkim przepyszny. Zrównoważone smaki - przede wszystkim nie za słodki, był po prostu przepyszny. Zamówiłam tort inspirowany naturą o smaku cytrynowo - malinowym. Bardzo polecam!",
       data: "20 marca 2022r.",
     },
-    {
-      authorName: "Ola Baca",
-      text: "Przepiękny wizualnie tort, udekorowany prawdziwymi ciętymi, kwiatami, ale przede wszystkim przepyszny. Zrównoważone smaki - przede wszystkim nie za słodki, był po prostu przepyszny. Zamówiłam tort inspirowany naturą o smaku cytrynowo - malinowym. Bardzo polecam!",
-      data: "21marca 2022r.",
-    },
-    {
-      authorName: "Ola guca",
-      text: "Przepiękny wizualnie tort, udekorowany prawdziwymi ciętymi, kwiatami, ale przede wszystkim przepyszny. Zrównoważone smaki - przede wszystkim nie za słodki, był po prostu przepyszny. Zamówiłam tort inspirowany naturą o smaku cytrynowo - malinowym. Bardzo polecam!",
-      data: "22 marca 2022r.",
-    },
+    // {
+    //   authorName: "Ola Baca",
+    //   text: "Przepiękny wizualnie tort, udekorowany prawdziwymi ciętymi, kwiatami, ale przede wszystkim przepyszny. Zrównoważone smaki - przede wszystkim nie za słodki, był po prostu przepyszny. Zamówiłam tort inspirowany naturą o smaku cytrynowo - malinowym. Bardzo polecam!",
+    //   data: "21marca 2022r.",
+    // },
+    // {
+    //   authorName: "Ola guca",
+    //   text: "Przepiękny wizualnie tort, udekorowany prawdziwymi ciętymi, kwiatami, ale przede wszystkim przepyszny. Zrównoważone smaki - przede wszystkim nie za słodki, był po prostu przepyszny. Zamówiłam tort inspirowany naturą o smaku cytrynowo - malinowym. Bardzo polecam!",
+    //   data: "22 marca 2022r.",
+    // },
     {
       authorName: "Ola Baca",
       text: "Przepiękny wizualnie tort, udekorowany prawdziwymi ciętymi, kwiatami, ale przede wszystkim przepyszny. Zrównoważone smaki - przede wszystkim nie za słodki, był po prostu przepyszny. Zamówiłam tort inspirowany naturą o smaku cytrynowo - malinowym. Bardzo polecam!",
@@ -35,7 +35,7 @@ const Main = () => {
     <main className="main pb-5">
       <Arrow />
       <Header />
-      <section className="main__section">
+      <article className="main__section">
         <div className="w-25 mx-auto my-3 main__border" />
         <h1 className="main__heading">
           CHODŹ NA CIACHO – ZACHWYCAJĄCE WYPIEKI NA KAŻDĄ OKAZJĘ
@@ -50,8 +50,12 @@ const Main = () => {
           składnikach i autorskich przepisach. Smak, jakość i wygląd idą u nas w
           parze!
         </p>
+        </article>
 
-        <Carousel>
+        <article className="main__opinion">
+          <h2>Opinie naszych Klientów</h2>
+          <div className="main__section">
+          <Carousel>
           {opinions.map((opinion) => {
             return (
               <Carousel.Item>
@@ -65,7 +69,10 @@ const Main = () => {
             );
           })}
         </Carousel>
+          </div>
 
+        </article>
+        <article className="main__section">
         <p className="main__description p-1 pb-5 m-3 mt-0">
           Miłość do słodkości, rękodzieła i wszystkiego co piękne w naturze
           przejawia się w tym, co tworzymy. Smak, jakość i wygląd to podstawowe
@@ -77,7 +84,7 @@ const Main = () => {
         </p>
 
         <Offer />
-      </section>
+      </article>
     </main>
   );
 };
