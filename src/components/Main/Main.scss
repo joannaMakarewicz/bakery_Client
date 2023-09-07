@@ -8,6 +8,9 @@
     text-align: justify;
     margin:0 1rem 1rem;
     padding:3rem 0.25rem 0.5rem;
+    &--2 {
+      padding: 6px 6px 2rem;
+    }
   }
   &__feedback {
     background-color: red;
@@ -41,8 +44,11 @@
     margin: 0 auto;
     padding-top: 3rem;
     @media screen and (min-width: 768px) {
-      margin: 0 auto;
+      margin: 5rem auto;
       width: 80vw;
+    }
+    &--2 {
+      padding-top: 0;
     }
 
   }

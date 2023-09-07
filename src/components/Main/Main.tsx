@@ -72,8 +72,8 @@ const Main = () => {
           </div>
 
         </article>
-        <article className="main__section">
-        <p className="main__description">
+        <article className="main__section main__section--2">
+        <p className="main__description main__description--2">
           Miłość do słodkości, rękodzieła i wszystkiego co piękne w naturze
           przejawia się w tym, co tworzymy. Smak, jakość i wygląd to podstawowe
           kryteria, którymi kierujemy się przy tworzeniu naszych słodkości.
