@@ -41,7 +41,7 @@ const Main = () => {
           CHODŹ NA CIACHO – ZACHWYCAJĄCE WYPIEKI NA KAŻDĄ OKAZJĘ
         </h1>
         <div className="w-25 mx-auto my-3 main__border" />
-        <p className="main__description p-1 pt-5 pb-2 m-3 mt-0">
+        <p className="main__description">
           U nas powstają wyjątkowe artystyczne torty, ciasta i ciasteczka
           tworzone z ogromną pasją i zaangażowaniem w każdy szczegół. Magia
           naszych wypieków przejawia się w niebanalnym wyglądzie i wyjątkowym
@@ -73,7 +73,7 @@ const Main = () => {
 
         </article>
         <article className="main__section">
-        <p className="main__description p-1 pb-5 m-3 mt-0">
+        <p className="main__description">
           Miłość do słodkości, rękodzieła i wszystkiego co piękne w naturze
           przejawia się w tym, co tworzymy. Smak, jakość i wygląd to podstawowe
           kryteria, którymi kierujemy się przy tworzeniu naszych słodkości.
