@@ -1,13 +1,16 @@
 @import "../../helpers/variables";
 
 .feedback {
-//   min-width: 30vw;
-//   max-width: 200px;
-
+background-color: transparent;
+border: none;
+&__data {
+  font-size: 1.1rem;
+}
   &__text {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-style: italic;
     line-height: 1.5rem;
     margin: 1rem 0;
+    padding: 0 10%;
   }
 }

@@ -4,38 +4,28 @@ import Offer from "./Offer/Offer";
 import Arrow from "../Arrow/Arrow";
 import "../Main/Main.scss";
 import Feedback from "../Feedback/Feedback";
-import bcg5 from "../../assets/bcg1.jpeg";
-import bcg6 from "../../assets/bcg2.jpeg";
-import bcg7 from "../../assets/bcg3.jpeg";
+import { AiFillStar } from "react-icons/ai";
 
 const Main = () => {
   const opinions = [
     {
       authorName: "Ola Baca",
       text: "Przepiękny wizualnie tort, udekorowany prawdziwymi ciętymi, kwiatami, ale przede wszystkim przepyszny. Zrównoważone smaki - przede wszystkim nie za słodki, był po prostu przepyszny. Zamówiłam tort inspirowany naturą o smaku cytrynowo - malinowym. Bardzo polecam!",
-      data: "20 marca 2022r.",
     },
-    // {
-    //   authorName: "Ola Baca",
-    //   text: "Przepiękny wizualnie tort, udekorowany prawdziwymi ciętymi, kwiatami, ale przede wszystkim przepyszny. Zrównoważone smaki - przede wszystkim nie za słodki, był po prostu przepyszny. Zamówiłam tort inspirowany naturą o smaku cytrynowo - malinowym. Bardzo polecam!",
-    //   data: "21marca 2022r.",
-    // },
-    // {
-    //   authorName: "Ola guca",
-    //   text: "Przepiękny wizualnie tort, udekorowany prawdziwymi ciętymi, kwiatami, ale przede wszystkim przepyszny. Zrównoważone smaki - przede wszystkim nie za słodki, był po prostu przepyszny. Zamówiłam tort inspirowany naturą o smaku cytrynowo - malinowym. Bardzo polecam!",
-    //   data: "22 marca 2022r.",
-    // },
     {
       authorName: "Ola Baca",
       text: "Przepiękny wizualnie tort, udekorowany prawdziwymi ciętymi, kwiatami, ale przede wszystkim przepyszny. Zrównoważone smaki - przede wszystkim nie za słodki, był po prostu przepyszny. Zamówiłam tort inspirowany naturą o smaku cytrynowo - malinowym. Bardzo polecam!",
-      data: "23 marca 2022r.",
+    },
+    {
+      authorName: "Ola guca",
+      text: "Przepiękny wizualnie tort, udekorowany prawdziwymi ciętymi, kwiatami, ale przede wszystkim przepyszny. Zrównoważone smaki - przede wszystkim nie za słodki, był po prostu przepyszny. Zamówiłam tort inspirowany naturą o smaku cytrynowo - malinowym. Bardzo polecam!",
     },
   ];
   return (
     <main className="main pb-5">
       <Arrow />
       <Header />
-      <article className="main__section">
+      <article className="main__section main__section--1">
         <div className="w-25 mx-auto my-3 main__border" />
         <h1 className="main__heading">
           CHODŹ NA CIACHO – ZACHWYCAJĄCE WYPIEKI NA KAŻDĄ OKAZJĘ
@@ -50,29 +40,48 @@ const Main = () => {
           składnikach i autorskich przepisach. Smak, jakość i wygląd idą u nas w
           parze!
         </p>
-        </article>
+      </article>
 
-        <article className="main__opinion">
-          <h2>Opinie naszych Klientów</h2>
-          <div className="main__section main__section--1">
-          <Carousel>
-          {opinions.map((opinion) => {
-            return (
-              <Carousel.Item>
+      <article className="main__opinion">
+        <div>
+          <AiFillStar className="star me-2" />
+          <AiFillStar className="star me-2" />
+          <AiFillStar className="star me-2" />
+        </div>
+        <h2>Opinie naszych Klientów</h2>
+        <div>
+          <AiFillStar className="star me-2" />
+          <AiFillStar className="star me-2" />
+          <AiFillStar className="star me-2" />
+        </div>
+        <div className="main__section">
+          <Carousel className="myOwnCarousel">
+            {opinions.map((opinion) => {
+              return (
+                <Carousel.Item>
+                  <Feedback
+                    authorName={opinion.authorName}
+                    text={opinion.text}
+                    key={Math.random()}
+                  />
+                </Carousel.Item>
+              );
+            })}
+          </Carousel>
+          <div className="noCarousel">
+            {opinions.map((opinion) => {
+              return (
                 <Feedback
                   authorName={opinion.authorName}
                   text={opinion.text}
-                  data={opinion.data}
                   key={Math.random()}
                 />
-              </Carousel.Item>
-            );
-          })}
-        </Carousel>
+              );
+            })}
           </div>
-
-        </article>
-        <article className="main__section main__section--2">
+        </div>
+      </article>
+      <article className="main__section main__section--2">
         <p className="main__description main__description--2">
           Miłość do słodkości, rękodzieła i wszystkiego co piękne w naturze
           przejawia się w tym, co tworzymy. Smak, jakość i wygląd to podstawowe

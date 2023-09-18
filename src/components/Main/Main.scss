@@ -6,14 +6,10 @@
   }
   &__description {
     text-align: justify;
-    margin: 0 1rem 1rem;
-    padding: 3rem 0.25rem 0.5rem;
-    &--2 {
-      padding: 6px 6px 2rem;
-    }
+    margin: 1rem;
+    padding: 3rem 0.25rem 2rem;
   }
   &__feedback {
-    background-color: red;
     column-gap: 6px;
     display: grid;
     grid-template-columns: 1fr;
@@ -36,23 +32,23 @@
     justify-content: center;
   }
   &__opinion {
-    // background-image: url("../../assets/bcg16__blurxxl.png");
-    // background-size: cover;
-    background-color: red;
-    padding: 3rem 6px;
+    background-image: url("../../assets/bcg16__blurxxl.png");
+    background-size: cover;
+    background-color: $beigeColor;
+    padding: 5rem 6px;
+    & h2 {
+      font-size: 1.8rem;
+      margin: 12px 0;
+      text-transform: uppercase;
+    }
   }
   &__section {
     margin: 0 auto;
-    padding-top: 3rem;
-    @media screen and (min-width: 768px) {
-      margin: 5rem auto;
-      width: 80vw;
-    }
+    padding: 3rem 5% 0;
+
     &--1 {
-      margin: 0 auto;
-      padding: 3rem 0.25rem 0.5rem;
       @media screen and (min-width: 768px) {
-        width: 50%;
+        margin-top:5rem;
       }
     }
     &--2 {
@@ -64,4 +60,22 @@
 .test {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.star {
+  color: $mainBeige;
+}
+
+.myOwnCarousel {
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.noCarousel {
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
