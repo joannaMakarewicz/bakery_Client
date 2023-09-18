@@ -9,14 +9,12 @@ import "../Navbar/Navbar.scss";
 const Navbar = () => {
   const [active, setActive] = useState<boolean>(false);
 
-
   const showMenu = () => {
     setActive(!active);
   };
 
-
   return (
-    <nav className="nav">
+    <nav className={active ? "nav nav__open" : "nav"}>
       <Link to="/">
         <img className="nav__logo" src={logo} alt="chodz na ciacho" />
       </Link>
@@ -28,11 +26,11 @@ const Navbar = () => {
             : "nav__list text-center m-0 p-0"
         }
       >
-        <Navlink linkName="O nas" link="/"/>
+        <Navlink linkName="O nas" link="/" />
         <Navlink linkName="Torty" link="/cakes" />
         <Navlink linkName="Wesela" link="/wedding" />
         <Navlink linkName="Słodki stół" link="/sweetTable" />
-        <Navlink linkName="Kontakt" link="/contact"/>
+        <Navlink linkName="Kontakt" link="/contact" />
       </ul>
       <button
         className={

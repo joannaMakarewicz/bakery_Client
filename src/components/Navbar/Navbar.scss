@@ -30,7 +30,7 @@
     &--close {
       color: $beigeColor;
       transition: 1s ease;
-      z-index: 5;
+      z-index: 10;
       &:hover {
         color: $mainBeige;
       }
@@ -65,7 +65,7 @@
       top: -6vh;
       left: 0;
       transition: 1s ease;
-      z-index: 4;
+      z-index: 6;
       & li :hover {
         color: $mainBeige;
       }
@@ -84,5 +84,8 @@
   &__logo {
     width: 90px;
     height: 90px;
+  }
+  &__open {
+    z-index: 7;
   }
 }
