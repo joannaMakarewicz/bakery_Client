@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import ExtraContent from "../../components/ExtraContent/ExtraContent";
 import Navbar from "../../components/Navbar/Navbar";
 import Form from "../../components/Form/Form";
@@ -25,6 +25,9 @@ const Contact = () => {
     bcg45
   ]
 
+  useEffect (()=> {
+    window.scrollTo(0,0)
+  }, [])
 
   return (
     <>

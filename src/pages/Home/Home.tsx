@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect} from "react";
 import ExtraContent from "../../components/ExtraContent/ExtraContent";
 import Navbar from "../../components/Navbar/Navbar";
 import Main from "../../components/Main/Main";
@@ -8,7 +8,12 @@ import "../Home/Home.scss";
 
 
 const Home = () => {
-  useWebsiteTitle("Strona główna")
+  useWebsiteTitle("Strona główna");
+
+  useEffect (()=> {
+    window.scrollTo(0,0)
+  }, [])
+  
   return (
     <>
       <ExtraContent />

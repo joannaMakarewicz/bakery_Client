@@ -54,7 +54,7 @@ const Main = () => {
 
         <article className="main__opinion">
           <h2>Opinie naszych Klientów</h2>
-          <div className="main__section">
+          <div className="main__section main__section--1">
           <Carousel>
           {opinions.map((opinion) => {
             return (

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import ExtraContent from '../../components/ExtraContent/ExtraContent';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
@@ -13,7 +13,6 @@ import bcg53 from "../../assets/bcg53.jpg";
 import bcg54 from "../../assets/bcg54.jpg";
 import bcg3 from "../../assets/bcg3.jpeg";
 import HeaderSmall from '../../components/HeaderSmall/HeaderSmall';
-import Button from '../../components/Button/Button';
 import "../Wedding/Wedding.scss";
 import MainContent from '../../components/MainContent/MainContent';
 
@@ -42,6 +41,10 @@ const Wedding = () => {
     buttonName:"Zapytaj o ofertę",
     buttonLink:"/contact"
   };
+  
+  useEffect (()=> {
+    window.scrollTo(0,0)
+  }, [])
 
   return (
     <>

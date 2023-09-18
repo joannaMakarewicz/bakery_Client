@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ExtraContent from "../../components/ExtraContent/ExtraContent";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
@@ -30,6 +30,8 @@ import FormQuotation from "../../components/FormQuotation/FormQuotation";
 
 const Cakes = () => {
   useWebsiteTitle("Torty");
+
+
   const [info, setInfo] = useState<boolean>(false);
 
   const listOfImages: string[] = [
@@ -58,6 +60,10 @@ const Cakes = () => {
   const showInfo = () => {
     setInfo(true);
   };
+
+  useEffect (()=> {
+    window.scrollTo(0,0)
+  }, [])
 
   return (
     <>
