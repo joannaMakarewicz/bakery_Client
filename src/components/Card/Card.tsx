@@ -11,6 +11,7 @@ type CardProps = {
 const Card = ({ photo, text, name }: CardProps) => {
   return (
     <>
+    <Link to={`/${name}`}>
       <figure className="myCard">
         <div className="myCard__img card rounded-0">
           <img className="card-img-top rounded-0" src={photo} alt={name} />
@@ -22,8 +23,9 @@ const Card = ({ photo, text, name }: CardProps) => {
             completely pointless.
           </p>
         </figcaption>
-        <Link to={`/${name}`}/>
+        
       </figure>
+      </Link>
     </>
   );
 };
