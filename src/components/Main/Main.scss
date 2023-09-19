@@ -37,8 +37,9 @@
     background-color: $beigeColor;
     padding: 5rem 6px;
     & h2 {
+      color:$mainBeige;
       font-size: 1.8rem;
-      margin: 12px 0;
+      margin: 12px 6px;
       text-transform: uppercase;
     }
   }
@@ -63,7 +64,8 @@
 }
 
 .star {
-  color: $mainBeige;
+  color: $fontColor;
+  opacity: 0.8;
 }
 
 .myOwnCarousel {
