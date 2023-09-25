@@ -1,7 +1,7 @@
 {
   "name": "bakery",
   "version": "0.1.0",
-  "homepage": "https://joannamakarewicz.github.io/bakery",
+  "homepage": "https://joannamakarewicz.github.io/bakery_Client/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
