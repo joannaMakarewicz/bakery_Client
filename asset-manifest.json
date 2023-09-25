@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bakery_Client/static/css/main.54a33353.css",
-    "main.js": "/bakery_Client/static/js/main.e97cf1db.js",
+    "main.js": "/bakery_Client/static/js/main.47cc6568.js",
     "static/js/787.b2a56feb.chunk.js": "/bakery_Client/static/js/787.b2a56feb.chunk.js",
     "static/media/bcg16__blurxxl.png": "/bakery_Client/static/media/bcg16__blurxxl.d6e5c779d5cbd27da28c.png",
     "static/media/bcg16_blur.png": "/bakery_Client/static/media/bcg16_blur.abf12ba324eb7935ca45.png",
@@ -40,11 +40,11 @@
     "static/media/bcg26.jpg": "/bakery_Client/static/media/bcg26.677faec6c61ff6e6a217.jpg",
     "index.html": "/bakery_Client/index.html",
     "main.54a33353.css.map": "/bakery_Client/static/css/main.54a33353.css.map",
-    "main.e97cf1db.js.map": "/bakery_Client/static/js/main.e97cf1db.js.map",
+    "main.47cc6568.js.map": "/bakery_Client/static/js/main.47cc6568.js.map",
     "787.b2a56feb.chunk.js.map": "/bakery_Client/static/js/787.b2a56feb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.54a33353.css",
-    "static/js/main.e97cf1db.js"
+    "static/js/main.47cc6568.js"
   ]
 }
