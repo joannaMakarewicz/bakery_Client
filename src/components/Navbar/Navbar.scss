@@ -2,11 +2,11 @@
 .nav {
   align-items: center;
   background-color: #fff;
-  box-shadow: 0 4px 8px 0 rgba(41,51,65,.15);
+  box-shadow: 0 4px 8px 0 rgba(41, 51, 65, 0.15);
   display: flex;
   justify-content: space-between;
-  position:fixed;
-  top:0;
+  position: fixed;
+  top: 0;
   width: 100%;
   z-index: 4;
   &__hamburger {
@@ -36,35 +36,35 @@
     }
   }
   &__list {
+    list-style-type: none;
     display: block;
     position: absolute;
     height: 100%;
     width: 100%;
-    left: -100%;
-    margin:0;
+    margin: 0;
     padding: 0 16px 0 0;
+    left: -100%;
     transition: 1s ease;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    justify-content: center;
+    line-height: 3em;
+    margin: 0;
+    padding: 0;
     @media screen and (min-width: 768px) {
       align-items: center;
       display: flex;
       list-style-type: none;
       position: static;
-      width:auto;
+      width: auto;
     }
     &--open {
-      list-style-type: none;
       background-color: $darkBeige;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      font-size: large;
       height: 100vh;
-      justify-content: center;
-      line-height: 3em;
-      margin: 0;
-      padding: 0;
-      top: 0;
       left: 0;
+      top:0;
       transition: 1s ease;
       z-index: 6;
       & li :hover {
@@ -76,8 +76,8 @@
     margin-left: 16px;
     text-transform: uppercase;
     &:hover {
-      @media screen and (min-width:768px) {
-        color:$mainBeige;
+      @media screen and (min-width: 768px) {
+        color: $mainBeige;
       }
     }
   }
