@@ -1,30 +1,30 @@
 import React, { useState } from "react";
 import "../Card/Card.scss";
 import { Link } from "react-router-dom";
+import { off } from "process";
 
 type CardProps = {
+offers: {
   photo: string;
-  text: string;
+  heading: string;
   name: string;
+  content: string;
+}
 };
 
-const Card = ({ photo, text, name }: CardProps) => {
+const Card = ({ offers }: CardProps) => {
   return (
     <>
-    <Link to={`/${name}`}>
-      <figure className="myCard">
-        <div className="myCard__img card rounded-0">
-          <img className="card-img-top rounded-0" src={photo} alt={name} />
-        </div>
-        <figcaption className="myCard__body">
-          <h3>{text.toUpperCase()}</h3>
-          <p>
-            Weekends don't count unless you spend them doing something
-            completely pointless.
-          </p>
-        </figcaption>
-        
-      </figure>
+      <Link to={`/${offers.name}`}>
+        <figure className="myCard">
+          <div className="myCard__img card rounded-0">
+            <img className="card-img-top rounded-0" src={offers.photo} alt={offers.name} />
+          </div>
+          <figcaption className="myCard__body">
+            <h3>{offers.heading.toUpperCase()}</h3>
+            <p>{offers.content}</p>
+          </figcaption>
+        </figure>
       </Link>
     </>
   );

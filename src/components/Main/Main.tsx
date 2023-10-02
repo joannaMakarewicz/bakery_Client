@@ -9,16 +9,16 @@ import { AiFillStar } from "react-icons/ai";
 const Main = () => {
   const opinions = [
     {
-      authorName: "Ola Baca",
+      authorName: "Ola B.",
       text: "Przepiękny wizualnie tort, udekorowany prawdziwymi ciętymi, kwiatami, ale przede wszystkim przepyszny. Zrównoważone smaki - przede wszystkim nie za słodki, był po prostu przepyszny. Zamówiłam tort inspirowany naturą o smaku cytrynowo - malinowym. Bardzo polecam!",
     },
     {
-      authorName: "Ola Baca",
-      text: "Przepiękny wizualnie tort, udekorowany prawdziwymi ciętymi, kwiatami, ale przede wszystkim przepyszny. Zrównoważone smaki - przede wszystkim nie za słodki, był po prostu przepyszny. Zamówiłam tort inspirowany naturą o smaku cytrynowo - malinowym. Bardzo polecam!",
+      authorName: "Weronika K.",
+      text: "Zamówiłam tort i pasujące babeczki na baby shower. Wszystko wyglądało obłędnie i do tego super w smaku. Napewno skorzystam jeszcze nie raz. Zdecydowanie polecam!",
     },
     {
-      authorName: "Ola guca",
-      text: "Przepiękny wizualnie tort, udekorowany prawdziwymi ciętymi, kwiatami, ale przede wszystkim przepyszny. Zrównoważone smaki - przede wszystkim nie za słodki, był po prostu przepyszny. Zamówiłam tort inspirowany naturą o smaku cytrynowo - malinowym. Bardzo polecam!",
+      authorName: "Monika M.",
+      text: "Z całego serca polecam🥰 Słodki stół cudny, zrobiony z pasją i starannością o wszystkie detal. Lepiej niż sobie wyobrażałam. No i oczywiście słodkości przepyszne. Kontakt z Panią bardzo dobry 😊 Goście również byli zachwyceni.😊Jescze raz bardzo dziękujemy🥰",
     },
   ];
   return (
