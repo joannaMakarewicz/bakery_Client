@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross1 } from "react-icons/rx";
 import logo from "../../assets/logo.jpg";
+import ExtraContent from "../ExtraContent/ExtraContent";
 import "../Navbar/Navbar.scss";
 
 const Navbar = () => {
@@ -15,6 +16,7 @@ const Navbar = () => {
 
   return (
     <nav className={active ? "nav nav__open" : "nav"}>
+       <ExtraContent />
       <Link to="/">
         <img className="nav__logo" src={logo} alt="chodz na ciacho" />
       </Link>
@@ -22,8 +24,8 @@ const Navbar = () => {
       <ul
         className={
           active
-            ? "nav__list nav__list--open text-center m-0 p-0"
-            : "nav__list text-center m-0 p-0"
+            ? "nav__list nav__list--open text-center"
+            : "nav__list text-center"
         }
       >
         <Navlink linkName="O nas" link="/" />

@@ -1,6 +1,9 @@
 @import "../../helpers//variables";
 .main {
-  margin-top: 130px;
+  margin-top: 75px;
+  @media screen and (min-width: 1024x) {
+    margin-top: 120px;
+  }
   &__border {
     border-top: 2px solid $mainBeige;
   }

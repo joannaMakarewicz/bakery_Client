@@ -16,7 +16,6 @@ const Home = () => {
   
   return (
     <>
-      <ExtraContent />
       <Navbar />
       <Main />
       <Footer />
