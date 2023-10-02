@@ -1,8 +1,8 @@
 import React from 'react';
 import Card from '../../Card/Card';
-import bcg7 from "../../../assets/bcg7.jpg";
+import bcg7 from "../../../assets/offerCakes.jpeg";
 import bcg8 from "../../../assets/bcg8.jpg";
-import bcg23 from "../../../assets/bcg23.jpeg";
+import bcg23 from "../../../assets/offerWedding.jpeg";
 
 import "../Offer/Offer.scss";
 

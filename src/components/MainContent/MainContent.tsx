@@ -25,9 +25,6 @@ const MainContent = ({information}:MainContentProps) => {
           <h1 className="special__heading">{information.header}</h1>
         </article>
         <article className="mainContent__content">
-          <div className="mainContent__content--frame">
-            <img src={information.bcg} alt="cakes" width={"100%"} />
-          </div>
 
           <div className="mainContent__text">
             <div className="mainContent__extra">

@@ -1,10 +1,10 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import bcg24 from "../../../assets/bcg24.jpeg";
-import bcg17 from "../../../assets/bcg17.jpeg";
-import bcg10 from "../../../assets/bcg10.jpeg";
-import bcg30 from "../../../assets/bcg30.jpg";
-import bcg28 from "../../../assets/bcg28.jpg";
+import bcg17 from "../../../assets/thirdSlide.jpeg";
+import bcg10 from "../../../assets/secondSlide.jpeg";
+import bcg30 from "../../../assets/headerRight.jpeg";
+import bcg28 from "../../../assets/headerLeft.jpeg";
 import "../Header/Header.scss";
 
 const Header = () => {
@@ -30,7 +30,7 @@ const Header = () => {
             </div>
           </Carousel.Item>
           <Carousel.Item>
-            <img className="header__img w-100" src={bcg17} alt="Third slide" />
+            <img className="header__img w-100" src={bcg17} alt="Tort czarny z kobietą i czerwonymi różami" />
           </Carousel.Item>
         </Carousel>
         <img

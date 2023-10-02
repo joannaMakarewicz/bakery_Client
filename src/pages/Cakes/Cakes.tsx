@@ -19,8 +19,9 @@ import bcg35 from "../../assets/bcg35.jpg";
 import bcg24 from "../../assets/bcg21.jpeg";
 import bcg31 from "../../assets/bcg31.jpg";
 import bcg26 from "../../assets/bcg26.jpg";
-import bcg29 from "../../assets/bcg29.jpg";
-import bcg27 from "../../assets/bcg27.jpg";
+import cakesLeft from "../../assets/cakesLeft.jpeg";
+import cakesMiddle from "../../assets/cakesMiddle.jpeg";
+import cakesRight from "../../assets/cakesRight.jpeg";
 import bcg3 from "../../assets/bcg3.jpeg";
 import bcg46 from "../../assets/bcg46.jpg";
 import MainContent from "../../components/MainContent/MainContent";
@@ -45,12 +46,11 @@ const Cakes = () => {
     bcg28,
   ];
 
-  const backgroundImages = [bcg29, bcg27];
+  const backgroundImages = [cakesLeft, cakesMiddle, cakesRight];
 
   const information = {
     topHeading: "urodziny, chrzest, komunia",
     header: "Torty na każdą okazję",
-    bcg: bcg3,
     title: "spełniamy marzenia",
     text: "Wyjątkowe i wymarzone, przygotowywane na indywidualne zamówienie. Stworzymy dla Ciebie niezapomniany tort na wesele, urodziny, komunię, chrzciny, wieczory panieńskie/kawalerskie, baby shawer i na każdą inną okazję.",
     buttonName: "Wycena",
@@ -78,10 +78,6 @@ const Cakes = () => {
           <h1 className="special__heading">{information.header}</h1>
         </article>
         <article className="mainContent__content">
-          <div className="mainContent__content--frame">
-            <img src={information.bcg} alt="cakes" width={"100%"} />
-          </div>
-
           <div className="mainContent__text">
             <div className="mainContent__extra">
               <span>{information.title}</span>
