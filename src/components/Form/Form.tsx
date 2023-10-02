@@ -1,6 +1,6 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
-import bcg54 from "../../assets/bcg54.jpg";
+import formAreaImg from "../../assets/formAreaImg.jpg";
 import "../Form/Form.scss";
 import LoadingButton from "../../helpers/LoadingButton/LoadingButton";
 
@@ -41,7 +41,7 @@ const Form = () => {
   return (
     <div className="formArea">
       <div className="formArea__frame">
-        <img className="formArea__img" src={bcg54} alt="przykład ciast" />
+        <img className="formArea__img" src={formAreaImg} alt="przykład ciast" />
       </div>
       <form className="form" onSubmit={sendEmail}>
         <h3 className="form__heading">Formularz kontaktowy</h3>

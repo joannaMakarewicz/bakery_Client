@@ -12,7 +12,6 @@ import Wedding from "./pages/Wedding/Wedding";
 import SweetTable from "./pages/SweetTable/SweetTable";
 import MyDataContext from "./context/MyDataContext";
 import Contact from "./pages/Contact/Contact";
-import Quotation from "./pages/Quotation/Quotation";
 
 function App() {
   const myData = {
@@ -39,7 +38,6 @@ function App() {
           <Route path="/wedding" element={<Wedding />} />
           <Route path="/sweetTable" element={<SweetTable />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/quotation" element={<Quotation />} />
           {/* <Route path="/bakery" element={<Navigate to="/" />} /> */}
           {/* <Route end path="/" element={<Home />} /> */}
           {/* <Route path="*" element={<ErrorPage />} /> */}

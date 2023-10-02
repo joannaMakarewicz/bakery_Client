@@ -18,7 +18,6 @@ import wedding10 from "../../assets/wedding10.jpeg";
 import weddingLeft from "../../assets/weddingLeft.jpeg";
 import weddingMiddle from "../../assets/weddingMiddle.jpeg";
 import weddingRight from "../../assets/weddingRight.jpeg";
-import bcg3 from "../../assets/bcg3.jpeg";
 import HeaderSmall from '../../components/HeaderSmall/HeaderSmall';
 import "../Wedding/Wedding.scss";
 import MainContent from '../../components/MainContent/MainContent';
@@ -49,7 +48,6 @@ const Wedding = () => {
   const information = {
     topHeading: "magiczne, wyjątkowe",
     header: "Osłodzimy Twoje wesele",
-    bcg: bcg3,
     title:"spełniamy marzenia",
     text:"Osłodzimy Wasze przyjęcie weselne wyjątkowym tortem i słodkościami. Całość przygotowana w pięknej aranżacji.  Wypożyczenie pater, naczyń i dekoracji uwzględniona jest w indywidualnej ofercie.  Skontaktuj się z nami poprzez formularz a my zgodnie z Twoimi wyobrażeniami przygotujemy dla Ciebie wyjątkową ofertę.",
     buttonName:"Zapytaj o ofertę",

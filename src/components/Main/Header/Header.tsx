@@ -1,10 +1,10 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import bcg24 from "../../../assets/bcg24.jpeg";
-import bcg17 from "../../../assets/thirdSlide.jpeg";
-import bcg10 from "../../../assets/secondSlide.jpeg";
-import bcg30 from "../../../assets/headerRight.jpeg";
-import bcg28 from "../../../assets/headerLeft.jpeg";
+import firstSlide from "../../../assets/firstSlide.jpeg";
+import thirdSlide from "../../../assets/thirdSlide.jpeg";
+import secondSlide from "../../../assets/secondSlide.jpeg";
+import headerRight from "../../../assets/headerRight.jpeg";
+import headerLeft from "../../../assets/headerLeft.jpeg";
 import "../Header/Header.scss";
 
 const Header = () => {
@@ -13,29 +13,29 @@ const Header = () => {
       <div className="header__images">
         <img
           className="header__photo header__photo--1"
-          src={bcg28}
+          src={headerLeft}
           alt="Słodki stół"
         />
         <Carousel className="header__photo header__photo--2">
           <Carousel.Item>
-            <img className="header__img w-100" src={bcg24} alt="Tort biały z różowymi różami" />
+            <img className="header__img w-100" src={firstSlide} alt="Tort biały z różowymi różami" />
           </Carousel.Item>
           <Carousel.Item>
             <div className="d-flex">
               <img
                 className="header__img w-100"
-                src={bcg10}
+                src={secondSlide}
                 alt="Tort zielony na Chrzest Święty"
               />
             </div>
           </Carousel.Item>
           <Carousel.Item>
-            <img className="header__img w-100" src={bcg17} alt="Tort czarny z kobietą i czerwonymi różami" />
+            <img className="header__img w-100" src={thirdSlide} alt="Tort czarny z kobietą i czerwonymi różami" />
           </Carousel.Item>
         </Carousel>
         <img
           className="header__photo header__photo--3"
-          src={bcg30}
+          src={headerRight}
           alt="Słodki stół"
         />
       </div>

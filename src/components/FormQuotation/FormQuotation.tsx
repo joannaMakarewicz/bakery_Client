@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import LoadingButton from "../../helpers/LoadingButton/LoadingButton";
 import emailjs from "@emailjs/browser";
-import bcg2 from "../../assets/bcg2.jpeg";
+import formQuotationImg from "../../assets/formQuotationImg.jpeg";
 import "../FormQuotation/FormQuotation.scss";
 
 const FormQuotation = () => {
@@ -109,7 +109,7 @@ const FormQuotation = () => {
       <div className="formQuotationArea__frame">
         <img
           className="formQuotationArea__img"
-          src={bcg2}
+          src={formQuotationImg}
           alt="przykład ciast"
         />
       </div>

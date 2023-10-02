@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "../Card/Card.scss";
 import { Link } from "react-router-dom";
-import { off } from "process";
 
 type CardProps = {
 offers: {

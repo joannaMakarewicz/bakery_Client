@@ -2,14 +2,9 @@ import React, { useEffect, useState } from "react";
 import ExtraContent from "../../components/ExtraContent/ExtraContent";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
-// import { PiNumberCircleOneThin } from "react-icons/pi";
-// import { PiNumberCircleTwoThin } from "react-icons/pi";
-// import { PiNumberCircleThreeThin } from "react-icons/pi";
-
 import HeaderSmall from "../../components/HeaderSmall/HeaderSmall";
 import Arrow from "../../components/Arrow/Arrow";
 import Gallery from "../../components/Gallery/Gallery";
-
 import useWebsiteTitle from "../../hooks/useWebsiteTitle";
 import cakes1 from "../../assets/cakes1.jpeg";
 import cakes2 from "../../assets/cakes2.jpeg";
@@ -24,7 +19,7 @@ import cakes10 from "../../assets/cakes10.jpeg";
 import cakesLeft from "../../assets/cakesLeft.jpeg";
 import cakesMiddle from "../../assets/cakesMiddle.jpeg";
 import cakesRight from "../../assets/cakesRight.jpeg";
-import bcg46 from "../../assets/bcg46.jpg";
+import formQuotationImg2 from "../../assets/formQuotationImg2.jpg";
 import "../Cakes/Cakes.scss";
 import FormQuotation from "../../components/FormQuotation/FormQuotation";
 
@@ -102,7 +97,7 @@ const Cakes = () => {
           <>
             <FormQuotation />
             <div className="mainContent__frame">
-              <img className="mainContent__img" src={bcg46} alt="przykład ciast" />
+              <img className="mainContent__img" src={formQuotationImg2} alt="przykład ciast" />
             </div>
           </>
         ) : null}

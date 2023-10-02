@@ -1,27 +1,27 @@
 import React from "react";
 import Card from "../../Card/Card";
-import bcg7 from "../../../assets/offerCakes.jpeg";
-import bcg8 from "../../../assets/bcg8.jpg";
-import bcg23 from "../../../assets/offerWedding.jpeg";
+import offerCakes from "../../../assets/offerCakes.jpeg";
+import offerSweet from "../../../assets/offerSweet.jpg";
+import offerWedding from "../../../assets/offerWedding.jpeg";
 
 import "../Offer/Offer.scss";
 
 const Offer = () => {
   const offers = [
     {
-      photo: bcg7,
+      photo: offerCakes,
       heading: "Torty",
       name: "cakes",
-      content: "Wyjątkowe i wymarzone, przygotowywane na indywidualne zamówienie."
+      content: "Wyjoffer3ątkowe i wymarzone, przygotowywane na indywidualne zamówienie."
     },
     {
-      photo: bcg8,
+      photo: offerSweet,
       heading: "Słodkie stoły",
       name: "sweetTable",
       content: "Osłodzimy Wasze przyjęcie weselne wyjątkowym tortem i słodkościami.",
     },
     {
-      photo: bcg23,
+      photo: offerWedding,
       heading: "Wesela",
       name: "wedding",
       content: "Słodki stół w naszym wykonaniu to niezapomniana uczta smakowa i wizualna.",

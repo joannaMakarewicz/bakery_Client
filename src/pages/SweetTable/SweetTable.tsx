@@ -18,7 +18,6 @@ import sweetTable10 from "../../assets/sweetTable10.jpeg";
 import sweetTableLeft from "../../assets/sweetTableLeft.jpeg";
 import sweetTableMiddle from "../../assets/sweetTableMiddle.jpeg";
 import sweetTableRight from "../../assets/sweetTableRight.jpeg";
-import bcg3 from "../../assets/bcg3.jpeg";
 import MainContent from "../../components/MainContent/MainContent";
 import "../SweetTable/SweetTable.scss";
 import HeaderSmall from "../../components/HeaderSmall/HeaderSmall";
@@ -48,7 +47,6 @@ const SweetTable = () => {
   const information = {
     topHeading: "niepowtarzalne, wyjątkowe",
     header: "Słodkości dla każdego",
-    bcg: bcg3,
     title:"spełniamy marzenia",
     text:"Słodki stół w naszym wykonaniu to niezapomniana uczta smakowa i wizualna. Dbamy o każdy nawet najdrobniejszy szczegół przy tworzeniu tej niebananej, słodkiej oprawy Waszej uroczystości. Wszystko przygotujemy zgodnie z motywem przewodnim i kolorystyką przyjęcia. Nasz słodki stół może pojawić się na Waszym weselu, chrzcinach, urodzinach czy przy innej okazji i zachwycić Was i Waszych gości pięknem wykonania i wyjątkowym smakiem.",
     buttonName:"Zapytaj o ofertę",

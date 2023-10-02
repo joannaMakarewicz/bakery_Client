@@ -10,20 +10,19 @@ import "../Contact/Contact.scss";
 import MyDataContext from "../../context/MyDataContext";
 import useWebsiteTitle from "../../hooks/useWebsiteTitle";
 import Arrow from "../../components/Arrow/Arrow";
-import bcg52 from "../../assets/bcg52.jpg";
-import bcg45 from "../../assets/bcg45.jpg";
-import bcg30 from "../../assets/bcg30.jpg";
+import contact1 from "../../assets/contact1.jpg";
+import contact2 from "../../assets/contact2.jpg";
+import contact3 from "../../assets/contact3.jpg";
 import HeaderSmall from "../../components/HeaderSmall/HeaderSmall";
-import MainContent from "../../components/MainContent/MainContent";
 
 const Contact = () => {
   useWebsiteTitle('Kontakt');
   const contactData = useContext(MyDataContext);
 
   const backgroundImages = [
-    bcg52,
-    bcg30,
-    bcg45
+    contact1,
+    contact3,
+    contact2
   ]
 
   useEffect (()=> {
