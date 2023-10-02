@@ -29,7 +29,7 @@ const Offer = () => {
   ];
 
   return (
-    <article className="offer m-3 p-1">
+    <article className="offer">
       {offers.map((offer) => {
         return <Card offers={offer} key={offer.name}/>;
       })}

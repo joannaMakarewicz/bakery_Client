@@ -5,9 +5,9 @@
     border-top: 2px solid $mainBeige;
   }
   &__description {
-    text-align: justify;
+    text-align: left;
     margin: 1rem;
-    padding: 3rem 0.25rem 2rem;
+    padding: 4rem 0.25rem;
   }
   &__feedback {
     column-gap: 6px;
@@ -45,11 +45,11 @@
   }
   &__section {
     margin: 0 auto;
-    padding: 3rem 5% 0;
+    padding: 4rem 5% 0;
 
     &--1 {
       @media screen and (min-width: 768px) {
-        margin-top:5rem;
+        margin-top:6rem;
       }
     }
     &--2 {

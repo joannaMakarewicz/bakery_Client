@@ -1,6 +1,7 @@
 @import "../../helpers/variables";
 
 .myCard {
+  background-color: rgba(254,248,248,1);
   border: 1px solid #d8c097;
   padding: 0.5rem;
   overflow: hidden;
@@ -10,6 +11,7 @@
   text-decoration: none;
   line-height: 1.4em;
   font-size: 16px;
+  margin-bottom: 1rem;
   @media screen and (min-width: 1024px) {
     position: relative;
   }

@@ -58,22 +58,27 @@
       @media screen and (min-width:768px) {
         top: 15%;
         left: 6px;
+        max-height: 55%;
+        overflow: hidden;
         width: 250px;
       }
       @media screen and (min-width:1024px) {
         top: 15%;
         left: 6px;
         width: 300px;
+        max-height: 60%;
+        
       }
       @media screen and (min-width:1200px) {
         left:6px;
-        top: 20%;
+        max-height: 100%;
+        top: 19%;
         width: 324px;
       }
     }
     &--2 {
       border: 12px solid rgba(255, 255, 255, 1);
-      left:10vw;
+      left:7vw;
       top: 15vh;
       transform: scale(1, 1) translate(0px, 0px);
       width: 80vw;
@@ -81,18 +86,18 @@
       min-width: 230px;
       @media screen and (min-width:376px) {
         top:16vh;
-        left:10vw;
+        left:8vw;
         min-width: 290px;
         width: 80vw;
       }
       @media screen and (min-width:426px) {
-        top:16vh;
-        left:16vw;
+        top:13vh;
+        left:14vw;
         min-width: 290px;
         width: 70vw;
       }
       @media screen and (min-width:768px) {
-        top:19vh;
+        top:20vh;
         left: 170px;
         width: 412px;
       }
@@ -103,29 +108,33 @@
       }
       @media screen and (min-width:1200px) {
         left: 300px;
-        top: 9vh;
+        top: 10vh;
         width: 600px;
       }
     }
     &--3 {
-      right: -12px;
-      top:50%;
+      right: -5px;
+      top:45%;
       transform: scale(1, 1) translate(0px, 0px);
       width: 45vw;
       @media screen and (min-width:768px) {
-        right: 6px;
+        right: 0;
         top: 40%;
+        max-height: 55%;
+        overflow: hidden;
         width: 250px;
       }
       @media screen and (min-width:1024px) {
         right: 6px;
         top: 30%;
         width:300px ;
+        max-height: 60%;
+        overflow: hidden;
       }
       @media screen and (min-width:1200px) {
+        max-height: 100%;
         width: 324px;
-        top:35%;
-        width: 324px;
+        top:25%;
       }
     }
   }

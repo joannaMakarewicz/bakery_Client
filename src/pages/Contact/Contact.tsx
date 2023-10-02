@@ -12,7 +12,7 @@ import useWebsiteTitle from "../../hooks/useWebsiteTitle";
 import Arrow from "../../components/Arrow/Arrow";
 import bcg52 from "../../assets/bcg52.jpg";
 import bcg45 from "../../assets/bcg45.jpg";
-import bcg3 from "../../assets/bcg3.jpeg";
+import bcg30 from "../../assets/bcg30.jpg";
 import HeaderSmall from "../../components/HeaderSmall/HeaderSmall";
 import MainContent from "../../components/MainContent/MainContent";
 
@@ -22,6 +22,7 @@ const Contact = () => {
 
   const backgroundImages = [
     bcg52,
+    bcg30,
     bcg45
   ]
 

@@ -5,6 +5,7 @@ import { BsInstagram } from "react-icons/bs";
 import { FaLocationDot } from "react-icons/fa6";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdAlternateEmail } from "react-icons/md";
+import { LiaCopyrightSolid } from "react-icons/lia"
 import "../Footer/Footer.scss";
 import MyDataContext from "../../context/MyDataContext";
 
@@ -69,7 +70,7 @@ const Footer = () => {
               </div>
             </div>
           </section>
-          <div className="footer__author">makaDev</div>
+          <div className="footer__author"><LiaCopyrightSolid/> 2023 Joanna Makarewicz</div>
         </footer>
       )}
     </MyDataContext.Consumer>
