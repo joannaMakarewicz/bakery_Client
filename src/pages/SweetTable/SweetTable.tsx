@@ -5,16 +5,19 @@ import Footer from "../../components/Footer/Footer";
 import useWebsiteTitle from "../../hooks/useWebsiteTitle";
 import Arrow from "../../components/Arrow/Arrow";
 import Gallery from "../../components/Gallery/Gallery";
-import bcg47 from "../../assets/bcg47.jpg";
-import bcg44 from "../../assets/bcg44.jpg";
-import bcg39 from "../../assets/bcg39.jpg";
-import bcg17 from "../../assets/bcg17.jpeg";
-import bcg30 from "../../assets/bcg30.jpg";
-import bcg32 from "../../assets/bcg32.jpg";
-import bcg38 from "../../assets/bcg38.jpg";
-import bcg34 from "../../assets/bcg34.jpg";
-import bcg46 from "../../assets/bcg46.jpg";
-import bcg51 from "../../assets/bcg51.jpg";
+import sweetTable1 from "../../assets/sweetTable1.jpeg";
+import sweetTable2 from "../../assets/sweetTable2.jpeg";
+import sweetTable3 from "../../assets/sweetTable3.jpeg";
+import sweetTable4 from "../../assets/sweetTable4.jpeg";
+import sweetTable5 from "../../assets/sweetTable5.jpeg";
+import sweetTable6 from "../../assets/sweetTable6.jpeg";
+import sweetTable7 from "../../assets/sweetTable7.jpeg";
+import sweetTable8 from "../../assets/sweetTable8.jpeg";
+import sweetTable9 from "../../assets/sweetTable9.jpeg";
+import sweetTable10 from "../../assets/sweetTable10.jpeg";
+import sweetTableLeft from "../../assets/sweetTableLeft.jpeg";
+import sweetTableMiddle from "../../assets/sweetTableMiddle.jpeg";
+import sweetTableRight from "../../assets/sweetTableRight.jpeg";
 import bcg3 from "../../assets/bcg3.jpeg";
 import MainContent from "../../components/MainContent/MainContent";
 import "../SweetTable/SweetTable.scss";
@@ -24,19 +27,22 @@ const SweetTable = () => {
   useWebsiteTitle("Słodki stół");
 
   const listOfImages:string[] = [
-    bcg34,
-    bcg47,
-    bcg39,
-    bcg44,
-    bcg30,
-    bcg38,
-    bcg17,
-    bcg32,
+    sweetTable1,
+    sweetTable2,
+    sweetTable3,
+    sweetTable4,
+    sweetTable5,
+    sweetTable6,
+    sweetTable7,
+    sweetTable8,
+    sweetTable9,
+    sweetTable10
   ];
 
   const backgroundImages = [
-    bcg46,
-    bcg51
+    sweetTableLeft,
+    sweetTableMiddle,
+    sweetTableRight
   ]
 
   const information = {

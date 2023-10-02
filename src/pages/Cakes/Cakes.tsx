@@ -11,21 +11,20 @@ import Arrow from "../../components/Arrow/Arrow";
 import Gallery from "../../components/Gallery/Gallery";
 
 import useWebsiteTitle from "../../hooks/useWebsiteTitle";
-import bcg19 from "../../assets/bcg19.jpeg";
-import bcg1 from "../../assets/bcg1.jpeg";
-import bcg2 from "../../assets/bcg2.jpeg";
-import bcg28 from "../../assets/bcg28.jpg";
-import bcg35 from "../../assets/bcg35.jpg";
-import bcg24 from "../../assets/bcg21.jpeg";
-import bcg31 from "../../assets/bcg31.jpg";
-import bcg26 from "../../assets/bcg26.jpg";
+import cakes1 from "../../assets/cakes1.jpeg";
+import cakes2 from "../../assets/cakes2.jpeg";
+import cakes3 from "../../assets/cakes3.jpeg";
+import cakes4 from "../../assets/cakes4.jpeg";
+import cakes5 from "../../assets/cakes5.jpeg";
+import cakes6 from "../../assets/cakes6.jpeg";
+import cakes7 from "../../assets/cakes7.jpeg";
+import cakes8 from "../../assets/cakes8.jpeg";
+import cakes9 from "../../assets/cakes9.jpeg";
+import cakes10 from "../../assets/cakes10.jpeg";
 import cakesLeft from "../../assets/cakesLeft.jpeg";
 import cakesMiddle from "../../assets/cakesMiddle.jpeg";
 import cakesRight from "../../assets/cakesRight.jpeg";
-import bcg3 from "../../assets/bcg3.jpeg";
 import bcg46 from "../../assets/bcg46.jpg";
-import MainContent from "../../components/MainContent/MainContent";
-import Button from "../../components/Button/Button";
 import "../Cakes/Cakes.scss";
 import FormQuotation from "../../components/FormQuotation/FormQuotation";
 
@@ -36,14 +35,16 @@ const Cakes = () => {
   const [info, setInfo] = useState<boolean>(false);
 
   const listOfImages: string[] = [
-    bcg19,
-    bcg31,
-    bcg1,
-    bcg2,
-    bcg24,
-    bcg35,
-    bcg26,
-    bcg28,
+    cakes1,
+    cakes2,
+    cakes3,
+    cakes4,
+    cakes5,
+    cakes6,
+    cakes7,
+    cakes8,
+    cakes9,
+    cakes10
   ];
 
   const backgroundImages = [cakesLeft, cakesMiddle, cakesRight];
