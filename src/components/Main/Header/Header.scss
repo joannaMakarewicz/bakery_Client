@@ -53,8 +53,9 @@
     &--1 {
       top: -16px;
       left: -12px;
+      max-height: 55%;
       transform: scale(1, 1) translate(0px, 0px);
-      width: 45vw;
+      max-width: 45vw;
       @media screen and (min-width:768px) {
         top: 15%;
         left: 6px;
@@ -78,7 +79,7 @@
     }
     &--2 {
       border: 12px solid rgba(255, 255, 255, 1);
-      left:7vw;
+      left:10vw;
       top: 15vh;
       transform: scale(1, 1) translate(0px, 0px);
       width: 80vw;
@@ -86,13 +87,12 @@
       min-width: 230px;
       @media screen and (min-width:376px) {
         top:16vh;
-        left:8vw;
         min-width: 290px;
         width: 80vw;
       }
       @media screen and (min-width:426px) {
         top:13vh;
-        left:14vw;
+        left:15vw;
         min-width: 290px;
         width: 70vw;
       }
