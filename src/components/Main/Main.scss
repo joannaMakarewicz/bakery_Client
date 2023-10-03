@@ -8,9 +8,13 @@
     border-top: 2px solid $mainBeige;
   }
   &__description {
+    font-size: 17px;
     text-align: justify;
     margin: 1rem;
     padding: 4rem 0.25rem;
+    @media screen and (min-width: 500px) {
+font-size: 20px;
+    }
   }
   &__feedback {
     column-gap: 6px;
@@ -38,7 +42,20 @@
     background-image: url("../../assets/bcg16__blurxxl.png");
     background-size: cover;
     background-color: $beigeColor;
+    height: 85vh;
     padding: 5rem 6px;
+    @media screen and (min-width: 425px) {
+      height: 70vh;
+    }
+    @media screen and (min-width: 768px) {
+      height: 60vh;
+    }
+    @media screen and (min-width: 1024px) {
+      height: 80vh;
+    }
+    @media screen and (min-width: 1200px) {
+      height: 70vh;
+    }
     & h2 {
       color:$mainBeige;
       font-size: 1.8rem;
@@ -72,6 +89,15 @@
 }
 
 .myOwnCarousel {
+  align-items:flex-start;
+  display: flex;
+  height: 35vh;
+  @media screen and (min-width: 425px) {
+    height: 25vh;
+  }
+  @media screen and (min-width: 768px) {
+    height: 15vh;
+  }
   @media screen and (min-width: 1024px) {
     display: none;
   }
@@ -83,4 +109,8 @@
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+ background-color:$fontColor;
 }
