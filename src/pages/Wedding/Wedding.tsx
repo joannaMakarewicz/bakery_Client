@@ -12,8 +12,6 @@ import wedding5 from "../../assets/wedding5.jpeg";
 import wedding6 from "../../assets/wedding6.jpeg";
 import wedding7 from "../../assets/wedding7.jpeg";
 import wedding8 from "../../assets/wedding8.jpeg";
-import wedding9 from "../../assets/wedding9.jpeg";
-import wedding10 from "../../assets/wedding10.jpeg";
 import weddingLeft from "../../assets/weddingLeft.jpeg";
 import weddingMiddle from "../../assets/weddingMiddle.jpeg";
 import weddingRight from "../../assets/weddingRight.jpeg";
@@ -33,9 +31,7 @@ const Wedding = () => {
     wedding5,
     wedding6,
     wedding7,
-    wedding8,
-    wedding9,
-    wedding10
+    wedding8
   ];
 
   const backgroundImages = [

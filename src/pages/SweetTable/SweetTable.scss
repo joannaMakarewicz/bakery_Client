@@ -24,23 +24,6 @@
       align-items: start;
       position: relative;
     }
-    &--frame {
-      background-image: url('../../assets/bcg17.jpeg');
-      background-size:cover;
-      background-position: center;
-      display: none;
-      height: 60vh;
-      @media screen and (min-width: 1024px) {
-        border: 1px solid #d8c097;
-        display: flex;
-        height: 70vh;
-        padding: 0.5rem;
-        width: 60%;
-      }
-      & img {
-        max-height: 600px;
-      }
-    }
   }
   &__description {
     font-size: 1rem;

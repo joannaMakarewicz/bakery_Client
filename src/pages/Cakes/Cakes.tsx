@@ -12,12 +12,10 @@ import cakes4 from "../../assets/cakes4.jpeg";
 import cakes5 from "../../assets/cakes5.jpeg";
 import cakes6 from "../../assets/cakes6.jpeg";
 import cakes7 from "../../assets/cakes7.jpeg";
-import cakes8 from "../../assets/cakes8.jpeg";
-import cakes9 from "../../assets/cakes9.jpeg";
-import cakes10 from "../../assets/cakes10.jpeg";
+import cakes8 from "../../assets/cakes8.jpg";
 import cakesLeft from "../../assets/cakesLeft.jpeg";
-import cakesMiddle from "../../assets/cakesMiddle.jpeg";
-import cakesRight from "../../assets/cakesRight.jpeg";
+import cakesRight from "../../assets/cakesMiddle.jpeg";
+import cakesMiddle from "../../assets/cakesRight.jpeg";
 import formQuotationImg2 from "../../assets/formQuotationImg2.jpg";
 import "../Cakes/Cakes.scss";
 import FormQuotation from "../../components/FormQuotation/FormQuotation";
@@ -36,9 +34,7 @@ const Cakes = () => {
     cakes5,
     cakes6,
     cakes7,
-    cakes8,
-    cakes9,
-    cakes10
+    cakes8
   ];
 
   const backgroundImages = [cakesLeft, cakesMiddle, cakesRight];

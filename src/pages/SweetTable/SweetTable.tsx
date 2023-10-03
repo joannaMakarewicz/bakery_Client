@@ -4,16 +4,14 @@ import Footer from "../../components/Footer/Footer";
 import useWebsiteTitle from "../../hooks/useWebsiteTitle";
 import Arrow from "../../components/Arrow/Arrow";
 import Gallery from "../../components/Gallery/Gallery";
-import sweetTable1 from "../../assets/sweetTable1.jpeg";
-import sweetTable2 from "../../assets/sweetTable2.jpeg";
-import sweetTable3 from "../../assets/sweetTable3.jpeg";
-import sweetTable4 from "../../assets/sweetTable4.jpeg";
 import sweetTable5 from "../../assets/sweetTable5.jpeg";
+import sweetTable3 from "../../assets/sweetTable3.jpeg";
+import sweetTable2 from "../../assets/sweetTable2.jpeg";
+import sweetTable4 from "../../assets/sweetTable4.jpeg";
 import sweetTable6 from "../../assets/sweetTable6.jpeg";
+import sweetTable1 from "../../assets/sweetTable1.jpeg";
 import sweetTable7 from "../../assets/sweetTable7.jpeg";
 import sweetTable8 from "../../assets/sweetTable8.jpeg";
-import sweetTable9 from "../../assets/sweetTable9.jpeg";
-import sweetTable10 from "../../assets/sweetTable10.jpeg";
 import sweetTableLeft from "../../assets/sweetTableLeft.jpeg";
 import sweetTableMiddle from "../../assets/sweetTableMiddle.jpeg";
 import sweetTableRight from "../../assets/sweetTableRight.jpeg";
@@ -33,8 +31,6 @@ const SweetTable = () => {
     sweetTable6,
     sweetTable7,
     sweetTable8,
-    sweetTable9,
-    sweetTable10
   ];
 
   const backgroundImages = [

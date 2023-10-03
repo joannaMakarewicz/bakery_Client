@@ -3,7 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 import firstSlide from "../../../assets/firstSlide.jpeg";
 import thirdSlide from "../../../assets/thirdSlide.jpeg";
 import secondSlide from "../../../assets/secondSlide.jpeg";
-import headerRight from "../../../assets/headerRight.jpeg";
+import headerRight from "../../../assets/headerRight.jpg";
 import headerLeft from "../../../assets/headerLeft.jpeg";
 import "../Header/Header.scss";
 
