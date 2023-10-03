@@ -1,5 +1,4 @@
 import React, { useEffect} from "react";
-import ExtraContent from "../../components/ExtraContent/ExtraContent";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import useWebsiteTitle from "../../hooks/useWebsiteTitle";
@@ -59,7 +58,6 @@ const SweetTable = () => {
 
   return (
     <>
-      <ExtraContent />
       <Navbar />
       <Arrow />
       <HeaderSmall backgroundImages={backgroundImages} />

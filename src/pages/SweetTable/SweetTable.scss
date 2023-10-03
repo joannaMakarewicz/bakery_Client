@@ -8,7 +8,7 @@
   &__button {
     background-color: $beigeColor;
     border: 0;
-    justify-content: end;
+    justify-content: flex-end;
     margin-top:24px;
     &:hover {
       background-color: #d7b881;

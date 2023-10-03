@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import ExtraContent from "../../components/ExtraContent/ExtraContent";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import HeaderSmall from "../../components/HeaderSmall/HeaderSmall";
@@ -63,7 +62,6 @@ const Cakes = () => {
 
   return (
     <>
-      <ExtraContent />
       <Navbar />
       <Arrow />
       <HeaderSmall backgroundImages={backgroundImages} />

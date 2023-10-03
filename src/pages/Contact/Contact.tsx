@@ -1,5 +1,4 @@
 import React, { useContext, useEffect } from "react";
-import ExtraContent from "../../components/ExtraContent/ExtraContent";
 import Navbar from "../../components/Navbar/Navbar";
 import Form from "../../components/Form/Form";
 import Footer from "../../components/Footer/Footer";
@@ -31,7 +30,6 @@ const Contact = () => {
 
   return (
     <>
-      <ExtraContent />
       <Navbar />
       <Arrow/>
       <HeaderSmall backgroundImages={backgroundImages}/>
