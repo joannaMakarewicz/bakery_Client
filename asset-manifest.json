@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bakery_Client/static/css/main.e54afe6b.css",
-    "main.js": "/bakery_Client/static/js/main.fc309f57.js",
+    "main.css": "/bakery_Client/static/css/main.8d10d481.css",
+    "main.js": "/bakery_Client/static/js/main.47418e47.js",
     "static/js/787.b2a56feb.chunk.js": "/bakery_Client/static/js/787.b2a56feb.chunk.js",
     "static/media/bcg16__blurxxl.png": "/bakery_Client/static/media/bcg16__blurxxl.d6e5c779d5cbd27da28c.png",
     "static/media/sweetTable1.jpeg": "/bakery_Client/static/media/sweetTable1.ae1cd4a0c22621308a2c.jpeg",
@@ -39,7 +39,6 @@
     "static/media/offerWedding.jpeg": "/bakery_Client/static/media/offerWedding.1c85fbac9f014f01f9e6.jpeg",
     "static/media/thirdSlide.jpeg": "/bakery_Client/static/media/thirdSlide.d3ab0ca0c808f171f235.jpeg",
     "static/media/sweetTable2.jpeg": "/bakery_Client/static/media/sweetTable2.fa1952210673294a9cc1.jpeg",
-    "static/media/bcg25.jpg": "/bakery_Client/static/media/bcg25.df581160c4e9b1011dbc.jpg",
     "static/media/weddingLeft.jpeg": "/bakery_Client/static/media/weddingLeft.e081979cc15bacc970ee.jpeg",
     "static/media/sweetTable4.jpeg": "/bakery_Client/static/media/sweetTable4.0ce9c431113120ad43bb.jpeg",
     "static/media/secondSlide.jpeg": "/bakery_Client/static/media/secondSlide.b468b0b500ab793566d4.jpeg",
@@ -55,12 +54,12 @@
     "static/media/logo.jpg": "/bakery_Client/static/media/logo.547a621d9d55ec97a3cb.jpg",
     "static/media/cakes8.jpg": "/bakery_Client/static/media/cakes8.97485740a63f971423cf.jpg",
     "index.html": "/bakery_Client/index.html",
-    "main.e54afe6b.css.map": "/bakery_Client/static/css/main.e54afe6b.css.map",
-    "main.fc309f57.js.map": "/bakery_Client/static/js/main.fc309f57.js.map",
+    "main.8d10d481.css.map": "/bakery_Client/static/css/main.8d10d481.css.map",
+    "main.47418e47.js.map": "/bakery_Client/static/js/main.47418e47.js.map",
     "787.b2a56feb.chunk.js.map": "/bakery_Client/static/js/787.b2a56feb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e54afe6b.css",
-    "static/js/main.fc309f57.js"
+    "static/css/main.8d10d481.css",
+    "static/js/main.47418e47.js"
   ]
 }
