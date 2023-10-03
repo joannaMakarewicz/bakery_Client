@@ -1,17 +1,6 @@
 @import "../../helpers/variables";
 
 .wedding {
-  &__bcg {
-    align-items: center;
-    background-image: url("../../assets/bcg25.jpg");
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    font-size: 3rem;
-    height: 10rem;
-    justify-content: center;
-    text-transform: uppercase;
-  }
   &__border {
     border-top: 1px solid $mainBeige;
   }

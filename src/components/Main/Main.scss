@@ -13,7 +13,7 @@
     margin: 1rem;
     padding: 4rem 0.25rem;
     @media screen and (min-width: 500px) {
-font-size: 20px;
+      font-size: 20px;
     }
   }
   &__feedback {
@@ -57,7 +57,7 @@ font-size: 20px;
       height: 70vh;
     }
     & h2 {
-      color:$mainBeige;
+      color: $mainBeige;
       font-size: 1.8rem;
       margin: 12px 6px;
       text-transform: uppercase;
@@ -69,7 +69,7 @@ font-size: 20px;
 
     &--1 {
       @media screen and (min-width: 768px) {
-        margin-top:6rem;
+        margin-top: 6rem;
       }
     }
     &--2 {
@@ -89,7 +89,7 @@ font-size: 20px;
 }
 
 .myOwnCarousel {
-  align-items:flex-start;
+  align-items: flex-start;
   display: flex;
   height: 35vh;
   @media screen and (min-width: 425px) {
@@ -106,11 +106,11 @@ font-size: 20px;
 .noCarousel {
   display: none;
   @media screen and (min-width: 1024px) {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
- background-color:$fontColor;
+  background-color: $fontColor;
 }
