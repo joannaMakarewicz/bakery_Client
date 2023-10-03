@@ -28,7 +28,7 @@ const Navbar = () => {
             : "nav__list text-center"
         }
       >
-        <Navlink linkName="O nas" link="/" />
+        <Navlink linkName="O nas" link="/bakery_Client" />
         <Navlink linkName="Torty" link="/cakes" />
         <Navlink linkName="Wesela" link="/wedding" />
         <Navlink linkName="Słodki stół" link="/sweetTable" />
