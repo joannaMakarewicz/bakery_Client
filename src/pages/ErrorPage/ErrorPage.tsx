@@ -1,13 +1,13 @@
 import React from 'react';
-import "../ErrorPage/ErrorPage.scss";
+import styles from "../ErrorPage/ErrorPage.module.scss";
 import { NavLink } from 'react-router-dom';
 
 const ErrorPage = () => {
   return (
-    <div className='error'>
+    <div className={styles.error}>
       <h1>404</h1>
       <p>Nie znaleziono takiej strony</p>
-      <NavLink className="error__button" to="/">Strona główna</NavLink>
+      <NavLink className={styles.error__button} to="/">Strona główna</NavLink>
     </div>
   )
 }

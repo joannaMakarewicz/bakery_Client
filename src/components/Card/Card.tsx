@@ -1,6 +1,6 @@
 import React from "react";
-import "../Card/Card.scss";
 import { Link } from "react-router-dom";
+import "../Card/Card.scss";
 
 type CardProps = {
 offers: {
@@ -15,7 +15,7 @@ const Card = ({ offers }: CardProps) => {
   return (
     <>
       <Link to={`/${offers.name}`}>
-        <div className="myCard">
+        <figure className="myCard">
           <div className="myCard__img card rounded-0">
             <img className="card-img-top rounded-0" src={offers.photo} alt={offers.name} />
           </div>
@@ -23,7 +23,7 @@ const Card = ({ offers }: CardProps) => {
             <h3>{offers.heading.toUpperCase()}</h3>
             <p>{offers.content}</p>
           </figcaption>
-        </div>
+        </figure>
       </Link>
     </>
   );

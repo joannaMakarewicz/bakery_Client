@@ -1,15 +1,15 @@
 @import "../../helpers/variables";
 
 .arrow {
-    bottom: 15px;
-    font-size: 3rem;
-    position: fixed;
-    right:16px;
-    z-index: 6;
-    &:hover {
-        color:$greenDark;
-    }
-    & a {
-        color:$mainBeige;
-    }
+  bottom: 15px;
+  font-size: 3rem;
+  position: fixed;
+  right: 16px;
+  z-index: 6;
+  &:hover {
+    color: $greenDark;
+  }
+  & a {
+    color: $mainBeige;
+  }
 }
