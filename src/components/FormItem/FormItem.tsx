@@ -10,6 +10,7 @@ type FormItemProps = {
   className: string;
   textarea: boolean;
   maxLength?: number;
+  min?:number
 };
 
 const FormItem = ({
@@ -21,6 +22,7 @@ const FormItem = ({
   textarea,
   type,
   maxLength,
+  min
 }: FormItemProps) => {
   return (
     <>

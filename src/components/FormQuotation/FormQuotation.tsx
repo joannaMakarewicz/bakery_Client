@@ -3,10 +3,69 @@ import LoadingButton from "../../helpers/LoadingButton/LoadingButton";
 import emailjs from "@emailjs/browser";
 import formQuotationImg from "../../assets/formQuotationImg.jpeg";
 import "../FormQuotation/FormQuotation.scss";
+import FormItem from "../FormItem/FormItem";
 
 const FormQuotation = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const [status, setStatus] = useState<boolean>(false);
+
+  const formQuotationContent = [
+    {
+      type: "text",
+      id: "name",
+      name: "name",
+      placeholder: "Imię i nazwisko *",
+      htmlFor: "name",
+      className:"formQuotation__control",
+      textarea:false
+    },
+    {
+      type: "email",
+      id: "email",
+      name: "email",
+      placeholder: "E-mail *",
+      htmlFor: "email",
+      className:"formQuotation__control",
+      textarea:false
+    },
+    {
+      type: "tel",
+      id: "phone",
+      name: "phone",
+      placeholder: "Telefon *",
+      htmlFor: "phone",
+      className:"formQuotation__control",
+      textarea:false
+    },
+    {
+      type: "number",
+      id: "guests",
+      name: "guests",
+      placeholder: "Liczba gości *",
+      htmlFor: "guests",
+      className:"formQuotation__control",
+      textarea:false,
+      min: 0
+    },
+    {
+      type: "text",
+      id: "type",
+      name: "type",
+      placeholder: "Rodzaj przyjęcia *",
+      htmlFor: "type",
+      className:"formQuotation__control",
+      textarea:false
+    },
+    {
+      id: "message",
+      name: "message",
+      placeholder: "Motyw, kolor lub ozdoby *",
+      htmlFor: "message",
+      className:"formQuotation__control formQuotation__control--message",
+      textarea:true,
+      maxLength:200
+    },
+  ]
 
   const makeQuotation = (e: any) => {
     e.preventDefault();
@@ -33,6 +92,7 @@ const FormQuotation = () => {
       setLoading(false);
     }, 200);
   };
+
   return (
     <div className="formQuotationArea">
       <form className="formQuotation" onSubmit={makeQuotation}>
@@ -44,65 +104,23 @@ const FormQuotation = () => {
           <p className="alert mb-5">Twoja wiadomość została wysłana</p>
         ) : null}
 
-        <label htmlFor="name"></label>
-        <input
-          type="text"
-          className="formQuotation__control"
-          id="name"
-          name="name"
-          aria-describedby="emailHelp"
-          placeholder="Imię i nazwisko *"
-          required
-        />
+        {formQuotationContent.map(item => {
+          return (
+            <FormItem
+            type={item.type}
+            id={item.id}
+            name={item.name}
+            placeholder={item.placeholder}
+            htmlFor={item.htmlFor}
+            key={item.name}
+            className={item.className}
+            maxLength={item.maxLength}
+            textarea={item.textarea}
+            min={item.min}/>
+          )
+        })}
 
-        <label htmlFor="email"></label>
-        <input
-          type="email"
-          className="formQuotation__control"
-          id="email"
-          name="email"
-          placeholder="Email *"
-          required
-        />
 
-        <label htmlFor="phone"></label>
-        <input
-          type="tel"
-          className="formQuotation__control"
-          id="phone"
-          name="phone"
-          placeholder="Telefon *"
-          required
-        />
-        <label htmlFor="guests"></label>
-        <input
-          type="number"
-          min="0"
-          className="formQuotation__control"
-          id="guests"
-          name="guests"
-          placeholder="Liczba gości *"
-          required
-        />
-
-        <label htmlFor="type"></label>
-        <input
-          type="text"
-          className="formQuotation__control"
-          id="type"
-          name="type"
-          placeholder="Rodzaj przyjęcia*"
-          required
-        />
-
-        <textarea
-          className="formQuotation__control formQuotation__control--message"
-          id="message"
-          name="message"
-          placeholder="Motyw, kolor lub ozdoby *"
-          maxLength={200}
-          required
-        />
         <p className="formQuotation__info">* pole wymagane</p>
         <LoadingButton loading={loading}>Wyślij</LoadingButton>
       </form>
