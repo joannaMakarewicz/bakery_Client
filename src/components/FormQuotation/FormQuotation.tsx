@@ -16,8 +16,8 @@ const FormQuotation = () => {
       name: "name",
       placeholder: "Imię i nazwisko *",
       htmlFor: "name",
-      className:"formQuotation__control",
-      textarea:false
+      className: "formQuotation__control",
+      textarea: false,
     },
     {
       type: "email",
@@ -25,8 +25,8 @@ const FormQuotation = () => {
       name: "email",
       placeholder: "E-mail *",
       htmlFor: "email",
-      className:"formQuotation__control",
-      textarea:false
+      className: "formQuotation__control",
+      textarea: false,
     },
     {
       type: "tel",
@@ -34,8 +34,8 @@ const FormQuotation = () => {
       name: "phone",
       placeholder: "Telefon *",
       htmlFor: "phone",
-      className:"formQuotation__control",
-      textarea:false
+      className: "formQuotation__control",
+      textarea: false,
     },
     {
       type: "number",
@@ -43,9 +43,9 @@ const FormQuotation = () => {
       name: "guests",
       placeholder: "Liczba gości *",
       htmlFor: "guests",
-      className:"formQuotation__control",
-      textarea:false,
-      min: 0
+      className: "formQuotation__control",
+      textarea: false,
+      min: 0,
     },
     {
       type: "text",
@@ -53,19 +53,19 @@ const FormQuotation = () => {
       name: "type",
       placeholder: "Rodzaj przyjęcia *",
       htmlFor: "type",
-      className:"formQuotation__control",
-      textarea:false
+      className: "formQuotation__control",
+      textarea: false,
     },
     {
       id: "message",
       name: "message",
       placeholder: "Motyw, kolor lub ozdoby *",
       htmlFor: "message",
-      className:"formQuotation__control formQuotation__control--message",
-      textarea:true,
-      maxLength:200
+      className: "formQuotation__control formQuotation__control--message",
+      textarea: true,
+      maxLength: 200,
     },
-  ]
+  ];
 
   const makeQuotation = (e: any) => {
     e.preventDefault();
@@ -104,26 +104,27 @@ const FormQuotation = () => {
           <p className="alert mb-5">Twoja wiadomość została wysłana</p>
         ) : null}
 
-        {formQuotationContent.map(item => {
+        {formQuotationContent.map((item) => {
           return (
             <FormItem
-            type={item.type}
-            id={item.id}
-            name={item.name}
-            placeholder={item.placeholder}
-            htmlFor={item.htmlFor}
-            key={item.name}
-            className={item.className}
-            maxLength={item.maxLength}
-            textarea={item.textarea}
-            min={item.min}/>
-          )
+              type={item.type}
+              id={item.id}
+              name={item.name}
+              placeholder={item.placeholder}
+              htmlFor={item.htmlFor}
+              key={item.name}
+              className={item.className}
+              maxLength={item.maxLength}
+              textarea={item.textarea}
+              min={item.min}
+            />
+          );
         })}
-
 
         <p className="formQuotation__info">* pole wymagane</p>
         <LoadingButton loading={loading}>Wyślij</LoadingButton>
       </form>
+
       <div className="formQuotationArea__frame">
         <img
           className="formQuotationArea__img"
@@ -131,6 +132,7 @@ const FormQuotation = () => {
           alt="przykład ciast"
         />
       </div>
+
     </div>
   );
 };
