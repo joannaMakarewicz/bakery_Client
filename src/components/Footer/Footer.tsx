@@ -6,8 +6,8 @@ import { FaLocationDot } from "react-icons/fa6";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdAlternateEmail } from "react-icons/md";
 import { LiaCopyrightSolid } from "react-icons/lia"
-import "../Footer/Footer.scss";
 import MyDataContext from "../../context/MyDataContext";
+import "../Footer/Footer.scss";
 
 const Footer = () => {
   const dataBase = useContext(MyDataContext);

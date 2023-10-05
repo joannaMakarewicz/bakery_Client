@@ -1,13 +1,53 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import formAreaImg from "../../assets/formAreaImg.jpg";
-import "../Form/Form.scss";
 import LoadingButton from "../../helpers/LoadingButton/LoadingButton";
+import FormItem from "../FormItem/FormItem";
+import "../Form/Form.scss";
 
 const Form = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const [status, setStatus] = useState<boolean>(false);
-  console.log(loading, status);
+
+  const formContent = [
+    {
+      type: "text",
+      id: "name",
+      name: "name",
+      placeholder: "Imię i nazwisko *",
+      htmlFor: "name",
+      className:"form__control",
+      textarea:false
+    },
+    {
+      type: "email",
+      id: "email",
+      name: "email",
+      placeholder: "Email *",
+      htmlFor: "email",
+      className:"form__control",
+      textarea:false
+    },
+    {
+      type: "tel",
+      id: "phone",
+      name: "phone",
+      placeholder: "Telefon *",
+      htmlFor: "phone",
+      className:"form__control",
+      textarea:false
+    },
+    {
+      type: "tel",
+      id: "message",
+      name: "message",
+      placeholder: "Twoja wiadomość *",
+      htmlFor: "phone",
+      className:"form__control form__control--message",
+      textarea:true,
+      maxLength:200
+    },
+  ];
 
   const sendEmail = async (e: any) => {
     e.preventDefault();
@@ -28,8 +68,6 @@ const Form = () => {
           console.log(error.text);
         }
       );
-   
-
 
     setTimeout(() => {
       setStatus(true);
@@ -49,46 +87,22 @@ const Form = () => {
         {status ? (
           <p className="alert">Twoja wiadomość została wysłana</p>
         ) : null}
+        {formContent.map((item) => {
+          return (
+            <FormItem
+              type={item.type}
+              id={item.id}
+              name={item.name}
+              placeholder={item.placeholder}
+              htmlFor={item.htmlFor}
+              key={item.name}
+              className={item.className}
+              maxLength={item.maxLength}
+              textarea={item.textarea}
+            />
+          );
+        })}
 
-        <label htmlFor="name"></label>
-        <input
-          type="text"
-          className="form__control"
-          id="name"
-          name="name"
-          aria-describedby="emailHelp"
-          placeholder="Imię i nazwisko *"
-          required
-        />
-
-        <label htmlFor="email"></label>
-        <input
-          type="email"
-          className="form__control"
-          id="email"
-          name="email"
-          placeholder="Email *"
-          required
-        />
-
-        <label htmlFor="phone"></label>
-        <input
-          type="tel"
-          className="form__control"
-          id="phone"
-          name="phone"
-          placeholder="Telefon *"
-          required
-        />
-
-        <textarea
-          className="form__control form__control--message"
-          id="message"
-          name="message"
-          placeholder="Twoja wiadomość *"
-          maxLength={200}
-          required
-        />
         <p className="form__info">* pole wymagane</p>
         <LoadingButton loading={loading}>Wyślij</LoadingButton>
       </form>

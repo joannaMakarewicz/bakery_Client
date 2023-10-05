@@ -1,8 +1,8 @@
 @import "../../helpers//variables";
 .alert {
   background-color: transparent;
-  border:1px solid $beigeColor;
-  color:$mainBeige;
+  border: 1px solid $beigeColor;
+  color: $mainBeige;
   font-size: 1rem;
   margin-bottom: 2rem;
   opacity: 0.8;
@@ -14,11 +14,11 @@
   flex-direction: column;
   padding: 3rem 16px;
   width: 80%;
-  margin:0 auto;
+  margin: 0 auto;
   &__control {
     border: 0;
     border-radius: 0;
-    color:$fontColor;
+    color: $fontColor;
     font-size: 1rem;
     outline-color: transparent;
     margin: 6px;
@@ -28,7 +28,7 @@
       height: 8rem;
     }
     &--file {
-font-size: 0.9rem;
+      font-size: 0.9rem;
     }
   }
   &__heading {
@@ -37,35 +37,34 @@ font-size: 0.9rem;
   &__info {
     font-size: 0.8rem;
     text-align: left;
-    width:100%;
+    width: 100%;
   }
 }
 
 .formArea {
   background-color: $lightGrey;
   display: grid;
-  padding:0 0 2rem 0;
+  padding: 0 0 2rem 0;
   @media screen and (min-width: 1024px) {
     grid-template-columns: 1fr 1fr;
-    padding:2rem 10vw;
+    padding: 2rem 10vw;
   }
   &__frame {
-    box-shadow: 0 0 10px 0 rgba(41,51,65,.15);
+    box-shadow: 0 0 10px 0 rgba(41, 51, 65, 0.15);
     height: 20rem;
     @media screen and (min-width: 1024px) {
       border: 1px solid $beigeColor;
       height: 80%;
       margin: auto;
-      padding:0.5rem;
+      padding: 0.5rem;
       width: 25vw;
     }
   }
   &__img {
     height: 100%;
-    object-fit:cover;
+    object-fit: cover;
     object-position: center;
     opacity: 0.9;
     width: 100%;
-
   }
 }
