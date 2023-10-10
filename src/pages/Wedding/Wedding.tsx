@@ -29,9 +29,7 @@ const Wedding = () => {
     wedding3,
     wedding4,
     wedding5,
-    wedding6,
-    wedding7,
-    wedding8
+    wedding7
   ];
 
   const backgroundImages = [

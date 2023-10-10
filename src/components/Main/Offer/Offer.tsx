@@ -12,7 +12,7 @@ const Offer = () => {
       photo: offerCakes,
       heading: "Torty",
       name: "cakes",
-      content: "Wyjoffer3ątkowe i wymarzone, przygotowywane na indywidualne zamówienie."
+      content: "Wyjątkowe i wymarzone, przygotowywane na indywidualne zamówienie."
     },
     {
       photo: offerSweet,

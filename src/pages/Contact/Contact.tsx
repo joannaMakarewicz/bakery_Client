@@ -9,9 +9,9 @@ import "../Contact/Contact.scss";
 import MyDataContext from "../../context/MyDataContext";
 import useWebsiteTitle from "../../hooks/useWebsiteTitle";
 import Arrow from "../../components/Arrow/Arrow";
-import contact1 from "../../assets/contact1.jpg";
-import contact2 from "../../assets/contact2.jpg";
-import contact3 from "../../assets/contact3.jpg";
+import contactLeft from "../../assets/contactLeft.jpg";
+import contactMiddle from "../../assets/contactMiddle.jpg";
+import contactRight from "../../assets/contactRight.jpeg";
 import HeaderSmall from "../../components/HeaderSmall/HeaderSmall";
 
 const Contact = () => {
@@ -19,9 +19,9 @@ const Contact = () => {
   const contactData = useContext(MyDataContext);
 
   const backgroundImages = [
-    contact1,
-    contact3,
-    contact2
+    contactLeft,
+    contactMiddle,
+    contactRight
   ]
 
   useEffect (()=> {

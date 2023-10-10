@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
-import formAreaImg from "../../assets/formAreaImg.jpg";
+import formAreaImg from "../../assets/formAreaImg.jpeg";
 import LoadingButton from "../../helpers/LoadingButton/LoadingButton";
 import FormItem from "../FormItem/FormItem";
 import "../Form/Form.scss";
