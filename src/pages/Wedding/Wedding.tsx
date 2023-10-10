@@ -10,8 +10,9 @@ import wedding3 from "../../assets/wedding3.jpeg";
 import wedding4 from "../../assets/wedding4.jpeg";
 import wedding5 from "../../assets/wedding5.jpeg";
 import wedding6 from "../../assets/wedding6.jpeg";
-import wedding7 from "../../assets/wedding7.jpeg";
-import wedding8 from "../../assets/wedding8.jpeg";
+import wedding7 from "../../assets/wedding7.jpg";
+import wedding8 from "../../assets/wedding8.jpg";
+import weddingAdditional from "../../assets/weddingAdditional.jpeg";
 import weddingLeft from "../../assets/weddingLeft.jpeg";
 import weddingMiddle from "../../assets/weddingMiddle.jpeg";
 import weddingRight from "../../assets/weddingRight.jpeg";
@@ -29,7 +30,9 @@ const Wedding = () => {
     wedding3,
     wedding4,
     wedding5,
-    wedding7
+    wedding6,
+    wedding7,
+    wedding8
   ];
 
   const backgroundImages = [
@@ -44,7 +47,8 @@ const Wedding = () => {
     title:"spełniamy marzenia",
     text:"Osłodzimy Wasze przyjęcie weselne wyjątkowym tortem i słodkościami. Całość przygotowana w pięknej aranżacji.  Wypożyczenie pater, naczyń i dekoracji uwzględniona jest w indywidualnej ofercie.  Skontaktuj się z nami poprzez formularz a my zgodnie z Twoimi wyobrażeniami przygotujemy dla Ciebie wyjątkową ofertę.",
     buttonName:"Zapytaj o ofertę",
-    buttonLink:"/contact"
+    buttonLink:"/contact",
+    bcg:weddingAdditional
   };
   
   useEffect (()=> {

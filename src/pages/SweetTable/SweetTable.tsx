@@ -1,4 +1,4 @@
-import React, { useEffect} from "react";
+import React, { useEffect } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import useWebsiteTitle from "../../hooks/useWebsiteTitle";
@@ -15,6 +15,7 @@ import sweetTable8 from "../../assets/sweetTable8.jpeg";
 import sweetTableLeft from "../../assets/sweetTableLeft.jpeg";
 import sweetTableMiddle from "../../assets/sweetTableMiddle.jpeg";
 import sweetTableRight from "../../assets/sweetTableRight.jpeg";
+import sweetTableAdditional from "../../assets/sweetTableAdditional.jpg";
 import MainContent from "../../components/MainContent/MainContent";
 import "../SweetTable/SweetTable.scss";
 import HeaderSmall from "../../components/HeaderSmall/HeaderSmall";
@@ -22,7 +23,7 @@ import HeaderSmall from "../../components/HeaderSmall/HeaderSmall";
 const SweetTable = () => {
   useWebsiteTitle("Słodki stół");
 
-  const listOfImages:string[] = [
+  const listOfImages: string[] = [
     sweetTable1,
     sweetTable2,
     sweetTable3,
@@ -33,24 +34,21 @@ const SweetTable = () => {
     sweetTable8,
   ];
 
-  const backgroundImages = [
-    sweetTableLeft,
-    sweetTableMiddle,
-    sweetTableRight
-  ]
+  const backgroundImages = [sweetTableLeft, sweetTableMiddle, sweetTableRight];
 
   const information = {
     topHeading: "niepowtarzalne, wyjątkowe",
     header: "Słodkości dla każdego",
-    title:"spełniamy marzenia",
-    text:"Słodki stół w naszym wykonaniu to niezapomniana uczta smakowa i wizualna. Dbamy o każdy nawet najdrobniejszy szczegół przy tworzeniu tej niebananej, słodkiej oprawy Waszej uroczystości. Wszystko przygotujemy zgodnie z motywem przewodnim i kolorystyką przyjęcia. Nasz słodki stół może pojawić się na Waszym weselu, chrzcinach, urodzinach czy przy innej okazji i zachwycić Was i Waszych gości pięknem wykonania i wyjątkowym smakiem.",
-    buttonName:"Zapytaj o ofertę",
-    buttonLink:"/contact"
+    title: "spełniamy marzenia",
+    text: "Słodki stół w naszym wykonaniu to niezapomniana uczta smakowa i wizualna. Dbamy o każdy nawet najdrobniejszy szczegół przy tworzeniu tej niebananej, słodkiej oprawy Waszej uroczystości. Wszystko przygotujemy zgodnie z motywem przewodnim i kolorystyką przyjęcia. Nasz słodki stół może pojawić się na Waszym weselu, chrzcinach, urodzinach czy przy innej okazji i zachwycić Was i Waszych gości pięknem wykonania i wyjątkowym smakiem.",
+    buttonName: "Zapytaj o ofertę",
+    buttonLink: "/contact",
+    bcg:sweetTableAdditional
   };
 
-  useEffect (()=> {
-    window.scrollTo(0,0)
-  }, [])
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
@@ -58,7 +56,7 @@ const SweetTable = () => {
       <Arrow />
       <HeaderSmall backgroundImages={backgroundImages} />
       <MainContent information={information} />
-        <Gallery listOfImages={listOfImages} />
+      <Gallery listOfImages={listOfImages} />
       <Footer />
     </>
   );

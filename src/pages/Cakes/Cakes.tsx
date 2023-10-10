@@ -16,9 +16,11 @@ import cakes8 from "../../assets/cakes8.jpg";
 import cakesLeft from "../../assets/cakesLeft.jpeg";
 import cakesRight from "../../assets/cakesRight.jpeg";
 import cakesMiddle from "../../assets/cakesMiddle.jpeg";
+import cakesAdditional from "../../assets/cakesAdditional.jpeg";
 import formQuotationImg2 from "../../assets/formQuotationImg2.jpg";
 import "../Cakes/Cakes.scss";
 import FormQuotation from "../../components/FormQuotation/FormQuotation";
+import MainContent from "../../components/MainContent/MainContent";
 
 const Cakes = () => {
   useWebsiteTitle("Torty");
@@ -46,6 +48,7 @@ const Cakes = () => {
     text: "Wyjątkowe i wymarzone, przygotowywane na indywidualne zamówienie. Stworzymy dla Ciebie niezapomniany tort na wesele, urodziny, komunię, chrzciny, wieczory panieńskie/kawalerskie, baby shawer i na każdą inną okazję.",
     buttonName: "Wycena",
     buttonLink: "/quotation",
+    bcg:cakesAdditional
   };
 
   const showInfo = () => {
@@ -61,31 +64,8 @@ const Cakes = () => {
       <Navbar />
       <Arrow />
       <HeaderSmall backgroundImages={backgroundImages} />
+<MainContent information={information} />
 
-      <section className="mainContent">
-        <article className="special">
-          <p className="special__content">{information.topHeading}</p>
-          <h1 className="special__heading">{information.header}</h1>
-        </article>
-        <article className="mainContent__content">
-          <div className="mainContent__text">
-            <div className="mainContent__extra">
-              <span>{information.title}</span>
-            </div>
-            <p className="mainContent__description">{information.text}</p>
-            <div className="button" id="quotation">
-              <a
-                href="#quotation"
-                className="btn"
-                id="button__icon"
-                onClick={showInfo}
-              >
-                {information.buttonName}
-              </a>
-            </div>
-          </div>
-        </article>
-      </section>
       <section className="cakesQuotation">
         {info ? (
           <>
@@ -105,3 +85,29 @@ const Cakes = () => {
 };
 
 export default Cakes;
+
+
+{/* <section className="mainContent">
+<article className="special">
+  <p className="special__content">{information.topHeading}</p>
+  <h1 className="special__heading">{information.header}</h1>
+</article>
+<article className="mainContent__content">
+  <div className="mainContent__text">
+    <div className="mainContent__extra">
+      <span>{information.title}</span>
+    </div>
+    <p className="mainContent__description">{information.text}</p>
+    <div className="button" id="quotation">
+      <a
+        href="#quotation"
+        className="btn"
+        id="button__icon"
+        onClick={showInfo}
+      >
+        {information.buttonName}
+      </a>
+    </div>
+  </div>
+</article>
+</section> */}

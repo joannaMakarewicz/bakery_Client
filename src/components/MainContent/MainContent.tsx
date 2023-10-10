@@ -7,11 +7,11 @@ type MainContentProps = {
   information: {
     topHeading: string;
     header: string;
+    buttonName: string;
+    buttonLink: string;
     bcg?: string;
     title?: string;
     text?: string;
-    buttonName: string;
-    buttonLink: string;
   };
 };
 
@@ -24,7 +24,7 @@ const MainContent = ({ information }: MainContentProps) => {
       </article>
       <article className="mainContent__content">
         <div className="mainContent__content--frame">
-          <img src={bcg} alt="cakes" width={"100%"} />
+          <img src={information.bcg} alt="cakes" width={"100%"} />
         </div>
         <div className="mainContent__text">
           <div className="mainContent__extra">
