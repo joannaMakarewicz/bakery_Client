@@ -24,7 +24,7 @@ const MainContent = ({ information }: MainContentProps) => {
       </article>
       <article className="mainContent__content">
         <div className="mainContent__content--frame">
-          <img src={information.bcg} alt="cakes" width={"100%"} />
+          <img src={information.bcg} alt="cakes" width={"100%"} className="mainContent__picture"/>
         </div>
         <div className="mainContent__text">
           <div className="mainContent__extra">
