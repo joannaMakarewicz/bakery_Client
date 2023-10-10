@@ -31,7 +31,23 @@
       padding: 120px 0 30px;
     }
     @media screen and (min-width: 1024px) {
-      padding: 50px 0;
+      align-items: start;
+      margin: 110px 10vw;
+      padding: 0;
+      position: relative;
+    }
+    &--frame {
+      display: none;
+      @media screen and (min-width: 1024px) {
+        border: 1px solid $beigeColor;
+        display: flex;
+        height: 600px;
+        padding: 0.5rem;
+        width: 50%;
+      }
+      @media screen and (min-width: 1250px) {
+        width: 40%;
+      }
     }
   }
   &__description {
@@ -106,13 +122,22 @@
     margin: 2rem;
   }
   &__text {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, .8);
     left: 30%;
     margin: 0 auto;
     position: static;
     top: 15%;
     width: 80vw;
     z-index: 3;
+    @media screen and (min-width: 1024px) {
+      font-size: 1.3rem;
+      height: 400px;
+      left: 30%;
+      padding: 2rem 0 2rem 2rem;
+      position: absolute;
+      top: 100px;
+      width: 70%;position: absolute;
+    }
   }
 }
 
@@ -136,7 +161,7 @@
       top: -15vh;
     }
     @media screen and (min-width: 1024px) {
-      top: -25vh;
+      top: -35vh;
     }
 
     & h1,
