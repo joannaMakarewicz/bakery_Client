@@ -25,7 +25,6 @@ import MainContent from "../../components/MainContent/MainContent";
 const Cakes = () => {
   useWebsiteTitle("Torty");
 
-
   const [info, setInfo] = useState<boolean>(false);
 
   const listOfImages: string[] = [
@@ -36,7 +35,7 @@ const Cakes = () => {
     cakes5,
     cakes6,
     cakes7,
-    cakes8
+    cakes8,
   ];
 
   const backgroundImages = [cakesLeft, cakesMiddle, cakesRight];
@@ -48,30 +47,35 @@ const Cakes = () => {
     text: "Wyjątkowe i wymarzone, przygotowywane na indywidualne zamówienie. Stworzymy dla Ciebie niezapomniany tort na wesele, urodziny, komunię, chrzciny, wieczory panieńskie/kawalerskie, baby shawer i na każdą inną okazję.",
     buttonName: "Wycena",
     buttonLink: "/quotation",
-    bcg:cakesAdditional
+    bcg: cakesAdditional,
   };
 
-  const showInfo = () => {
-    setInfo(true);
-  };
-
-  useEffect (()=> {
-    window.scrollTo(0,0)
-  }, [])
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
       <Navbar />
       <Arrow />
       <HeaderSmall backgroundImages={backgroundImages} />
-<MainContent information={information} />
+      <MainContent
+        information={information}
+        setInfo={() => {
+          setInfo(true);
+        }}
+      />
 
       <section className="cakesQuotation">
         {info ? (
           <>
             <FormQuotation />
             <div className="mainContent__frame">
-              <img className="mainContent__img" src={formQuotationImg2} alt="przykład ciast" />
+              <img
+                className="mainContent__img"
+                src={formQuotationImg2}
+                alt="przykład ciast"
+              />
             </div>
           </>
         ) : null}
@@ -86,28 +90,29 @@ const Cakes = () => {
 
 export default Cakes;
 
-
-{/* <section className="mainContent">
-<article className="special">
-  <p className="special__content">{information.topHeading}</p>
-  <h1 className="special__heading">{information.header}</h1>
-</article>
-<article className="mainContent__content">
-  <div className="mainContent__text">
-    <div className="mainContent__extra">
-      <span>{information.title}</span>
-    </div>
-    <p className="mainContent__description">{information.text}</p>
-    <div className="button" id="quotation">
-      <a
-        href="#quotation"
-        className="btn"
-        id="button__icon"
-        onClick={showInfo}
-      >
-        {information.buttonName}
-      </a>
-    </div>
-  </div>
-</article>
-</section> */}
+// {
+//   /* <section className="mainContent">
+// <article className="special">
+//   <p className="special__content">{information.topHeading}</p>
+//   <h1 className="special__heading">{information.header}</h1>
+// </article>
+// <article className="mainContent__content">
+//   <div className="mainContent__text">
+//     <div className="mainContent__extra">
+//       <span>{information.title}</span>
+//     </div>
+//     <p className="mainContent__description">{information.text}</p>
+//     <div className="button" id="quotation">
+//       <a
+//         href="#quotation"
+//         className="btn"
+//         id="button__icon"
+//         onClick={showInfo}
+//       >
+//         {information.buttonName}
+//       </a>
+//     </div>
+//   </div>
+// </article>
+// </section> */
+// }

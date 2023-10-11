@@ -13,7 +13,7 @@ const Gallery = ({ listOfImages }: GalleryProps) => {
         {listOfImages.map((el) => {
           return (
             <a href={el} className="gallery__frame" key={el}>
-              <img src={el} alt="cakes" width={"100%"} />
+              <img src={el} alt="cakes" width={"100%"} className="gallery__item"/>
             </a>
           );
         })}

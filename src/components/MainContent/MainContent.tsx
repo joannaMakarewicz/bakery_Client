@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Button from "../../components/Button/Button";
-import bcg from "../../assets/weddingAdditional.jpeg";
 import "../MainContent/MainContent.scss";
+import { on } from "stream";
 
 type MainContentProps = {
   information: {
@@ -13,9 +13,10 @@ type MainContentProps = {
     title?: string;
     text?: string;
   };
+  setInfo?: () => void;
 };
 
-const MainContent = ({ information }: MainContentProps) => {
+const MainContent = ({ information, setInfo }: MainContentProps) => {
   return (
     <section className="mainContent">
       <article className="special">
@@ -24,16 +25,23 @@ const MainContent = ({ information }: MainContentProps) => {
       </article>
       <article className="mainContent__content">
         <div className="mainContent__content--frame">
-          <img src={information.bcg} alt="cakes" width={"100%"} />
+          <img
+            src={information.bcg}
+            alt="cakes"
+            width={"100%"}
+            className="mainContent__picture"
+          />
         </div>
         <div className="mainContent__text">
           <div className="mainContent__extra">
             <span>{information.title}</span>
           </div>
           <p className="mainContent__description">{information.text}</p>
+
           <Button
             value={information.buttonName}
             href={information.buttonLink}
+            setInfo={setInfo}
           />
         </div>
       </article>

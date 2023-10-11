@@ -20,6 +20,15 @@
       display: flex;
       height: 100%;
       padding: 0.5rem;
+      @media screen and (min-width: 768px) {
+        height: 220px;
+      }
+      @media screen and (min-width: 1024px) {
+        height: 300px;
+      }
+      @media screen and (min-width: 1300px) {
+        height: 400px;
+      }
       & img {
         object-fit: cover;
       }
@@ -28,5 +37,12 @@
       margin-bottom: 40px;
       padding: 30px 0;
       text-transform: uppercase;
+    }
+    &__item {
+      height: 100%;
+      object-fit:cover;
+      object-position: center;
+      width: 100%;
+  
     }
   }
