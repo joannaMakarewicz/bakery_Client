@@ -12,7 +12,9 @@ const Button = ({ href, value, setInfo }: ButtonProps) => {
   return (
     <div className="button">
       {value === "Wycena" ? (
-        <button onClick={setInfo} className="btn" id="button__icon">{value}</button>
+        <button onClick={setInfo} className="btn" id="button__icon">
+          {value}
+        </button>
       ) : (
         <NavLink to={href} className="btn" id="button__icon">
           {value}
