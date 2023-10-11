@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bakery_Client/static/css/main.3dea7fd2.css",
-    "main.js": "/bakery_Client/static/js/main.a207d949.js",
+    "main.css": "/bakery_Client/static/css/main.90439008.css",
+    "main.js": "/bakery_Client/static/js/main.2b249d51.js",
     "static/js/787.b2a56feb.chunk.js": "/bakery_Client/static/js/787.b2a56feb.chunk.js",
     "static/media/bcg16__blurxxl.png": "/bakery_Client/static/media/bcg16__blurxxl.d6e5c779d5cbd27da28c.png",
     "static/media/sweetTable2.jpeg": "/bakery_Client/static/media/sweetTable2.ae1cd4a0c22621308a2c.jpeg",
@@ -23,7 +23,6 @@
     "static/media/wedding6.jpeg": "/bakery_Client/static/media/wedding6.df7e651183a1a270d693.jpeg",
     "static/media/cakes7.jpeg": "/bakery_Client/static/media/cakes7.f3f6793ecbe153c5e33b.jpeg",
     "static/media/wedding1.jpeg": "/bakery_Client/static/media/wedding1.479bef9a0f18a8d27b0e.jpeg",
-    "static/media/cakesAdditional.jpeg": "/bakery_Client/static/media/cakesAdditional.f9986ed91295d21c8503.jpeg",
     "static/media/weddingAdditional.jpeg": "/bakery_Client/static/media/weddingAdditional.958cfcb30fd1e9f0618d.jpeg",
     "static/media/wedding3.jpeg": "/bakery_Client/static/media/wedding3.a41158769a699e725c06.jpeg",
     "static/media/cakes1.jpeg": "/bakery_Client/static/media/cakes1.6bb26bb3a9dd526aaf22.jpeg",
@@ -39,11 +38,12 @@
     "static/media/sweetTable3.jpeg": "/bakery_Client/static/media/sweetTable3.e7b756d8c63dd68faf9f.jpeg",
     "static/media/cakes2.jpeg": "/bakery_Client/static/media/cakes2.d33c4cd6f6439dfb411f.jpeg",
     "static/media/formQuotationImg.jpeg": "/bakery_Client/static/media/formQuotationImg.cba302bce965fc427606.jpeg",
+    "static/media/cakesAdditional.jpeg": "/bakery_Client/static/media/cakesAdditional.39e757ef7f86a8907bcf.jpeg",
     "static/media/offerWedding.jpeg": "/bakery_Client/static/media/offerWedding.1c85fbac9f014f01f9e6.jpeg",
     "static/media/thirdSlide.jpeg": "/bakery_Client/static/media/thirdSlide.d3ab0ca0c808f171f235.jpeg",
     "static/media/contactRight.jpeg": "/bakery_Client/static/media/contactRight.493d350d1c58e2c01601.jpeg",
     "static/media/weddingMiddle.jpeg": "/bakery_Client/static/media/weddingMiddle.e081979cc15bacc970ee.jpeg",
-    "static/media/formAreaImg.jpeg": "/bakery_Client/static/media/formAreaImg.41aae9b7a545310c4126.jpeg",
+    "static/media/formAreaImg.jpeg": "/bakery_Client/static/media/formAreaImg.09b0497c6e3b45dc834a.jpeg",
     "static/media/secondSlide.jpeg": "/bakery_Client/static/media/secondSlide.b468b0b500ab793566d4.jpeg",
     "static/media/contactMiddle.jpg": "/bakery_Client/static/media/contactMiddle.e2f2fe0c96585792bcee.jpg",
     "static/media/headerRight.jpg": "/bakery_Client/static/media/headerRight.e2f2fe0c96585792bcee.jpg",
@@ -51,18 +51,18 @@
     "static/media/formQuotationImg2.jpg": "/bakery_Client/static/media/formQuotationImg2.919e121db2b816daf2e1.jpg",
     "static/media/contactLeft.jpg": "/bakery_Client/static/media/contactLeft.455a8a8edd5bbb48fea8.jpg",
     "static/media/offerSweet.jpg": "/bakery_Client/static/media/offerSweet.ec8f9352d35bf9d04ef0.jpg",
+    "static/media/wedding8.jpg": "/bakery_Client/static/media/wedding8.a3b9383cf9925f71b97d.jpg",
     "static/media/sweetTableAdditional.jpg": "/bakery_Client/static/media/sweetTableAdditional.1c14c6c8c73c513b56ef.jpg",
     "static/media/wedding7.jpg": "/bakery_Client/static/media/wedding7.db08c8515eba08058894.jpg",
-    "static/media/wedding8.jpg": "/bakery_Client/static/media/wedding8.8c41056c2f515662334b.jpg",
     "static/media/logo.jpg": "/bakery_Client/static/media/logo.547a621d9d55ec97a3cb.jpg",
     "static/media/cakes8.jpg": "/bakery_Client/static/media/cakes8.97485740a63f971423cf.jpg",
     "index.html": "/bakery_Client/index.html",
-    "main.3dea7fd2.css.map": "/bakery_Client/static/css/main.3dea7fd2.css.map",
-    "main.a207d949.js.map": "/bakery_Client/static/js/main.a207d949.js.map",
+    "main.90439008.css.map": "/bakery_Client/static/css/main.90439008.css.map",
+    "main.2b249d51.js.map": "/bakery_Client/static/js/main.2b249d51.js.map",
     "787.b2a56feb.chunk.js.map": "/bakery_Client/static/js/787.b2a56feb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3dea7fd2.css",
-    "static/js/main.a207d949.js"
+    "static/css/main.90439008.css",
+    "static/js/main.2b249d51.js"
   ]
 }
