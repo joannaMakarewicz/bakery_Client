@@ -11,6 +11,9 @@
   border: 0;
   color: #fff;
   margin-top: 24px;
+  @media screen and (min-width: 1024px) {
+    margin-top: 44px;
+  }
   &:hover {
     background-color: #d7b881;
     color: #fff;
