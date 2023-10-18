@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cakes from "./pages/Cakes/Cakes";
 import Contact from "./pages/Contact/Contact";
@@ -7,9 +7,24 @@ import Home from "./pages/Home/Home";
 import MyDataContext from "./context/MyDataContext";
 import SweetTable from "./pages/SweetTable/SweetTable";
 import Wedding from "./pages/Wedding/Wedding";
+import axiosInstance from "./services/config";
 import "./App.scss";
 
 function App() {
+
+  const [myDataTest, setMyData]=useState<[]>([])
+
+  const getMyData = async () => {
+    await axiosInstance.get("/myData").then((response) => {
+      setMyData(response.data.records);
+    });
+  };
+
+  useEffect(() => {
+    getMyData();
+  }, []);
+
+  console.log(myDataTest);
 
   const myData = {
     name: "Chodź na ciacho",

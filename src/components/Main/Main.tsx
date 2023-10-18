@@ -56,25 +56,25 @@ const Main = () => {
         </div>
         <div className="main__section">
           <Carousel className="myOwnCarousel">
-            {opinions.map((opinion) => {
+            {opinions.map((opinion, key) => {
               return (
                 <Carousel.Item>
                   <Feedback
                     authorName={opinion.authorName}
                     text={opinion.text}
-                    key={Math.random()}
+                    key={opinion.authorName}
                   />
                 </Carousel.Item>
               );
             })}
           </Carousel>
           <div className="noCarousel">
-            {opinions.map((opinion) => {
+            {opinions.map((opinion, key) => {
               return (
                 <Feedback
                   authorName={opinion.authorName}
                   text={opinion.text}
-                  key={Math.random()}
+                  key={opinion.authorName}
                 />
               );
             })}
