@@ -11,16 +11,26 @@ import axiosInstance from "./services/config";
 import "./App.scss";
 
 function App() {
-  interface AppData {
-    [key:string]:string;
-  }
+ type AppData = {
+    fields: {
+      name: string;
+      owner: string;
+      tel: string;
+      email: string;
+      fb: string;
+      instagram: string;
+      address: string;
+      city: string;
+      google: string;
+    }
+  }[];
 
-  const [myDataAirtable, setMyDataAirtableData]=useState<AppData>({})
+  const [myDataAirtable, setMyDataAirtableData]=useState<AppData>([])
 
 
   const getMyDataAirtable = async () => {
     await axiosInstance.get("/myData").then((response) => {
-      setMyDataAirtableData(response.data.records[0].fields);
+      setMyDataAirtableData(response.data.records);
     });
     
   };
@@ -32,15 +42,15 @@ function App() {
 
 
   const myData = {
-    name: myDataAirtable.name,
-    owner: myDataAirtable.owner,
-    tel: myDataAirtable.tel,
-    email: myDataAirtable.email,
-    fb: myDataAirtable.fb,
-    instagram: myDataAirtable.instagram,
-    address: myDataAirtable.address,
-    city: myDataAirtable.city,
-    google:myDataAirtable.google
+    name: myDataAirtable[0].fields.name,
+    owner: myDataAirtable[0].fields.owner,
+    tel: myDataAirtable[0].fields.tel,
+    email: myDataAirtable[0].fields.email,
+    fb: myDataAirtable[0].fields.fb,
+    instagram: myDataAirtable[0].fields.instagram,
+    address: myDataAirtable[0].fields.address,
+    city: myDataAirtable[0].fields.city,
+    google:myDataAirtable[0].fields.google
      };
 
   return (
