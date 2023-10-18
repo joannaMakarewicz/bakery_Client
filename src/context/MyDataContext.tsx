@@ -3,7 +3,7 @@ import React from "react";
 type MyDataContextProps = {
   name: string;
   owner: string;
-  tel: number;
+  tel: string;
   email: string;
   fb: string;
   instagram: string;

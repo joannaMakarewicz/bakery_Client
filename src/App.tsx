@@ -11,33 +11,37 @@ import axiosInstance from "./services/config";
 import "./App.scss";
 
 function App() {
+  interface AppData {
+    [key:string]:string;
+  }
 
-  const [myDataTest, setMyData]=useState<[]>([])
+  const [myDataAirtable, setMyDataAirtableData]=useState<AppData>({})
 
-  const getMyData = async () => {
+
+  const getMyDataAirtable = async () => {
     await axiosInstance.get("/myData").then((response) => {
-      setMyData(response.data.records);
+      setMyDataAirtableData(response.data.records[0].fields);
     });
+    
   };
 
   useEffect(() => {
-    getMyData();
+    getMyDataAirtable();
+
   }, []);
 
-  console.log(myDataTest);
 
   const myData = {
-    name: "Chodź na ciacho",
-    owner: "Magdalena Kalinowska",
-    tel: 603909932,
-    email: "chodznaciachogdansk@gmail.com",
-    fb: "https://m.facebook.com/chodznaciachogdansk/",
-    instagram: "https://www.instagram.com/chodz_na_ciacho/",
-    address: "Leona Wyczółkowskiego 14A/3",
-    city: "80-147 Gdańsk",
-    google:
-      "https://www.google.pl/maps/place/Chod%C5%BA+na+ciacho/@54.3527029,18.6245243,17z/data=!3m1!4b1!4m6!3m5!1s0x46fd73e278063c51:0x6b1d9a2057e63c9b!8m2!3d54.3526998!4d18.6270992!16s%2Fg%2F11s5w_2t47?entry=ttu",
-    };
+    name: myDataAirtable.name,
+    owner: myDataAirtable.owner,
+    tel: myDataAirtable.tel,
+    email: myDataAirtable.email,
+    fb: myDataAirtable.fb,
+    instagram: myDataAirtable.instagram,
+    address: myDataAirtable.address,
+    city: myDataAirtable.city,
+    google:myDataAirtable.google
+     };
 
   return (
     <MyDataContext.Provider value={{ myData: myData }}>
