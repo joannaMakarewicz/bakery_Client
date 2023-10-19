@@ -42,15 +42,15 @@ function App() {
 
 
   const myData = {
-    name: myDataAirtable[0].fields.name,
-    owner: myDataAirtable[0].fields.owner,
-    tel: myDataAirtable[0].fields.tel,
-    email: myDataAirtable[0].fields.email,
-    fb: myDataAirtable[0].fields.fb,
-    instagram: myDataAirtable[0].fields.instagram,
-    address: myDataAirtable[0].fields.address,
-    city: myDataAirtable[0].fields.city,
-    google:myDataAirtable[0].fields.google
+    name: myDataAirtable[0]?.fields?.name,
+    owner: myDataAirtable[0]?.fields?.owner,
+    tel: myDataAirtable[0]?.fields?.tel,
+    email: myDataAirtable[0]?.fields?.email,
+    fb: myDataAirtable[0]?.fields?.fb,
+    instagram: myDataAirtable[0]?.fields?.instagram,
+    address: myDataAirtable[0]?.fields?.address,
+    city: myDataAirtable[0]?.fields?.city,
+    google:myDataAirtable[0]?.fields?.google
      };
 
   return (
