@@ -1,18 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import HeaderSmall from "../../components/HeaderSmall/HeaderSmall";
 import Arrow from "../../components/Arrow/Arrow";
 import Gallery from "../../components/Gallery/Gallery";
 import useWebsiteTitle from "../../hooks/useWebsiteTitle";
-import cakes1 from "../../assets/cakes1.jpeg";
-import cakes2 from "../../assets/cakes2.jpeg";
-import cakes3 from "../../assets/cakes3.jpeg";
-import cakes4 from "../../assets/cakes4.jpeg";
-import cakes5 from "../../assets/cakes5.jpeg";
-import cakes6 from "../../assets/cakes6.jpeg";
-import cakes7 from "../../assets/cakes7.jpeg";
-import cakes8 from "../../assets/cakes8.jpg";
 import cakesLeft from "../../assets/cakesLeft.jpeg";
 import cakesRight from "../../assets/cakesRight.jpeg";
 import cakesMiddle from "../../assets/cakesMiddle.jpeg";
@@ -21,22 +13,45 @@ import formQuotationImg2 from "../../assets/formQuotationImg2.jpg";
 import "../Cakes/Cakes.scss";
 import FormQuotation from "../../components/FormQuotation/FormQuotation";
 import MainContent from "../../components/MainContent/MainContent";
+import MyDataContext from "../../context/MyDataContext";
+import axiosInstance from "../../services/config";
 
 const Cakes = () => {
   useWebsiteTitle("Torty");
 
-  const [info, setInfo] = useState<boolean>(false);
+  type CakesPictures = {
+    fields: {
+      attachments: [
+        {
+          url: string;
+        }
+      ];
+    };
+  }[];
 
-  const listOfImages: string[] = [
-    cakes1,
-    cakes2,
-    cakes3,
-    cakes4,
-    cakes5,
-    cakes6,
-    cakes7,
-    cakes8,
-  ];
+  const [cakesPictures, setCakesPictures] = useState<CakesPictures>([]);
+  const cakesAttachments = cakesPictures.map((item) => {
+    return item.fields.attachments[0];
+  });
+
+  const listOfCakesPhotos = cakesAttachments.map((cakesPhoto) => {
+    return cakesPhoto.url;
+  });
+
+  const getCakesPictures = async () => {
+    await axiosInstance.get("/cakesGallery").then((response) => {
+      setCakesPictures(response.data.records);
+    });
+  };
+
+  useEffect(() => {
+    getCakesPictures();
+  }, []);
+
+
+  const listOfImages: string[] = listOfCakesPhotos;
+
+  const [info, setInfo] = useState<boolean>(false);
 
   const backgroundImages = [cakesLeft, cakesMiddle, cakesRight];
 
@@ -55,64 +70,41 @@ const Cakes = () => {
   }, []);
 
   return (
-    <>
-      <Navbar />
-      <Arrow />
-      <HeaderSmall backgroundImages={backgroundImages} />
-      <MainContent
-        information={information}
-        setInfo={() => {
-          setInfo(true);
-        }}
-      />
+    <MyDataContext.Consumer>
+      {(cakesPhotosFromContext) => (
+        <>
+          <Navbar />
+          <Arrow />
+          <HeaderSmall backgroundImages={backgroundImages} />
+          <MainContent
+            information={information}
+            setInfo={() => {
+              setInfo(true);
+            }}
+          />
 
-      <section className="cakesQuotation">
-        {info ? (
-          <>
-            <FormQuotation />
-            <div className="mainContent__frame">
-              <img
-                className="mainContent__img"
-                src={formQuotationImg2}
-                alt="przykład ciast"
-              />
-            </div>
-          </>
-        ) : null}
-      </section>
+          <section className="cakesQuotation">
+            {info ? (
+              <>
+                <FormQuotation />
+                <div className="mainContent__frame">
+                  <img
+                    className="mainContent__img"
+                    src={formQuotationImg2}
+                    alt="przykład ciast"
+                  />
+                </div>
+              </>
+            ) : null}
+          </section>
 
-      <Gallery listOfImages={listOfImages} />
+          <Gallery listOfImages={listOfImages} />
 
-      <Footer />
-    </>
+          <Footer />
+        </>
+      )}
+    </MyDataContext.Consumer>
   );
 };
 
 export default Cakes;
-
-// {
-//   /* <section className="mainContent">
-// <article className="special">
-//   <p className="special__content">{information.topHeading}</p>
-//   <h1 className="special__heading">{information.header}</h1>
-// </article>
-// <article className="mainContent__content">
-//   <div className="mainContent__text">
-//     <div className="mainContent__extra">
-//       <span>{information.title}</span>
-//     </div>
-//     <p className="mainContent__description">{information.text}</p>
-//     <div className="button" id="quotation">
-//       <a
-//         href="#quotation"
-//         className="btn"
-//         id="button__icon"
-//         onClick={showInfo}
-//       >
-//         {information.buttonName}
-//       </a>
-//     </div>
-//   </div>
-// </article>
-// </section> */
-// }

@@ -1,71 +1,80 @@
-import React, { useEffect } from 'react';
-import Navbar from '../../components/Navbar/Navbar';
-import Footer from '../../components/Footer/Footer';
-import useWebsiteTitle from '../../hooks/useWebsiteTitle';
-import Arrow from '../../components/Arrow/Arrow';
-import Gallery from '../../components/Gallery/Gallery';
-import wedding1 from "../../assets/wedding1.jpeg";
-import wedding2 from "../../assets/wedding2.jpeg";
-import wedding3 from "../../assets/wedding3.jpeg";
-import wedding4 from "../../assets/wedding4.jpeg";
-import wedding5 from "../../assets/wedding5.jpeg";
-import wedding6 from "../../assets/wedding6.jpeg";
-import wedding7 from "../../assets/wedding7.jpg";
-import wedding8 from "../../assets/wedding8.jpg";
+import React, { useEffect, useState } from "react";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
+import useWebsiteTitle from "../../hooks/useWebsiteTitle";
+import Arrow from "../../components/Arrow/Arrow";
+import Gallery from "../../components/Gallery/Gallery";
 import weddingAdditional from "../../assets/weddingAdditional.jpeg";
 import weddingLeft from "../../assets/weddingLeft.jpeg";
 import weddingMiddle from "../../assets/weddingMiddle.jpeg";
 import weddingRight from "../../assets/weddingRight.jpeg";
-import HeaderSmall from '../../components/HeaderSmall/HeaderSmall';
+import HeaderSmall from "../../components/HeaderSmall/HeaderSmall";
 import "../Wedding/Wedding.scss";
-import MainContent from '../../components/MainContent/MainContent';
-
+import MainContent from "../../components/MainContent/MainContent";
+import axiosInstance from "../../services/config";
 
 const Wedding = () => {
-  useWebsiteTitle('Wesela');
+  useWebsiteTitle("Wesela");
 
-  const listOfImages:string[] = [
-    wedding1,
-    wedding2,
-    wedding3,
-    wedding4,
-    wedding5,
-    wedding6,
-    wedding7,
-    wedding8
-  ];
+  type WeddingPictures = {
+    fields: {
+      attachments: [
+        {
+          url: string;
+        }
+      ];
+    };
+  }[];
 
-  const backgroundImages = [
-    weddingLeft,
-    weddingMiddle,
-    weddingRight
-  ]
+  const [weddingPictures, setWeddingPictures] = useState<WeddingPictures>([]);
+  const weddingAttachments = weddingPictures.map((item) => {
+    return item.fields.attachments[0];
+  });
+
+  const listOfWeddingPhotos = weddingAttachments.map((weddingPhoto) => {
+    return weddingPhoto.url;
+  });
+
+  const getWeddingPictures = async () => {
+    await axiosInstance.get("/weddingGallery").then((response) => {
+      setWeddingPictures(response.data.records);
+    });
+  };
+
+  useEffect(() => {
+    getWeddingPictures();
+  }, []);
+
+
+  const listOfImages: string[] = listOfWeddingPhotos;
+
+  const backgroundImages = [weddingLeft, weddingMiddle, weddingRight];
 
   const information = {
     topHeading: "magiczne, wyjątkowe",
     header: "Osłodzimy Twoje wesele",
-    title:"spełniamy marzenia",
-    text:"Osłodzimy Wasze przyjęcie weselne wyjątkowym tortem i słodkościami. Całość przygotowana w pięknej aranżacji.  Wypożyczenie pater, naczyń i dekoracji uwzględniona jest w indywidualnej ofercie.  Skontaktuj się z nami poprzez formularz a my zgodnie z Twoimi wyobrażeniami przygotujemy dla Ciebie wyjątkową ofertę.",
-    buttonName:"Zapytaj o ofertę",
-    buttonLink:"/contact",
-    bcg:weddingAdditional
+    title: "spełniamy marzenia",
+    text: "Osłodzimy Wasze przyjęcie weselne wyjątkowym tortem i słodkościami. Całość przygotowana w pięknej aranżacji.  Wypożyczenie pater, naczyń i dekoracji uwzględniona jest w indywidualnej ofercie.  Skontaktuj się z nami poprzez formularz a my zgodnie z Twoimi wyobrażeniami przygotujemy dla Ciebie wyjątkową ofertę.",
+    buttonName: "Zapytaj o ofertę",
+    buttonLink: "/contact",
+    bcg: weddingAdditional,
   };
-  
-  useEffect (()=> {
-    window.scrollTo(0,0)
-  }, [])
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
-        <Navbar />
-        <Arrow/>
-        <HeaderSmall backgroundImages={backgroundImages}/>
-        <MainContent information={information} />
-        <Gallery listOfImages={listOfImages}/>
+      <Navbar />
+      <Arrow />
+      <HeaderSmall backgroundImages={backgroundImages} />
+      <MainContent information={information} />
+      <Gallery listOfImages={listOfImages} />
 
-        <Footer />
+      <Footer />
     </>
-  )
-}
+  );
+};
 
 export default Wedding;

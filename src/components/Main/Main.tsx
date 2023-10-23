@@ -1,26 +1,34 @@
+import React, { useEffect, useState } from 'react';
 import Header from "./Header/Header";
 import Carousel from "react-bootstrap/Carousel";
 import Offer from "./Offer/Offer";
 import Arrow from "../Arrow/Arrow";
 import "../Main/Main.scss";
+import axiosInstance from "../../services/config";
 import Feedback from "../Feedback/Feedback";
 import { AiFillStar } from "react-icons/ai";
 
 const Main = () => {
-  const opinions = [
-    {
-      authorName: "Ola B.",
-      text: "Przepiękny wizualnie tort, udekorowany prawdziwymi ciętymi, kwiatami, ale przede wszystkim przepyszny. Zrównoważone smaki - przede wszystkim nie za słodki, był po prostu przepyszny. Zamówiłam tort inspirowany naturą o smaku cytrynowo - malinowym. Bardzo polecam!",
-    },
-    {
-      authorName: "Weronika K.",
-      text: "Zamówiłam tort i pasujące babeczki na baby shower. Wszystko wyglądało obłędnie i do tego super w smaku. Napewno skorzystam jeszcze nie raz. Zdecydowanie polecam!",
-    },
-    {
-      authorName: "Monika M.",
-      text: "Z całego serca polecam🥰 Słodki stół cudny, zrobiony z pasją i starannością o wszystkie detal. Lepiej niż sobie wyobrażałam. No i oczywiście słodkości przepyszne. Kontakt z Panią bardzo dobry 😊 Goście również byli zachwyceni.😊Jescze raz bardzo dziękujemy🥰",
-    },
-  ];
+  type Opinions = {
+    fields: {
+      authorName: string;
+      content: string;
+    };
+  }[];
+
+  const [opinions, setOpinions] = useState<Opinions>([]);
+
+  const getOpinions = async () => {
+    await axiosInstance.get("/opinions").then((response) => {
+      setOpinions(response.data.records);
+    });
+  };
+
+  useEffect(() => {
+    getOpinions();
+  }, []);
+
+
   return (
     <main className="main pb-5">
       <Arrow />
@@ -56,25 +64,25 @@ const Main = () => {
         </div>
         <div className="main__section">
           <Carousel className="myOwnCarousel">
-            {opinions.map((opinion) => {
+            {opinions.map((opinion, key) => {
               return (
                 <Carousel.Item>
                   <Feedback
-                    authorName={opinion.authorName}
-                    text={opinion.text}
-                    key={Math.random()}
+                    authorName={opinion.fields.authorName}
+                    text={opinion.fields.content}
+                    key={opinion.fields.authorName}
                   />
                 </Carousel.Item>
               );
             })}
           </Carousel>
           <div className="noCarousel">
-            {opinions.map((opinion) => {
+            {opinions.map((opinion, key) => {
               return (
                 <Feedback
-                  authorName={opinion.authorName}
-                  text={opinion.text}
-                  key={Math.random()}
+                  authorName={opinion.fields.authorName}
+                  text={opinion.fields.content}
+                  key={opinion.fields.authorName}
                 />
               );
             })}
