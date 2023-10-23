@@ -65,7 +65,14 @@
   }
   &__section {
     margin: 0 auto;
-    padding: 4rem 5% 0;
+    padding: 0 5% 0;
+    @media screen and (min-width:1024px) {
+      margin: 0 5vw;
+      padding: 0;
+    }
+    @media screen and (min-width:1300px) {
+      margin: 0 10vw;
+    }
 
     &--1 {
       @media screen and (min-width: 768px) {
