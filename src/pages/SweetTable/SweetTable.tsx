@@ -1,17 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import useWebsiteTitle from "../../hooks/useWebsiteTitle";
 import Arrow from "../../components/Arrow/Arrow";
 import Gallery from "../../components/Gallery/Gallery";
-import sweetTable5 from "../../assets/sweetTable5.jpeg";
-import sweetTable3 from "../../assets/sweetTable3.jpeg";
-import sweetTable2 from "../../assets/sweetTable2.jpeg";
-import sweetTable4 from "../../assets/sweetTable4.jpeg";
-import sweetTable6 from "../../assets/sweetTable6.jpeg";
-import sweetTable1 from "../../assets/sweetTable1.jpeg";
-import sweetTable7 from "../../assets/sweetTable7.jpeg";
-import sweetTable8 from "../../assets/sweetTable8.jpeg";
 import sweetTableLeft from "../../assets/sweetTableLeft.jpeg";
 import sweetTableMiddle from "../../assets/sweetTableMiddle.jpeg";
 import sweetTableRight from "../../assets/sweetTableRight.jpeg";
@@ -19,20 +11,45 @@ import sweetTableAdditional from "../../assets/sweetTableAdditional.jpg";
 import MainContent from "../../components/MainContent/MainContent";
 import "../SweetTable/SweetTable.scss";
 import HeaderSmall from "../../components/HeaderSmall/HeaderSmall";
+import axiosInstance from "../../services/config";
 
 const SweetTable = () => {
   useWebsiteTitle("Słodki stół");
 
-  const listOfImages: string[] = [
-    sweetTable1,
-    sweetTable2,
-    sweetTable3,
-    sweetTable4,
-    sweetTable5,
-    sweetTable6,
-    sweetTable7,
-    sweetTable8,
-  ];
+  
+  type SweetTablePictures = {
+    fields: {
+      attachments: [
+        {
+          url: string;
+        }
+      ];
+    };
+  }[];
+
+  const [sweetTablePictures, setSweetTablePictures] = useState<SweetTablePictures>([]);
+  const cakesAttachments = sweetTablePictures.map((item) => {
+    return item.fields.attachments[0];
+  });
+
+  const listOfSweetTablePhotos = cakesAttachments.map((sweetTablePhoto) => {
+    return sweetTablePhoto.url;
+  });
+
+  const getSweetTablePictures = async () => {
+    await axiosInstance.get("/sweetTableGallery").then((response) => {
+      setSweetTablePictures(response.data.records);
+    });
+  };
+
+  useEffect(() => {
+    getSweetTablePictures();
+  }, []);
+
+
+  const listOfImages: string[] = listOfSweetTablePhotos;
+
+
 
   const backgroundImages = [sweetTableLeft, sweetTableMiddle, sweetTableRight];
 

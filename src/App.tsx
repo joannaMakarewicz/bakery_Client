@@ -11,7 +11,7 @@ import axiosInstance from "./services/config";
 import "./App.scss";
 
 function App() {
- type AppData = {
+  type AppData = {
     fields: {
       name: string;
       owner: string;
@@ -22,24 +22,22 @@ function App() {
       address: string;
       city: string;
       google: string;
-    }
+    };
   }[];
 
-  const [myDataAirtable, setMyDataAirtableData]=useState<AppData>([])
 
+
+  const [myDataAirtable, setMyDataAirtableData] = useState<AppData>([]);
 
   const getMyDataAirtable = async () => {
     await axiosInstance.get("/myData").then((response) => {
       setMyDataAirtableData(response.data.records);
     });
-    
   };
 
   useEffect(() => {
     getMyDataAirtable();
-
   }, []);
-
 
   const myData = {
     name: myDataAirtable[0]?.fields?.name,
@@ -50,8 +48,8 @@ function App() {
     instagram: myDataAirtable[0]?.fields?.instagram,
     address: myDataAirtable[0]?.fields?.address,
     city: myDataAirtable[0]?.fields?.city,
-    google:myDataAirtable[0]?.fields?.google
-     };
+    google: myDataAirtable[0]?.fields?.google,
+  };
 
   return (
     <MyDataContext.Provider value={{ myData: myData }}>
