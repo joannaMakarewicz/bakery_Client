@@ -72,10 +72,10 @@ const FormQuotation = () => {
     setLoading(true);
     emailjs
       .sendForm(
-        "service_8sjpl4f",
-        "template_ihzlhtl",
+        "service_udhrx3a",
+        "template_0o3clh7",
         e.target,
-        "gxhVuR-MaQt-BRs6F"
+        "olrnHNauoTvRvkNFu"
       )
       .then(
         (result) => {
