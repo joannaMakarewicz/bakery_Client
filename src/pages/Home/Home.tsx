@@ -4,6 +4,7 @@ import Main from "../../components/Main/Main";
 import Footer from "../../components/Footer/Footer";
 import useWebsiteTitle from "../../hooks/useWebsiteTitle";
 import "../Home/Home.scss";
+import Layout from "../../components/Layout/Layout";
 
 const Home = () => {
   useWebsiteTitle("Strona główna");
@@ -14,9 +15,11 @@ const Home = () => {
 
   return (
     <>
-      <Navbar />
+    <Layout>
+      <Navbar/>
       <Main />
-      <Footer />
+      <Footer/>
+      </Layout>
     </>
   );
 };

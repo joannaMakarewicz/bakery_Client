@@ -12,6 +12,7 @@ import HeaderSmall from "../../components/HeaderSmall/HeaderSmall";
 import "../Wedding/Wedding.scss";
 import MainContent from "../../components/MainContent/MainContent";
 import axiosInstance from "../../services/config";
+import Layout from "../../components/Layout/Layout";
 
 const Wedding = () => {
   useWebsiteTitle("Wesela");
@@ -66,15 +67,13 @@ const Wedding = () => {
 
   return (
     <>
-      <Navbar />
-      <Arrow />
-      <HeaderSmall backgroundImages={backgroundImages} />
-      <MainContent information={information} />
-      <Gallery listOfImages={listOfImages} />
-
-      <Footer />
+      <Layout backgroundImages={backgroundImages}>
+        <MainContent information={information} />
+        <Gallery listOfImages={listOfImages} />
+      </Layout>
     </>
   );
+
 };
 
 export default Wedding;

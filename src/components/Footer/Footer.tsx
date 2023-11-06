@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import logo from "../../assets/logo.jpg";
 import { BsFacebook } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
@@ -7,10 +7,17 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdAlternateEmail } from "react-icons/md";
 import { LiaCopyrightSolid } from "react-icons/lia"
 import MyDataContext from "../../context/MyDataContext";
+import Policy from "../Policy/Policy";
 import "../Footer/Footer.scss";
 
 const Footer = () => {
   const dataBase = useContext(MyDataContext);
+  const [policy, setPolicy]=useState<boolean>(false)
+
+
+  const showPolicy = () => {
+    setPolicy(!policy)
+  }
 
   return (
     <MyDataContext.Consumer>
@@ -49,10 +56,11 @@ const Footer = () => {
             </div>
             <div className="footer__contact col-md-3 col-sm-6 w-100">
               <h5>Nawigacja</h5>
-              <p className="footer__special footer__special--margin">
+              <p className="footer__special footer__special--margin"><button className="footer__button" onClick={showPolicy}>
                 Polityka prywatności
-              </p>
-              <p className="footer__special">Regulamin</p>
+              </button></p>
+              {policy ? <Policy/> : null}
+              <p className="footer__special"><button className="footer__button">Regulamin</button></p>
             </div>
             <div className="col-md-3 col-sm-6 w-100 ">
               <h5 >Obserwuj</h5>

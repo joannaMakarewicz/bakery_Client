@@ -12,11 +12,11 @@ import MainContent from "../../components/MainContent/MainContent";
 import "../SweetTable/SweetTable.scss";
 import HeaderSmall from "../../components/HeaderSmall/HeaderSmall";
 import axiosInstance from "../../services/config";
+import Layout from "../../components/Layout/Layout";
 
 const SweetTable = () => {
   useWebsiteTitle("Słodki stół");
 
-  
   type SweetTablePictures = {
     fields: {
       attachments: [
@@ -27,7 +27,8 @@ const SweetTable = () => {
     };
   }[];
 
-  const [sweetTablePictures, setSweetTablePictures] = useState<SweetTablePictures>([]);
+  const [sweetTablePictures, setSweetTablePictures] =
+    useState<SweetTablePictures>([]);
   const cakesAttachments = sweetTablePictures.map((item) => {
     return item.fields.attachments[0];
   });
@@ -46,10 +47,7 @@ const SweetTable = () => {
     getSweetTablePictures();
   }, []);
 
-
   const listOfImages: string[] = listOfSweetTablePhotos;
-
-
 
   const backgroundImages = [sweetTableLeft, sweetTableMiddle, sweetTableRight];
 
@@ -60,7 +58,7 @@ const SweetTable = () => {
     text: "Słodki stół w naszym wykonaniu to niezapomniana uczta smakowa i wizualna. Dbamy o każdy nawet najdrobniejszy szczegół przy tworzeniu tej niebananej, słodkiej oprawy Waszej uroczystości. Wszystko przygotujemy zgodnie z motywem przewodnim i kolorystyką przyjęcia. Nasz słodki stół może pojawić się na Waszym weselu, chrzcinach, urodzinach czy przy innej okazji i zachwycić Was i Waszych gości pięknem wykonania i wyjątkowym smakiem.",
     buttonName: "Zapytaj o ofertę",
     buttonLink: "/contact",
-    bcg:sweetTableAdditional
+    bcg: sweetTableAdditional,
   };
 
   useEffect(() => {
@@ -69,12 +67,10 @@ const SweetTable = () => {
 
   return (
     <>
-      <Navbar />
-      <Arrow />
-      <HeaderSmall backgroundImages={backgroundImages} />
-      <MainContent information={information} />
-      <Gallery listOfImages={listOfImages} />
-      <Footer />
+      <Layout backgroundImages={backgroundImages}>
+        <MainContent information={information} />
+        <Gallery listOfImages={listOfImages} />
+      </Layout>
     </>
   );
 };

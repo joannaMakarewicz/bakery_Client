@@ -31,8 +31,6 @@ const Main = () => {
 
   return (
     <main className="main pb-5">
-      <Arrow />
-      <Header />
       <article className="main__section main__section--1">
         <div className="w-25 mx-auto my-3 main__border" />
         <h1 className="main__heading">

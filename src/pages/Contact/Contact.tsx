@@ -13,6 +13,7 @@ import contactLeft from "../../assets/contactLeft.jpg";
 import contactMiddle from "../../assets/contactMiddle.jpg";
 import contactRight from "../../assets/contactRight.jpeg";
 import HeaderSmall from "../../components/HeaderSmall/HeaderSmall";
+import Layout from "../../components/Layout/Layout";
 
 const Contact = () => {
   useWebsiteTitle('Kontakt');
@@ -30,9 +31,7 @@ const Contact = () => {
 
   return (
     <>
-      <Navbar />
-      <Arrow/>
-      <HeaderSmall backgroundImages={backgroundImages}/>
+      <Layout backgroundImages={backgroundImages}>
       <main className="contact pt-5 pb-5">
         <section className="contact__section">
           <article className="contact__article">
@@ -85,9 +84,10 @@ const Contact = () => {
         </section>
       </main>
       <Form />
-      <Footer />
+      </Layout>
     </>
   );
+
 };
 
 export default Contact;
