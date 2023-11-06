@@ -15,10 +15,8 @@ const Home = () => {
 
   return (
     <>
-    <Layout>
-      <Navbar/>
-      <Main />
-      <Footer/>
+      <Layout>
+        <Main />
       </Layout>
     </>
   );
