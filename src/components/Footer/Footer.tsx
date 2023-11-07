@@ -7,17 +7,15 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdAlternateEmail } from "react-icons/md";
 import { LiaCopyrightSolid } from "react-icons/lia"
 import MyDataContext from "../../context/MyDataContext";
-import Policy from "../Policy/Policy";
 import "../Footer/Footer.scss";
 
-const Footer = () => {
+type FooterProps = {
+  showPolicy:()=> void
+}
+
+const Footer = ({showPolicy}:FooterProps) => {
   const dataBase = useContext(MyDataContext);
-  const [policy, setPolicy]=useState<boolean>(false)
 
-
-  const showPolicy = () => {
-    setPolicy(!policy)
-  }
 
   return (
     <MyDataContext.Consumer>
@@ -59,7 +57,7 @@ const Footer = () => {
               <p className="footer__special footer__special--margin"><button className="footer__button" onClick={showPolicy}>
                 Polityka prywatności
               </button></p>
-              {policy ? <Policy/> : null}
+              
               <p className="footer__special"><button className="footer__button">Regulamin</button></p>
             </div>
             <div className="col-md-3 col-sm-6 w-100 ">

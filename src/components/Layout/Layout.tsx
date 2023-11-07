@@ -1,32 +1,40 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import Arrow from "../Arrow/Arrow";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import HeaderSmall from "../HeaderSmall/HeaderSmall";
 import Header from "../Main/Header/Header";
+import Policy from "../Policy/Policy";
 
 type LayoutProps = {
   children: React.ReactNode;
   backgroundImages?: string[];
 };
 
+const Layout = ({ children, backgroundImages = [""] }: LayoutProps) => {
+  const [policy, setPolicy] = useState<boolean>(false);
 
-const Layout = ({ children, backgroundImages= [''] }: LayoutProps) => {
+  const showPolicy = () => {
+    setPolicy(!policy);
+  };
 
   let isHome = useLocation();
 
   return (
     <>
+      {policy ?<Policy showPolicy={showPolicy}/> : null}
       <Navbar />
       <Arrow />
-      {isHome.pathname === "/" || isHome.pathname === "/bakery_Client"?
-      <Header/>
-      :
-      <HeaderSmall backgroundImages={backgroundImages} />
-      }
+      {isHome.pathname === "/" || isHome.pathname === "/bakery_Client" ? (
+        <Header />
+      ) : (
+        <HeaderSmall backgroundImages={backgroundImages} />
+      )}
+
       {children}
-      <Footer />
+
+      <Footer showPolicy={showPolicy} />
     </>
   );
 };
