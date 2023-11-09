@@ -1,18 +1,20 @@
 import React from "react";
+import PolicyRegulationsDraft from "../PolicyRegulationsDraft/PolicyRegulationsDraft";
 import "../Policy/Policy.scss";
 
-type PolicyProps =  {
-    showPolicy:()=>void;
+type PolicyProps = {
+    showPolicy: () => void;
 }
 
 const Policy = ({showPolicy}:PolicyProps) => {
+
+    // const policyRegulationsData = {
+    //     heading: "Polityka prywatności",
+    //     name: "Postanowienia ogólne",
+    // }
   return (
-    <div className="policy">
-      <div className="policy__content">
-        <h1 className="policy__heading mb-5">Polityka prywatności</h1>
-        <div className="policyText">
-            <h2 className="m-5">Postanowienia ogólne</h2>
-            <ol className="text-start">
+
+    <>
                 <li>Na potrzeby polityki prywatności poniższe pojęcia mają następujące znaczenie:
                     <ul>
                         <li><strong>Administrator danych</strong> - administratorem danych jest Chodź na ciacho Magdalena Kalinowska, NIP: 7441723323,adres: Leona Wyczółkowskiego 14A/3, 80-147 Gdańsk, email: chodznaciachogdansk@gmail.com Administrator świadczy usługi drogą elektroniczną oraz przechowuje i uzyskuje dostęp do informacji w urządzeniach Użytkownika.</li>
@@ -110,13 +112,9 @@ const Policy = ({showPolicy}:PolicyProps) => {
                         <li>Użytkownik może w każdej chwili usunąć pliki Cookies korzystając z dostępnych funkcji w przeglądarce internetowej, której używa.</li>
                         <li>Ograniczenie stosowania plików Cookies, może wpłynąć na niektóre funkcjonalności dostępne na stronie internetowej Serwisu.</li>
                         <li>Klient oświadcza, że wszelkie dane osobowe, które przekazuje są zgodnie z prawem, w szczególności są to dane osobowe, do których powierzenia jest uprawniony.</li>
-            </ol>
-        </div>
-        <div>
-          <button className="btn policyText__icon" onClick={showPolicy}>Zamknij</button>
-        </div>
-      </div>
-    </div>
+                        </>
+
+                        
   );
 };
 

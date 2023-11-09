@@ -58,7 +58,7 @@ const Footer = ({showPolicy}:FooterProps) => {
                 Polityka prywatności
               </button></p>
               
-              <p className="footer__special"><button className="footer__button">Regulamin</button></p>
+              <p className="footer__special"><button className="footer__button" onClick={showPolicy}>Regulamin</button></p>
             </div>
             <div className="col-md-3 col-sm-6 w-100 ">
               <h5 >Obserwuj</h5>

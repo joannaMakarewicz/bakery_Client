@@ -1,18 +1,14 @@
 import React, { useContext, useEffect } from "react";
-import Navbar from "../../components/Navbar/Navbar";
 import Form from "../../components/Form/Form";
-import Footer from "../../components/Footer/Footer";
 import { FaLocationDot } from "react-icons/fa6";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdAlternateEmail } from "react-icons/md";
 import "../Contact/Contact.scss";
 import MyDataContext from "../../context/MyDataContext";
 import useWebsiteTitle from "../../hooks/useWebsiteTitle";
-import Arrow from "../../components/Arrow/Arrow";
 import contactLeft from "../../assets/contactLeft.jpg";
 import contactMiddle from "../../assets/contactMiddle.jpg";
 import contactRight from "../../assets/contactRight.jpeg";
-import HeaderSmall from "../../components/HeaderSmall/HeaderSmall";
 import Layout from "../../components/Layout/Layout";
 
 const Contact = () => {
