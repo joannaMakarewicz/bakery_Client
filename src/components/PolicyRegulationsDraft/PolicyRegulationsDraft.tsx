@@ -7,18 +7,24 @@ type PolicyRegulationsDraftProps = {
     //     name:string;
     // }
     // children:React.ReactNode;
-    showPolicy:()=>void;
+    policy?:boolean;
+    regulations?:boolean;
+    showPolicy?:()=>void;
+    showRegulations?:()=>void;
 }
 
-const PolicyRegulationsDraft = ({showPolicy}:PolicyRegulationsDraftProps) => {
+const PolicyRegulationsDraft = ({policy, regulations, showPolicy, showRegulations}:PolicyRegulationsDraftProps) => {
     return (
-        <div className="policy">
+        <>
+        {
+policy?
+<div className="policy">
           <div className="policy__content">
-            <h1 className="policy__heading mb-5">heading</h1>
+            <h1 className="policy__heading mb-5">Polityka prywatności</h1>
             <div className="policyText">
                 <h2 className="m-5">Name</h2>
                 <ol className="text-start">
-                    text
+                    texst do Polityki prywatności
                 </ol>
             </div>
            
@@ -27,6 +33,24 @@ const PolicyRegulationsDraft = ({showPolicy}:PolicyRegulationsDraftProps) => {
             </div>
           </div>
         </div>
+        :
+        <div className="policy">
+          <div className="policy__content">
+            <h1 className="policy__heading mb-5">Regulamin</h1>
+            <div className="policyText">
+                <h2 className="m-5">Name</h2>
+                <ol className="text-start">
+                    text do Regulamin
+                </ol>
+            </div>
+           
+            <div>
+              <button className="btn policyText__icon" onClick={showRegulations}>Zamknij</button>
+            </div>
+          </div>
+        </div>
+        }</>
+        
       );
 }
 

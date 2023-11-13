@@ -16,17 +16,23 @@ type LayoutProps = {
 
 const Layout = ({ children, backgroundImages = [""] }: LayoutProps) => {
   const [policy, setPolicy] = useState<boolean>(false);
+  const [regulations, setRegulations] = useState<boolean>(false);
 
   const showPolicy = () => {
     setPolicy(!policy)
-    console.log(!policy)
+    console.log(`"policy:" ${!policy}`)
+  };
+
+  const showRegulations = () => {
+    setRegulations(!regulations)
+    console.log(`"regulations:" ${!regulations}`)
   };
 
   let isHome = useLocation();
 
   return (
     <>
-      {policy ?<PolicyRegulationsDraft showPolicy={showPolicy}/> : null}
+      {(policy || regulations) ?<PolicyRegulationsDraft showPolicy={showPolicy} policy={policy} regulations={regulations} showRegulations={showRegulations}/> : null}
       <Navbar />
       <Arrow />
       {isHome.pathname === "/" || isHome.pathname === "/bakery_Client" ? (
@@ -37,7 +43,7 @@ const Layout = ({ children, backgroundImages = [""] }: LayoutProps) => {
 
       {children}
 
-      <Footer showPolicy={showPolicy} />
+      <Footer showPolicy={showPolicy} showRegulations={showRegulations} />
     </>
   );
 };

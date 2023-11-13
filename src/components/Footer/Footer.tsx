@@ -10,10 +10,11 @@ import MyDataContext from "../../context/MyDataContext";
 import "../Footer/Footer.scss";
 
 type FooterProps = {
-  showPolicy:()=> void
+  showRegulations?:()=>void;
+  showPolicy?:()=> void
 }
 
-const Footer = ({showPolicy}:FooterProps) => {
+const Footer = ({showPolicy, showRegulations}:FooterProps) => {
   const dataBase = useContext(MyDataContext);
 
 
@@ -58,7 +59,7 @@ const Footer = ({showPolicy}:FooterProps) => {
                 Polityka prywatności
               </button></p>
               
-              <p className="footer__special"><button className="footer__button" onClick={showPolicy}>Regulamin</button></p>
+              <p className="footer__special"><button className="footer__button" onClick={showRegulations}>Regulamin</button></p>
             </div>
             <div className="col-md-3 col-sm-6 w-100 ">
               <h5 >Obserwuj</h5>
