@@ -15,6 +15,7 @@ import FormQuotation from "../../components/FormQuotation/FormQuotation";
 import MainContent from "../../components/MainContent/MainContent";
 import MyDataContext from "../../context/MyDataContext";
 import axiosInstance from "../../services/config";
+import Layout from "../../components/Layout/Layout";
 
 const Cakes = () => {
   useWebsiteTitle("Torty");
@@ -48,7 +49,6 @@ const Cakes = () => {
     getCakesPictures();
   }, []);
 
-
   const listOfImages: string[] = listOfCakesPhotos;
 
   const [info, setInfo] = useState<boolean>(false);
@@ -73,34 +73,30 @@ const Cakes = () => {
     <MyDataContext.Consumer>
       {(cakesPhotosFromContext) => (
         <>
-          <Navbar />
-          <Arrow />
-          <HeaderSmall backgroundImages={backgroundImages} />
-          <MainContent
-            information={information}
-            setInfo={() => {
-              setInfo(true);
-            }}
-          />
+          <Layout backgroundImages={backgroundImages}>
+            <MainContent
+              information={information}
+              setInfo={() => {
+                setInfo(true);
+              }}
+            />
+            <section className="cakesQuotation">
+              {info ? (
+                <>
+                  <FormQuotation />
+                  <div className="mainContent__frame">
+                    <img
+                      className="mainContent__img"
+                      src={formQuotationImg2}
+                      alt="przykład ciast"
+                    />
+                  </div>
+                </>
+              ) : null}
+            </section>
 
-          <section className="cakesQuotation">
-            {info ? (
-              <>
-                <FormQuotation />
-                <div className="mainContent__frame">
-                  <img
-                    className="mainContent__img"
-                    src={formQuotationImg2}
-                    alt="przykład ciast"
-                  />
-                </div>
-              </>
-            ) : null}
-          </section>
-
-          <Gallery listOfImages={listOfImages} />
-
-          <Footer />
+            <Gallery listOfImages={listOfImages} />
+          </Layout>
         </>
       )}
     </MyDataContext.Consumer>

@@ -29,6 +29,15 @@
     font-size: 0.8rem;
     text-align: center;
   }
+  &__button {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
   &__contact {
     margin-bottom: 1.5rem;
   }
@@ -71,8 +80,6 @@
   }
   &__special {
     font-size: 1rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
     margin: 0px;
     &--margin {
       margin-top: 1.5rem;
