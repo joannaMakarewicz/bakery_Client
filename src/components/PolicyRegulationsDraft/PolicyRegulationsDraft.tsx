@@ -1,5 +1,7 @@
 import React from 'react';
 import "../PolicyRegulationsDraft/PolicyRegulationsDraft.scss";
+import Regulations from '../Regulations/Regulations';
+import Policy from '../Policy/Policy';
 
 type PolicyRegulationsDraftProps = {
     // policyRegulationsData:{
@@ -15,42 +17,22 @@ type PolicyRegulationsDraftProps = {
 
 const PolicyRegulationsDraft = ({policy, regulations, showPolicy, showRegulations}:PolicyRegulationsDraftProps) => {
     return (
-        <>
-        {
-policy?
+
 <div className="policy">
           <div className="policy__content">
-            <h1 className="policy__heading mb-5">Polityka prywatności</h1>
+            <h1 className="policy__heading mb-5">{policy? "Polityka prywatności" : "Regulamin"}</h1>
             <div className="policyText">
-                <h2 className="m-5">Name</h2>
-                <ol className="text-start">
-                    texst do Polityki prywatności
-                </ol>
+                <h2 className="m-5">Postanowienia ogólne</h2>
+                
+                    {policy? <Policy/> : <Regulations/>}
+              
             </div>
            
             <div>
-              <button className="btn policyText__icon" onClick={showPolicy}>Zamknij</button>
+              <button className="btn policyText__icon" onClick={policy? showPolicy : showRegulations}>Zamknij</button>
             </div>
           </div>
         </div>
-        :
-        <div className="policy">
-          <div className="policy__content">
-            <h1 className="policy__heading mb-5">Regulamin</h1>
-            <div className="policyText">
-                <h2 className="m-5">Name</h2>
-                <ol className="text-start">
-                    text do Regulamin
-                </ol>
-            </div>
-           
-            <div>
-              <button className="btn policyText__icon" onClick={showRegulations}>Zamknij</button>
-            </div>
-          </div>
-        </div>
-        }</>
-        
       );
 }
 
