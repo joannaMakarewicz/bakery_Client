@@ -5,6 +5,7 @@
   border: 1px solid #d8c097;
   color: #141414;
   font-size: 16px;
+  height: 100%;
   line-height: 1.4em;
   margin-bottom: 1rem;
   padding: 0.5rem;
@@ -26,6 +27,9 @@
     color: $fontColor;
     left: -0.05rem;
     padding-top: 8px;
+  }
+  &__content {
+    margin:auto 0;
   }
   &__img {
     box-shadow: 0 0 10px 0 rgba(41, 51, 65, 0.15);
