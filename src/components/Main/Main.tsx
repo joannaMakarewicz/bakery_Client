@@ -38,7 +38,7 @@ const Main = () => {
         </h1>
         <div className="w-25 mx-auto my-3 main__border" />
         <p className="main__description">
-          U nas powstają wyjątkowe artystyczne torty, ciasta i ciasteczka
+          U nas powstają wyjątkowe artystyczne torty, ciasta oraz ciasteczka
           tworzone z ogromną pasją i zaangażowaniem w każdy szczegół. Magia
           naszych wypieków przejawia się w niebanalnym wyglądzie i wyjątkowym
           smaku. Są to słodkości przygotowywane na indywidualne zamówienia a
@@ -50,6 +50,7 @@ const Main = () => {
 
       <article className="main__opinion">
         <div>
+        <div>
           <AiFillStar className="star me-2" />
           <AiFillStar className="star me-2" />
           <AiFillStar className="star me-2" />
@@ -59,6 +60,7 @@ const Main = () => {
           <AiFillStar className="star me-2" />
           <AiFillStar className="star me-2" />
           <AiFillStar className="star me-2" />
+        </div>
         </div>
         <div className="main__section">
           <Carousel className="myOwnCarousel">

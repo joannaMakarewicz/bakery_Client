@@ -9,7 +9,7 @@
   }
   &__description {
     font-size: 17px;
-    text-align: justify;
+    text-align: start;
     margin: 1rem;
     padding: 4rem 0.25rem;
     @media screen and (min-width: 500px) {
@@ -42,20 +42,8 @@
     background-image: url("../../assets/bcg16__blurxxl.png");
     background-size: cover;
     background-color: $beigeColor;
-    height: 85vh;
-    padding: 5rem 6px;
-    @media screen and (min-width: 425px) {
-      height: 70vh;
-    }
-    @media screen and (min-width: 768px) {
-      height: 60vh;
-    }
-    @media screen and (min-width: 1024px) {
-      height: 80vh;
-    }
-    @media screen and (min-width: 1200px) {
-      height: 70vh;
-    }
+    // height: 65vh;
+    padding: 4rem 6px;
     & h2 {
       color: $mainBeige;
       font-size: 1.8rem;
@@ -65,7 +53,7 @@
   }
   &__section {
     margin: 0 auto;
-    padding: 0 5% 0;
+    padding: 0;
     @media screen and (min-width: 1024px) {
       margin: 0 5vw;
       padding: 0;
@@ -73,7 +61,6 @@
     @media screen and (min-width: 1300px) {
       margin: 0 10vw;
     }
-
     &--1 {
       margin-top: 5rem;
       @media screen and (min-width: 768px) {
@@ -86,10 +73,6 @@
   }
 }
 
-.test {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
 
 .star {
   color: $fontColor;
@@ -100,6 +83,7 @@
   align-items: flex-start;
   display: flex;
   height: 35vh;
+  margin:4rem 6px 0;
   @media screen and (min-width: 425px) {
     height: 25vh;
   }
@@ -111,14 +95,23 @@
   }
 }
 
-.noCarousel {
+.main__opinion .noCarousel {
   display: none;
   @media screen and (min-width: 1024px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top:4rem;
   }
 }
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   background-color: $fontColor;
+}
+
+.main__opinion .carousel-inner {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  overflow: visible;
+  padding: 30px 0;
 }

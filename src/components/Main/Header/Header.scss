@@ -4,7 +4,6 @@
   background-color: $beigeColor;
 }
 
-
 .carousel-indicators {
   display: none;
 }
@@ -13,16 +12,17 @@
   background-image: url("../../../assets/bcg16_blur.png");
   background-size: cover;
   height: 55vh;
+  margin-top:100px;
   overflow: hidden;
   width: 100%;
-  @media screen and (min-width:376px) {
+  @media screen and (min-width: 376px) {
     height: 60vh;
   }
-  @media screen and (min-width:769px) {
+  @media screen and (min-width: 769px) {
     overflow: visible;
     height: 500px;
   }
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     height: 600px;
   }
 
@@ -32,13 +32,13 @@
     overflow: hidden;
     position: relative;
     width: 100vw;
-    @media screen and (min-width:769px) {
+    @media screen and (min-width: 769px) {
       width: 769px;
     }
-    @media screen and (min-width:1024px) {
+    @media screen and (min-width: 1024px) {
       width: 900px;
     }
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width: 1200px) {
       width: 1200px;
     }
   }
@@ -56,22 +56,21 @@
       max-height: 55%;
       transform: scale(1, 1) translate(0px, 0px);
       max-width: 45vw;
-      @media screen and (min-width:768px) {
+      @media screen and (min-width: 768px) {
         top: 15%;
         left: 6px;
         max-height: 55%;
         overflow: hidden;
         width: 250px;
       }
-      @media screen and (min-width:1024px) {
+      @media screen and (min-width: 1024px) {
         top: 15%;
         left: 6px;
         width: 300px;
         max-height: 60%;
-        
       }
-      @media screen and (min-width:1200px) {
-        left:6px;
+      @media screen and (min-width: 1200px) {
+        left: 6px;
         max-height: 100%;
         top: 19%;
         width: 324px;
@@ -79,34 +78,34 @@
     }
     &--2 {
       border: 12px solid rgba(255, 255, 255, 1);
-      left:10vw;
+      left: 10vw;
       top: 15vh;
       transform: scale(1, 1) translate(0px, 0px);
       width: 80vw;
       z-index: 3;
       min-width: 230px;
-      @media screen and (min-width:376px) {
-        top:16vh;
+      @media screen and (min-width: 376px) {
+        top: 16vh;
         min-width: 290px;
         width: 80vw;
       }
-      @media screen and (min-width:426px) {
-        top:13vh;
-        left:15vw;
+      @media screen and (min-width: 426px) {
+        top: 13vh;
+        left: 15vw;
         min-width: 290px;
         width: 70vw;
       }
-      @media screen and (min-width:768px) {
-        top:20vh;
+      @media screen and (min-width: 768px) {
+        top: 20vh;
         left: 170px;
         width: 412px;
       }
-      @media screen and (min-width:1024px) {
-        top:7vh;
+      @media screen and (min-width: 1024px) {
+        top: 7vh;
         left: 190px;
         width: 512px;
       }
-      @media screen and (min-width:1200px) {
+      @media screen and (min-width: 1200px) {
         left: 300px;
         top: 10vh;
         width: 600px;
@@ -114,22 +113,22 @@
     }
     &--3 {
       right: -12px;
-      top:50%;
+      top: 50%;
       transform: scale(1, 1) translate(0px, 0px);
       width: 45vw;
-      @media screen and (min-width:768px) {
+      @media screen and (min-width: 768px) {
         right: 6px;
         top: 40%;
         width: 250px;
       }
-      @media screen and (min-width:1024px) {
+      @media screen and (min-width: 1024px) {
         right: 6px;
         top: 30%;
-        width:300px ;
+        width: 300px;
       }
-      @media screen and (min-width:1200px) {
+      @media screen and (min-width: 1200px) {
         width: 324px;
-        top:35%;
+        top: 35%;
         width: 324px;
       }
     }
