@@ -7,7 +7,7 @@ import "../Home/Home.scss";
 import Layout from "../../components/Layout/Layout";
 
 const Home = () => {
-  useWebsiteTitle("Strona główna");
+  useWebsiteTitle("Chodź na ciacho - strona główna");
 
   useEffect(() => {
     window.scrollTo(0, 0);

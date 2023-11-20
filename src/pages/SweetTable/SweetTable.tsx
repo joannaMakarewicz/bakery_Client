@@ -15,7 +15,7 @@ import axiosInstance from "../../services/config";
 import Layout from "../../components/Layout/Layout";
 
 const SweetTable = () => {
-  useWebsiteTitle("Słodki stół");
+  useWebsiteTitle("Chodź na ciacho - słodki stół");
 
   type SweetTablePictures = {
     fields: {

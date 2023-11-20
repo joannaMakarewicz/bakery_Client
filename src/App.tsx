@@ -59,10 +59,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/bakery_Client" element={<Home />} />
-          <Route path="/cakes" element={<Cakes />} />
-          <Route path="/wedding" element={<Wedding />} />
-          <Route path="/sweetTable" element={<SweetTable />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/torty" element={<Cakes />} />
+          <Route path="/wesela" element={<Wedding />} />
+          <Route path="/slodkistol" element={<SweetTable />} />
+          <Route path="/kontakt" element={<Contact />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Router>

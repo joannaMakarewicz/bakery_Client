@@ -12,7 +12,7 @@ import contactRight from "../../assets/contactRight.jpeg";
 import Layout from "../../components/Layout/Layout";
 
 const Contact = () => {
-  useWebsiteTitle('Kontakt');
+  useWebsiteTitle('Chodź na ciacho - kontakt');
   const contactData = useContext(MyDataContext);
 
   const backgroundImages = [

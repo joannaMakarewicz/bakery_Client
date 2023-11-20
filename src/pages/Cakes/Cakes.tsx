@@ -18,7 +18,7 @@ import axiosInstance from "../../services/config";
 import Layout from "../../components/Layout/Layout";
 
 const Cakes = () => {
-  useWebsiteTitle("Torty");
+  useWebsiteTitle("Chodź na ciacho - torty");
 
   type CakesPictures = {
     fields: {
