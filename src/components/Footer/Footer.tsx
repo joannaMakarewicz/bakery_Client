@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import logo from "../../assets/logo.jpg";
+import { Link } from "react-router-dom";
 import { BsFacebook } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import { FaLocationDot } from "react-icons/fa6";
@@ -23,9 +24,9 @@ const Footer = ({showPolicy, showRegulations}:FooterProps) => {
       {(dataBase) => (
         <footer className="footer">
           <section className="footer__article">
-            <div className="footer__container col-md-3 col-sm-6 w-100">
+            <Link to="/" className="footer__container col-md-3 col-sm-6 w-100">
               <img className="footer__logo" src={logo} alt="chodź na ciacho" />
-            </div>
+            </Link>
             <div className="col-md-3 col-sm-6 w-100">
               <h5 className=" footer__heading">
                 {dataBase.myData.name}

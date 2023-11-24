@@ -11,19 +11,19 @@ const Offer = () => {
     {
       photo: offerCakes,
       heading: "Torty",
-      name: "cakes",
+      name: "torty",
       content: "Wyjątkowe i wymarzone, przygotowywane na indywidualne zamówienie."
     },
     {
       photo: offerSweet,
       heading: "Słodkie stoły",
-      name: "sweetTable",
+      name: "slodkistol",
       content: "Osłodzimy Wasze przyjęcie weselne wyjątkowym tortem i słodkościami.",
     },
     {
       photo: offerWedding,
       heading: "Wesela",
-      name: "wedding",
+      name: "wesela",
       content: "Słodki stół w naszym wykonaniu to niezapomniana uczta smakowa i wizualna.",
     },
   ];

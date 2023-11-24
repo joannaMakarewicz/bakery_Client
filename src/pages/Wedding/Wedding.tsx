@@ -57,7 +57,7 @@ const Wedding = () => {
     title: "spełniamy marzenia",
     text: "Osłodzimy Wasze przyjęcie weselne wyjątkowym tortem i słodkościami. Całość przygotowana w pięknej aranżacji.  Wypożyczenie pater, naczyń i dekoracji uwzględniona jest w indywidualnej ofercie.  Skontaktuj się z nami poprzez formularz a my zgodnie z Twoimi wyobrażeniami przygotujemy dla Ciebie wyjątkową ofertę.",
     buttonName: "Zapytaj o ofertę",
-    buttonLink: "/contact",
+    buttonLink: "/kontakt",
     bcg: weddingAdditional,
   };
 
