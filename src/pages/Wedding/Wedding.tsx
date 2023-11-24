@@ -15,7 +15,7 @@ import axiosInstance from "../../services/config";
 import Layout from "../../components/Layout/Layout";
 
 const Wedding = () => {
-  useWebsiteTitle("Wesela");
+  useWebsiteTitle("Chodź na ciacho - wesela");
 
   type WeddingPictures = {
     fields: {
@@ -28,6 +28,7 @@ const Wedding = () => {
   }[];
 
   const [weddingPictures, setWeddingPictures] = useState<WeddingPictures>([]);
+  const [loading, setLoading] = useState<boolean>();
   const weddingAttachments = weddingPictures.map((item) => {
     return item.fields.attachments[0];
   });
@@ -37,9 +38,11 @@ const Wedding = () => {
   });
 
   const getWeddingPictures = async () => {
+    setLoading(true);
     await axiosInstance.get("/weddingGallery").then((response) => {
       setWeddingPictures(response.data.records);
     });
+    setLoading(false);
   };
 
   useEffect(() => {
@@ -57,7 +60,7 @@ const Wedding = () => {
     title: "spełniamy marzenia",
     text: "Osłodzimy Wasze przyjęcie weselne wyjątkowym tortem i słodkościami. Całość przygotowana w pięknej aranżacji.  Wypożyczenie pater, naczyń i dekoracji uwzględniona jest w indywidualnej ofercie.  Skontaktuj się z nami poprzez formularz a my zgodnie z Twoimi wyobrażeniami przygotujemy dla Ciebie wyjątkową ofertę.",
     buttonName: "Zapytaj o ofertę",
-    buttonLink: "/contact",
+    buttonLink: "/kontakt",
     bcg: weddingAdditional,
   };
 
@@ -67,7 +70,7 @@ const Wedding = () => {
 
   return (
     <>
-      <Layout backgroundImages={backgroundImages}>
+      <Layout backgroundImages={backgroundImages} loading={loading}>
         <MainContent information={information} />
         <Gallery listOfImages={listOfImages} />
       </Layout>

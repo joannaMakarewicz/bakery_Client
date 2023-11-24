@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Form from "../../components/Form/Form";
 import { FaLocationDot } from "react-icons/fa6";
 import { BsFillTelephoneFill } from "react-icons/bs";
@@ -12,8 +12,10 @@ import contactRight from "../../assets/contactRight.jpeg";
 import Layout from "../../components/Layout/Layout";
 
 const Contact = () => {
-  useWebsiteTitle('Kontakt');
+  useWebsiteTitle('Chodź na ciacho - kontakt');
   const contactData = useContext(MyDataContext);
+  const [loading, setLoading] = useState<boolean>();
+
 
   const backgroundImages = [
     contactLeft,
@@ -25,9 +27,18 @@ const Contact = () => {
     window.scrollTo(0,0)
   }, [])
 
+  useEffect(()=> {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 200);
+  }, [])
+
+
+
   return (
     <>
-      <Layout backgroundImages={backgroundImages}>
+      <Layout backgroundImages={backgroundImages} loading={loading}>
       <main className="contact pt-5 pb-5">
         <section className="contact__section">
           <article className="contact__article">

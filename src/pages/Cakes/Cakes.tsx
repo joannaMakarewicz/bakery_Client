@@ -18,7 +18,7 @@ import axiosInstance from "../../services/config";
 import Layout from "../../components/Layout/Layout";
 
 const Cakes = () => {
-  useWebsiteTitle("Torty");
+  useWebsiteTitle("Chodź na ciacho - torty");
 
   type CakesPictures = {
     fields: {
@@ -34,15 +34,18 @@ const Cakes = () => {
   const cakesAttachments = cakesPictures.map((item) => {
     return item.fields.attachments[0];
   });
-
+  const [loading, setLoading] = useState<boolean>();
+  console.log(loading)
   const listOfCakesPhotos = cakesAttachments.map((cakesPhoto) => {
     return cakesPhoto.url;
   });
 
   const getCakesPictures = async () => {
+    setLoading(true);
     await axiosInstance.get("/cakesGallery").then((response) => {
       setCakesPictures(response.data.records);
     });
+    setLoading(false)
   };
 
   useEffect(() => {
@@ -73,7 +76,7 @@ const Cakes = () => {
     <MyDataContext.Consumer>
       {(cakesPhotosFromContext) => (
         <>
-          <Layout backgroundImages={backgroundImages}>
+          <Layout backgroundImages={backgroundImages} loading={loading}>
             <MainContent
               information={information}
               setInfo={() => {

@@ -15,7 +15,7 @@ import axiosInstance from "../../services/config";
 import Layout from "../../components/Layout/Layout";
 
 const SweetTable = () => {
-  useWebsiteTitle("Słodki stół");
+  useWebsiteTitle("Chodź na ciacho - słodki stół");
 
   type SweetTablePictures = {
     fields: {
@@ -33,14 +33,19 @@ const SweetTable = () => {
     return item.fields.attachments[0];
   });
 
+  const [loading, setLoading] = useState<boolean>();
+ 
+
   const listOfSweetTablePhotos = cakesAttachments.map((sweetTablePhoto) => {
     return sweetTablePhoto.url;
   });
 
   const getSweetTablePictures = async () => {
+    setLoading(true);
     await axiosInstance.get("/sweetTableGallery").then((response) => {
       setSweetTablePictures(response.data.records);
     });
+    setLoading(false);
   };
 
   useEffect(() => {
@@ -57,7 +62,7 @@ const SweetTable = () => {
     title: "spełniamy marzenia",
     text: "Słodki stół w naszym wykonaniu to niezapomniana uczta smakowa i wizualna. Dbamy o każdy nawet najdrobniejszy szczegół przy tworzeniu tej niebananej, słodkiej oprawy Waszej uroczystości. Wszystko przygotujemy zgodnie z motywem przewodnim i kolorystyką przyjęcia. Nasz słodki stół może pojawić się na Waszym weselu, chrzcinach, urodzinach czy przy innej okazji i zachwycić Was i Waszych gości pięknem wykonania i wyjątkowym smakiem.",
     buttonName: "Zapytaj o ofertę",
-    buttonLink: "/contact",
+    buttonLink: "/kontakt",
     bcg: sweetTableAdditional,
   };
 
@@ -67,7 +72,7 @@ const SweetTable = () => {
 
   return (
     <>
-      <Layout backgroundImages={backgroundImages}>
+      <Layout backgroundImages={backgroundImages} loading={loading}>
         <MainContent information={information} />
         <Gallery listOfImages={listOfImages} />
       </Layout>

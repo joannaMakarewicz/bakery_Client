@@ -18,7 +18,7 @@ const Navbar = () => {
     <nav className={active ? "nav nav__open" : "nav"}>
        <ExtraContent />
       <Link to="/">
-        <img className="nav__logo" src={logo} alt="chodz na ciacho" />
+        <img className="nav__logo" src={logo} alt="chodź na ciacho" />
       </Link>
 
       <ul
@@ -28,11 +28,11 @@ const Navbar = () => {
             : "nav__list text-center"
         }
       >
-        <Navlink linkName="O nas" link="/bakery_Client" />
-        <Navlink linkName="Torty" link="/cakes" />
-        <Navlink linkName="Wesela" link="/wedding" />
-        <Navlink linkName="Słodki stół" link="/sweetTable" />
-        <Navlink linkName="Kontakt" link="/contact" />
+        <Navlink linkName="O nas" link="/" />
+        <Navlink linkName="Torty" link="/torty" />
+        <Navlink linkName="Wesela" link="/wesela" />
+        <Navlink linkName="Słodki stół" link="/slodkistol" />
+        <Navlink linkName="Kontakt" link="/kontakt" />
       </ul>
       <button
         className={

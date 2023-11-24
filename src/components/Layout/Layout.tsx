@@ -11,10 +11,11 @@ import PolicyRegulationsDraft from "../PolicyRegulationsDraft/PolicyRegulationsD
 
 type LayoutProps = {
   children: React.ReactNode;
+  loading?:boolean;
   backgroundImages?: string[];
 };
 
-const Layout = ({ children, backgroundImages = [""] }: LayoutProps) => {
+const Layout = ({ children,loading=false, backgroundImages = [""] }: LayoutProps) => {
   const [policy, setPolicy] = useState<boolean>(false);
   const [regulations, setRegulations] = useState<boolean>(false);
 
@@ -25,7 +26,6 @@ const Layout = ({ children, backgroundImages = [""] }: LayoutProps) => {
 
   const showRegulations = () => {
     setRegulations(!regulations)
-    console.log(`"regulations:" ${!regulations}`)
   };
 
   let isHome = useLocation();
@@ -35,10 +35,10 @@ const Layout = ({ children, backgroundImages = [""] }: LayoutProps) => {
       {(policy || regulations) ?<PolicyRegulationsDraft showPolicy={showPolicy} policy={policy} regulations={regulations} showRegulations={showRegulations}/> : null}
       <Navbar />
       <Arrow />
-      {isHome.pathname === "/" || isHome.pathname === "/bakery_Client" ? (
-        <Header />
+      {isHome.pathname === "/" || isHome.pathname === "/bakery_Client" || isHome.pathname === "/glowna" ? (
+        <Header loading={loading}  />
       ) : (
-        <HeaderSmall backgroundImages={backgroundImages} />
+        <HeaderSmall backgroundImages={backgroundImages} loading={loading} />
       )}
 
       {children}
