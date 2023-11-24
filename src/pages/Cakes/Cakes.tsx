@@ -15,7 +15,7 @@ import Layout from "../../components/Layout/Layout";
 
 const Cakes = () => {
   useWebsiteTitle("Chodź na ciacho - torty");
-s
+
   type CakesPictures = {
     fields: {
       attachments: [
