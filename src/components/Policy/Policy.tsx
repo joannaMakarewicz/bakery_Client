@@ -1,5 +1,4 @@
 import React from "react";
-import PolicyRegulationsDraft from "../PolicyRegulationsDraft/PolicyRegulationsDraft";
 import "../Policy/Policy.scss";
 
 const Policy = () => {

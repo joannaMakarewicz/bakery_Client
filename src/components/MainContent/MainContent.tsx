@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Button from "../../components/Button/Button";
 import "../MainContent/MainContent.scss";
-import { on } from "stream";
 
 type MainContentProps = {
   information: {

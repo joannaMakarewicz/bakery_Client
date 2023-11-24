@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
 import useWebsiteTitle from "../../hooks/useWebsiteTitle";
-import Arrow from "../../components/Arrow/Arrow";
 import Gallery from "../../components/Gallery/Gallery";
 import weddingAdditional from "../../assets/weddingAdditional.jpeg";
 import weddingLeft from "../../assets/weddingLeft.jpeg";
 import weddingMiddle from "../../assets/weddingMiddle.jpeg";
 import weddingRight from "../../assets/weddingRight.jpeg";
-import HeaderSmall from "../../components/HeaderSmall/HeaderSmall";
 import "../Wedding/Wedding.scss";
 import MainContent from "../../components/MainContent/MainContent";
 import axiosInstance from "../../services/config";

@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
 import useWebsiteTitle from "../../hooks/useWebsiteTitle";
-import Arrow from "../../components/Arrow/Arrow";
 import Gallery from "../../components/Gallery/Gallery";
 import sweetTableLeft from "../../assets/sweetTableLeft.jpeg";
 import sweetTableMiddle from "../../assets/sweetTableMiddle.jpeg";
@@ -10,7 +7,6 @@ import sweetTableRight from "../../assets/sweetTableRight.jpeg";
 import sweetTableAdditional from "../../assets/sweetTableAdditional.jpg";
 import MainContent from "../../components/MainContent/MainContent";
 import "../SweetTable/SweetTable.scss";
-import HeaderSmall from "../../components/HeaderSmall/HeaderSmall";
 import axiosInstance from "../../services/config";
 import Layout from "../../components/Layout/Layout";
 
