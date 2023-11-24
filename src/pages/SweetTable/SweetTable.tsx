@@ -33,14 +33,19 @@ const SweetTable = () => {
     return item.fields.attachments[0];
   });
 
+  const [loading, setLoading] = useState<boolean>();
+ 
+
   const listOfSweetTablePhotos = cakesAttachments.map((sweetTablePhoto) => {
     return sweetTablePhoto.url;
   });
 
   const getSweetTablePictures = async () => {
+    setLoading(true);
     await axiosInstance.get("/sweetTableGallery").then((response) => {
       setSweetTablePictures(response.data.records);
     });
+    setLoading(false);
   };
 
   useEffect(() => {
@@ -67,7 +72,7 @@ const SweetTable = () => {
 
   return (
     <>
-      <Layout backgroundImages={backgroundImages}>
+      <Layout backgroundImages={backgroundImages} loading={loading}>
         <MainContent information={information} />
         <Gallery listOfImages={listOfImages} />
       </Layout>

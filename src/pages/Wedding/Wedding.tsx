@@ -28,6 +28,7 @@ const Wedding = () => {
   }[];
 
   const [weddingPictures, setWeddingPictures] = useState<WeddingPictures>([]);
+  const [loading, setLoading] = useState<boolean>();
   const weddingAttachments = weddingPictures.map((item) => {
     return item.fields.attachments[0];
   });
@@ -37,9 +38,11 @@ const Wedding = () => {
   });
 
   const getWeddingPictures = async () => {
+    setLoading(true);
     await axiosInstance.get("/weddingGallery").then((response) => {
       setWeddingPictures(response.data.records);
     });
+    setLoading(false);
   };
 
   useEffect(() => {
@@ -67,7 +70,7 @@ const Wedding = () => {
 
   return (
     <>
-      <Layout backgroundImages={backgroundImages}>
+      <Layout backgroundImages={backgroundImages} loading={loading}>
         <MainContent information={information} />
         <Gallery listOfImages={listOfImages} />
       </Layout>
