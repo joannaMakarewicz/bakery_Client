@@ -1,8 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
-import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
-import HeaderSmall from "../../components/HeaderSmall/HeaderSmall";
-import Arrow from "../../components/Arrow/Arrow";
+import React, {useEffect, useState } from "react";
 import Gallery from "../../components/Gallery/Gallery";
 import useWebsiteTitle from "../../hooks/useWebsiteTitle";
 import cakesLeft from "../../assets/cakesLeft.jpeg";
@@ -19,7 +15,7 @@ import Layout from "../../components/Layout/Layout";
 
 const Cakes = () => {
   useWebsiteTitle("Chodź na ciacho - torty");
-
+s
   type CakesPictures = {
     fields: {
       attachments: [
@@ -35,7 +31,7 @@ const Cakes = () => {
     return item.fields.attachments[0];
   });
   const [loading, setLoading] = useState<boolean>();
-  console.log(loading)
+ 
   const listOfCakesPhotos = cakesAttachments.map((cakesPhoto) => {
     return cakesPhoto.url;
   });

@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Header from "./Header/Header";
 import Carousel from "react-bootstrap/Carousel";
 import Offer from "./Offer/Offer";
-import Arrow from "../Arrow/Arrow";
 import "../Main/Main.scss";
 import axiosInstance from "../../services/config";
 import Feedback from "../Feedback/Feedback";
