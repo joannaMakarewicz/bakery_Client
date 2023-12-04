@@ -57,12 +57,13 @@ function App() {
     <MyDataContext.Provider value={{ myData: myData }}>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+        <Route path="/bakery_Client" element={<Home />} />
           <Route path="/glowna" element={<Home />} />
           <Route path="/torty" element={<Cakes />} />
           <Route path="/wesela" element={<Wedding />} />
           <Route path="/slodkistol" element={<SweetTable />} />
           <Route path="/kontakt" element={<Contact />} />
+          <Route path="/" element={<Home />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Router>
