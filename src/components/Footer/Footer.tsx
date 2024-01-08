@@ -78,7 +78,7 @@ const Footer = ({showPolicy, showRegulations}:FooterProps) => {
               </div>
             </div>
           </section>
-          <div className="footer__author"><LiaCopyrightSolid/> 2023 Joanna Makarewicz</div>
+          <a className="footer__author" href="http://www.joannamakarewicz.pl/" target="_blank" rel="noreferrer"><LiaCopyrightSolid/> 2023 Joanna Makarewicz</a>
         </footer>
       )}
     </MyDataContext.Consumer>
