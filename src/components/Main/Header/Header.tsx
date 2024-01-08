@@ -12,6 +12,7 @@ type HeaderProps = {
 }
 
 const Header = ({loading}:HeaderProps) => {
+console.log(loading)
   return (
     <>
       {loading ? (

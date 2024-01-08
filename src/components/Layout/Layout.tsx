@@ -13,7 +13,11 @@ type LayoutProps = {
   backgroundImages?: string[];
 };
 
+
+
 const Layout = ({ children,loading=false, backgroundImages = [""] }: LayoutProps) => {
+
+  console.log(backgroundImages)
   const [policy, setPolicy] = useState<boolean>(false);
   const [regulations, setRegulations] = useState<boolean>(false);
 
@@ -33,7 +37,7 @@ const Layout = ({ children,loading=false, backgroundImages = [""] }: LayoutProps
       {(policy || regulations) ?<PolicyRegulationsDraft showPolicy={showPolicy} policy={policy} regulations={regulations} showRegulations={showRegulations}/> : null}
       <Navbar />
       <Arrow />
-      {isHome.pathname === "/" || isHome.pathname === "/bakery_Client" || isHome.pathname === "/glowna" ? (
+      {isHome.pathname === "/" || isHome.pathname === "/bakery_Client/" || isHome.pathname === "/glowna/" ? (
         <Header loading={loading}  />
       ) : (
         <HeaderSmall backgroundImages={backgroundImages} loading={loading} />

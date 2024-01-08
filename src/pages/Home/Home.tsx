@@ -6,7 +6,7 @@ import Layout from "../../components/Layout/Layout";
 
 const Home = () => {
   useWebsiteTitle("Chodź na ciacho - strona główna");
-  const [loading, setLoading] = useState<boolean>();
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(()=> {
     setLoading(true)
